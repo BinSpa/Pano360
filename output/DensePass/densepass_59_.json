@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "59_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which vehicle is parked closest to the building entrance under the overhang, and how can you tell based on their relative spatial positions in the image?",
+      "reasoning_chain": "1. The panoramic image shows a large building with an overhang on the right side, under which multiple vehicles are parked nearby.  \n2. The building entrance beneath the overhang is clearly visible, with a U-Haul truck positioned directly in front of it on the right side.  \n3. Other cars are parked to the left side of the image, farther from the building and separated by parking lines and open space.\n4. The U-Haul truck is aligned with the building entrance, indicating it is the closest vehicle to the entrance under the overhang, as it is positioned directly in front of both the entrance and the overhang structure.",
+      "final_answer": "The U-Haul truck is parked closest to the building entrance under the overhang."
+    },
+    {
+      "question": "Is the white sedan in the parking lot oriented perpendicular or parallel to the building?",
+      "reasoning_chain": "1. The image shows several cars parked in marked spaces on the left side of the panorama, away from the building.  \n2. The parking lines are visible, running perpendicular to the building face, and the cars, including the white sedan, are parked within these spaces.\n3. The side of the white sedan faces the building, with its front and rear aligned with the parking lines, not the building wall.\n4. This indicates the car is oriented perpendicular to the building, as typical for parking lot arrangements.",
+      "final_answer": "The white sedan is oriented perpendicular to the building."
+    },
+    {
+      "question": "Is the fenced area with barbed wire closer to the left edge or the right edge of the image, and what clues indicate its position?",
+      "reasoning_chain": "1. The fenced area with barbed wire appears along the background of the panoramic image.\n2. Examining both sides, the left and right edges of the image both show the fence, but the right edge has a green fence with a gate and signage more centrally visible.\n3. On the left, the fence appears more distant, with more open space and fewer close-up details.\n4. The right side shows the fence in greater detail and proximity, such as visible mesh, gate, and a sign.",
+      "final_answer": "The fenced area with barbed wire is closer to the right edge of the image."
+    },
+    {
+      "question": "Is the main road entrance to the parking lot likely to be on the left, center, or right side of the image?",
+      "reasoning_chain": "1. The image shows a large paved area that curves around the front of the building, creating a natural path for vehicles.\n2. The road and driveway space is widest on the center-right portion of the image, curving toward the background with fewer obstructions.\n3. The left side of the image is bordered by parked cars and a curb, which would restrict direct road entrance.\n4. The center-right to far right area is open, with a clear path and driveway, suggesting this is the main entrance for vehicles.",
+      "final_answer": "The main road entrance to the parking lot is likely to be on the right side of the image."
+    }
+  ]
+}

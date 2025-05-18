@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "163_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "How many cars are parked on the right side of the street in the panoramic image?",
+      "reasoning_chain": "1. Analyze the panoramic image from left to right, focusing on the right side of the street (which corresponds to the lower and right sections of the image due to the panoramic distortion).\n2. Identify all visible cars that are parked on the right-hand side of the street (adjacent to the sidewalk and facing the same direction as the flow of traffic on that side).\n3. Count each distinctly visible car that is parked on this side.\n4. Ignore any vehicles on the left side or those that are driving.",
+      "final_answer": "There are four cars parked on the right side of the street in the panoramic image."
+    },
+    {
+      "question": "Where is the red car positioned relative to the houses in the left half of the panorama?",
+      "reasoning_chain": "1. Locate the red car in the panoramic image, which is found on the far left side.\n2. Observe its spatial relationship to the nearby houses: the car is parked on the street parallel to the sidewalk in front of a row of houses.\n3. Note that the red car is adjacent to the front yard of the first house on the left and is near the edge of the image.\n4. The car is positioned closest to the leftmost house and directly in front of its hedge or wall.",
+      "final_answer": "The red car is parked on the street directly in front of the leftmost house, adjacent to its hedge."
+    },
+    {
+      "question": "Is there any tree obstructing the view of house entrances in this panorama?",
+      "reasoning_chain": "1. Examine the image for large trees and note their locations relative to the houses.\n2. Focus on the dark red-leaved tree, which is prominent near the center-left of the panorama.\n3. Observe how the tree\u2019s foliage and trunk partially block the view of one house entrance, making it less visible than the others.\n4. Confirm that other house entrances are unobstructed by trees or other objects.",
+      "final_answer": "Yes, one tree with dark red leaves partially obstructs the view of the entrance of the house just left of center in the panorama."
+    },
+    {
+      "question": "How many houses have visible bay windows facing the street?",
+      "reasoning_chain": "1. Scan the image for houses with prominent bay windows (windows protruding from the facade).\n2. Start from the left and move right, carefully identifying each house\u2019s window structure.\n3. Count the number of houses where bay windows are visible and clearly face the street.\n4. Exclude any windows that do not protrude or are not oriented to the street.",
+      "final_answer": "Three houses have visible bay windows facing the street in the panoramic image."
+    }
+  ]
+}

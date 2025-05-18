@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "305_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which is closer to the blue fence, the red building with \"THE WASTE WORKS\" signage or the multistory office building on the far right?",
+      "reasoning_chain": "The blue fence runs along the street and encloses the parking area directly adjacent to the red building with \"THE WASTE WORKS\" signage. The multistory office building on the far right is across a road and a large open parking lot from the blue fence, making it farther away compared to the red building, which is immediately adjacent to the fence.",
+      "final_answer": "The red building with \"THE WASTE WORKS\" signage is closer to the blue fence."
+    },
+    {
+      "question": "Is the parking lot with many cars located to the left or right of the red building with \"THE WASTE WORKS\" signage?",
+      "reasoning_chain": "The red building with \"THE WASTE WORKS\" signage is positioned near the center of the panoramic image. The large parking lot filled with cars is visible to the right of this building, separated by a road and some fencing. There are no large parking lots to the left of the red building, only other buildings and smaller parking spaces.",
+      "final_answer": "The parking lot with many cars is located to the right of the red building with \"THE WASTE WORKS\" signage."
+    },
+    {
+      "question": "Are the tallest office buildings in the scene closer to the left or right edge of the panoramic image?",
+      "reasoning_chain": "There are several tall office buildings visible in the image, but the tallest ones, featuring many floors, are most prominent near the right edge of the image. On the left, there are also some tall buildings, but they appear smaller and less prominent compared to those on the right.",
+      "final_answer": "The tallest office buildings are closer to the right edge of the panoramic image."
+    },
+    {
+      "question": "Does the road curve left or right as you move from the leftmost side of the image toward the center?",
+      "reasoning_chain": "Observing the placement and orientation of the road markings, the road on the left side of the image starts straight but then curves gently toward the right as it approaches the center, leading up to the area in front of \"THE WASTE WORKS\" building and the blue fence.",
+      "final_answer": "The road curves to the right as you move from the leftmost side of the image toward the center."
+    },
+    {
+      "question": "Is the entrance to the blue fenced area closer to the left or right side of the red building with \"THE WASTE WORKS\" signage?",
+      "reasoning_chain": "Examining the fence and gates, the entrance to the blue fenced area is positioned at the corner where the fence meets the red building with \"THE WASTE WORKS\" signage, which is toward the left side of this building as seen in the image.",
+      "final_answer": "The entrance to the blue fenced area is closer to the left side of the red building with \"THE WASTE WORKS\" signage."
+    }
+  ]
+}

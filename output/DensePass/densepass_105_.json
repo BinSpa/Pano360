@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "105_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "How many cars are visible in the panoramic image, and what are their spatial relationships relative to the central point of the panorama?",
+      "reasoning_chain": "1. The image is a panoramic street scene with a size of (2048, 400).\n2. Beginning from the leftmost side of the panorama, there is a silver car parked near a signboard.\n3. Moving towards the center-left, there is another silver car parked next to a building with a tower.\n4. On the far right side of the panorama, there is a third car, also silver, parked near another signboard.\n5. The central point of the panorama is roughly where the curved road and large trees are, with no cars positioned there.\n6. Spatially, the first car (leftmost) is to the far left of the central point, the second car (center-left) is just left of the central point, and the third car (rightmost) is to the far right of the central point.",
+      "final_answer": "There are three cars visible in the panorama: one far left, one just left of center, and one far right relative to the central point."
+    },
+    {
+      "question": "What is the orientation of the main buildings in the panoramic image with respect to the curved road?",
+      "reasoning_chain": "1. The panoramic image shows a wide view with a curved road running from the center-left to the center-right.\n2. There is a prominent building with a tower on the left side of the panorama, with its entrance facing the road.\n3. Another similar building with a tower is visible on the right side of the panorama, forming a symmetrical appearance.\n4. Both buildings are situated parallel to the road, with their entrances facing towards or slightly angled to the road\u2019s curve.\n5. The curved road creates a boundary, and both buildings are located inside this curve, with green spaces and fences between them and the road.",
+      "final_answer": "The main buildings are positioned parallel to the curved road, facing towards it from within the curve."
+    },
+    {
+      "question": "Is there more pedestrian or vehicular activity near the center of the panorama, and what evidence supports this?",
+      "reasoning_chain": "1. The center region of the panorama features a curved road, trees, and some open space.\n2. There are two visible pedestrians near the central area: one walking towards the camera and another further along the path.\n3. There are no cars driving or parked directly at the central point, suggesting less vehicular activity at the center.\n4. Most cars are parked near the edges of the image, not in the center.\n5. The presence of pedestrians in the center and the absence of vehicles indicate a higher level of pedestrian activity.",
+      "final_answer": "There is more pedestrian activity than vehicular activity near the center of the panorama."
+    },
+    {
+      "question": "How are the signboards distributed in the panorama, and what spatial arrangement can be inferred?",
+      "reasoning_chain": "1. At least three prominent blue signboards are visible in the panorama.\n2. One signboard is located at the far left, adjacent to the building and near the parked car.\n3. Another blue signboard appears near the center, inside a fenced green area, facing towards the curved road.\n4. The third blue signboard is on the far right, close to another parked car and beside a building entrance.\n5. The signboards are distributed at regular intervals along the perimeter of the scene, near main pathways and points of entry.",
+      "final_answer": "The signboards are positioned at the left, center, and right sides of the panorama, marking major entrances and pathways."
+    }
+  ]
+}

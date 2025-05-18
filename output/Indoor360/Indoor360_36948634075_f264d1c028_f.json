@@ -1,0 +1,33 @@
+{
+  "dataset": "Indoor360",
+  "task": "basic",
+  "image_id": "36948634075_f264d1c028_f",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (1920, 960).\n    The image contains detection boxes in multiple colors, each representing a different region. Based on these regions, \n    please generate a series of spatial reasoning data that includes detailed reasoning steps. \n    The questions should describe the spatial relationships between certain objects or infer the functional use of the region based on the objects present.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n",
+  "reasoning": [
+    {
+      "question": "What is the likely primary function of the area where the group of people is seated on orange couches?",
+      "reasoning_chain": "The panoramic image shows several people sitting together on orange couches arranged around a central glass table. There are multiple drinks (including beers), snacks, and flyers on the table, indicating social activity. The group appears relaxed, some holding drinks, others using their phones. The area is covered with a canopy, providing shade, and the outdoor setting suggests a casual, open-air environment. The presence of multiple people, leisure objects, and the arrangement of furniture all point to this being a social gathering or relaxation area.",
+      "final_answer": "The primary function of the area is a social lounge or gathering spot for relaxation and leisure."
+    },
+    {
+      "question": "How is the seating arrangement organized in relation to the central table?",
+      "reasoning_chain": "The panoramic view reveals a group of people seated in a semi-circular formation on orange couches. The couches are positioned around a central glass table, making it easy for everyone to access items on the table, such as drinks and snacks. This organization is conducive to group conversation and shared activities, which is typical for social seating areas.",
+      "final_answer": "The seating is organized in a semi-circle around a central table for shared access and interaction."
+    },
+    {
+      "question": "Based on the objects on the table, what activities might the group be engaging in?",
+      "reasoning_chain": "On the table, there are several drinks (beer and liquor), some flyers or brochures, and what appears to be party-related items or snacks. The drinks suggest social drinking, and the flyers could be related to events or activities at the location. The casual and festive environment, combined with the presence of multiple beverages and informational materials, suggests the group might be planning activities or simply enjoying a casual meetup.",
+      "final_answer": "The group is likely engaging in social drinking, conversation, and possibly planning or discussing events."
+    },
+    {
+      "question": "Is the environment more likely to be public or private, and what supports this inference?",
+      "reasoning_chain": "Outside the shaded lounge area, visible through the panoramic view, there are public features such as street signs, buildings, and what appears to be a sidewalk. The presence of these elements, as well as the open nature of the space, indicates that this lounge area is likely part of a public or semi-public venue, such as an outdoor bar, cafe, or resort lounge, rather than a private residence.",
+      "final_answer": "The environment is more likely to be public or semi-public, such as a lounge or bar area."
+    },
+    {
+      "question": "What can be inferred about the climate or weather conditions based on the image?",
+      "reasoning_chain": "The image shows clear skies, bright sunlight, and people dressed in summer clothing (shorts, t-shirts, tank tops). The lounge is shaded but otherwise open to the outdoors. The presence of sunglasses and sun hats further suggests warm, sunny weather.",
+      "final_answer": "The climate is likely warm and sunny, characteristic of a pleasant summer day."
+    }
+  ]
+}

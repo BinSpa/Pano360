@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "121_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the construction site with the cranes located to the left or right of the tall glass building in the panorama?",
+      "reasoning_chain": "The panoramic image shows a wide view containing a construction site with cranes and a tall glass building. Starting from the left, there are cranes, construction materials, and scaffolding. Moving to the center-right, the tall glass building appears. The construction site is clearly situated to the left of the tall glass building. Therefore, the spatial relationship is that the construction site is on the left side of the glass building in the panoramic view.",
+      "final_answer": "The construction site with the cranes is to the left of the tall glass building."
+    },
+    {
+      "question": "Where is the large yellow crane truck located in relation to the crosswalks and the stone with red text?",
+      "reasoning_chain": "In the panoramic image, several crosswalks intersect near a landscaped area with a large stone featuring red text. The yellow crane truck is parked further to the right side of the image, beyond both the crosswalks and the stone. It is positioned parallel to the crosswalk lines, in an open paved area past the landscaped section and fencing.",
+      "final_answer": "The large yellow crane truck is to the right of both the crosswalks and the stone with red text."
+    },
+    {
+      "question": "Is there a direct pedestrian path from the construction site to the landscaped area with trees and the stone?",
+      "reasoning_chain": "Looking at the panoramic image, the construction site is on the left side, while the landscaped area with trees and a stone is near the center. Between them, there are crosswalks and an open paved space, but no visible fencing or barriers that would prevent walking from one to the other. The crosswalks facilitate movement across the space.",
+      "final_answer": "Yes, there is a direct pedestrian path from the construction site to the landscaped area with trees and the stone."
+    },
+    {
+      "question": "What structure is directly behind the landscaped area with the stone and trees?",
+      "reasoning_chain": "At the center of the image, the landscaped area contains a stone with red text and several trees. Directly behind this area, there is a tall, modern glass building, which can be identified as the closest significant structure immediately adjacent to the landscaped section.",
+      "final_answer": "The tall modern glass building is directly behind the landscaped area with the stone and trees."
+    },
+    {
+      "question": "Is the elevated roadway closer to the yellow crane truck or the glass building?",
+      "reasoning_chain": "The elevated roadway is visible in the background of the right half of the image. Comparing its position relative to the yellow crane truck and the glass building, the roadway runs parallel and behind the area where the crane truck is parked, whereas the glass building is further away from it and separated by the landscaped area.",
+      "final_answer": "The elevated roadway is closer to the yellow crane truck."
+    }
+  ]
+}

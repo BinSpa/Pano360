@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "125_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "If you start from the entrance with the blue construction sign on the far left, how do you reach the gas station in the image?",
+      "reasoning_chain": "1. Identify the entrance with the blue construction sign on the far left side of the panoramic image.  \n2. Observe that the entrance opens onto a paved area that leads toward the middle of the image.  \n3. Notice the main road running horizontally across the center of the image, connecting the left and right sides.  \n4. The gas station is visible near the center-right of the image, with a red roof and fuel pumps, positioned to the right side of the main road.  \n5. To reach the gas station, one would exit the entrance, turn right onto the main road, and proceed straight ahead until reaching the gas station canopy.",
+      "final_answer": "Exit the entrance, turn right onto the main road, and walk straight ahead to reach the gas station."
+    },
+    {
+      "question": "What is the spatial relationship between the tall residential buildings and the gas station?",
+      "reasoning_chain": "1. Locate the tall residential buildings, which are clustered on the right half of the panoramic image.  \n2. Identify the gas station, which is just in front of these buildings and slightly left of their center.  \n3. Observe that the gas station is at a lower elevation with a driveway leading up, while the residential buildings are in the background and set further back from the road.  \n4. The residential buildings are behind and to the left and right of the gas station, forming a backdrop.",
+      "final_answer": "The tall residential buildings are situated behind and slightly to the sides of the gas station."
+    },
+    {
+      "question": "How would a vehicle traveling from the far right road enter the construction site on the far left?",
+      "reasoning_chain": "1. Observe the far right of the image, which shows a dirt road running towards the horizon, bordered by vegetation and streetlights.  \n2. Notice that this road continues and curves towards the main road crossing the image horizontally.  \n3. To reach the construction entrance on the far left, a vehicle would continue along the dirt road, merge onto the main road, and then follow the road leftward.  \n4. The vehicle would arrive at the entrance with the blue construction sign on the left edge of the image.",
+      "final_answer": "A vehicle would drive along the road from the far right, merge onto the main road, and proceed left to reach the construction site entrance."
+    },
+    {
+      "question": "Where is the van parked in relation to the gas station and the tall black building?",
+      "reasoning_chain": "1. Identify the van, which is parked near the center-left of the image, just in front of construction walls with informational posters.  \n2. Locate the gas station, near the center of the image, and the tall black building, slightly left of the gas station.  \n3. The van is parked closer to the tall black building and construction site entrance, and to the left side of the gas station.  \n4. The van is situated between the construction site entrance and the gas station, but farther from the gas station than from the construction entrance.",
+      "final_answer": "The van is parked between the construction site entrance and the gas station, but closer to the tall black building and construction entrance than to the gas station."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "363_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "What is the spatial relationship between the blue storefront on the far right and the van parked on the street?",
+      "reasoning_chain": "1. The panoramic image captures a street intersection with buildings and vehicles.\n2. The blue storefront is located at the far right edge of the image, with its door facing slightly towards the street.\n3. The van is visible in the right third of the image, parked near the crosswalk and occupying a prominent position in front of a cream building.\n4. Considering the street layout (crosswalks and curb lines), the van is parked on the perpendicular street adjacent to the building where the blue storefront is located.\n5. The blue storefront is on the corner, while the van is parked on the side street just past the storefront.",
+      "final_answer": "The blue storefront is at the street corner, and the van is parked immediately to its right on the adjacent street."
+    },
+    {
+      "question": "If a pedestrian starts at the crosswalk in front of the boulangerie (bakery) in the center and wants to reach the blue restaurant, which direction should they walk?",
+      "reasoning_chain": "1. The boulangerie is located almost at the center of the image, with its storefront and awning visible on the building at the corner.\n2. The blue restaurant is at the far right, occupying the corner of the next building across the street.\n3. A pedestrian on the crosswalk in front of the boulangerie would need to cross the intersection and move towards the blue storefront.\n4. The shortest path would be to cross the street directly to the adjacent corner (towards the van) and then walk a short distance right to the blue restaurant.",
+      "final_answer": "The pedestrian should cross the intersection towards the van and then turn right to reach the blue restaurant."
+    },
+    {
+      "question": "Where is the \"Do Not Enter\" traffic sign located relative to the blue storefront and the bakery?",
+      "reasoning_chain": "1. The \"Do Not Enter\" sign is visible twice: once near the bakery and once near the blue storefront, indicating one-way streets.\n2. The sign on the right is immediately adjacent to the blue storefront, indicating the street beside the blue restaurant is one-way.\n3. The other \"Do Not Enter\" sign is located across the intersection, near the bakery.\n4. Both signs face oncoming traffic to prevent entry, but the one closest to the blue storefront is directly in front of its corner.",
+      "final_answer": "The \"Do Not Enter\" sign is directly in front of the blue storefront, marking the adjacent street as one-way, and another is across the intersection near the bakery."
+    }
+  ]
+}

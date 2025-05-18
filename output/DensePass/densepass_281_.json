@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "281_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the entrance to the bakery (Croissanteria - Panaderia Lupe) closer to the crosswalk on the left or the crosswalk on the right in the panoramic image?",
+      "reasoning_chain": "The panoramic image shows two main crosswalks\u2014one to the left and one to the right. The entrance to the bakery is prominently centered in the image, with the bakery's door and signage occupying the middle section. By assessing the spatial arrangement, the left crosswalk is visible near the center-left edge, whereas the right crosswalk is situated further to the right of the bakery's entrance. The entrance\u2019s proximity to the left crosswalk is visually closer, as evidenced by the doors being adjacent to the left crosswalk, while the right crosswalk appears further away.",
+      "final_answer": "The entrance to the bakery is closer to the crosswalk on the left."
+    },
+    {
+      "question": "Is there any car parked directly in front of the bakery entrance?",
+      "reasoning_chain": "The bakery entrance is at the center of the image. To determine if a car is parked directly in front, I observe the immediate area in front of the door. The image shows clear sidewalk space with two potted plants flanking the entrance, but no car obstructs or is parked immediately in front of the door. The nearest cars are parked further away, on the street or along the curb, not blocking the entrance area.",
+      "final_answer": "No, there is no car parked directly in front of the bakery entrance."
+    },
+    {
+      "question": "Which direction, left or right, from the bakery entrance is the \"Hostal Jacinto\" sign visible in the image?",
+      "reasoning_chain": "The \"Hostal Jacinto\" sign is visible in the right half of the panoramic image, above some parked cars, and near a row of trees. Since the bakery entrance is central, and the sign is further to the right side, it is clear the sign is to the right of the bakery entrance.",
+      "final_answer": "The \"Hostal Jacinto\" sign is to the right of the bakery entrance."
+    },
+    {
+      "question": "Are there more cars parked on the street section visible to the left or to the right of the bakery entrance?",
+      "reasoning_chain": "On the left side, there is a visible street with a few parked cars and some empty parking spaces. On the right side, there are more cars parked closely together along the curb and sidewalk, with the spaces all seemingly occupied. The right side has a visibly higher number of parked cars compared to the left.",
+      "final_answer": "There are more cars parked to the right of the bakery entrance."
+    },
+    {
+      "question": "Is the mural on the wall (depicting bread and a bakery scene) on the left or right side of the bakery entrance?",
+      "reasoning_chain": "The mural is visible adjacent to the bakery entrance, specifically on the wall to the right (from the viewer's perspective standing in front of the entrance). The left side of the entrance is decorated with potted plants but does not have the mural.",
+      "final_answer": "The mural is on the right side of the bakery entrance."
+    }
+  ]
+}

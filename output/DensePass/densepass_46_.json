@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "46_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which building in the panorama is on the northwest corner of the intersection?",
+      "reasoning_chain": "1. The image is a panoramic view of a city intersection with multiple buildings visible.  \n2. The central point of the image (around the middle width-wise) is the intersection itself.  \n3. In a panorama, the left side usually represents the west, and the upper part of the intersection is north.  \n4. The building on the northwest corner would be to the left and slightly above the center, featuring large, rounded glass windows and a \"RETAIL SPACE AVAILABLE\" sign in blue at street level.  \n5. No other building in the panorama matches this description and position.",
+      "final_answer": "The building with large rounded glass windows and a \"RETAIL SPACE AVAILABLE\" sign is on the northwest corner of the intersection."
+    },
+    {
+      "question": "Where is the large delivery truck parked in relation to the intersection?",
+      "reasoning_chain": "1. The panoramic image shows a large delivery truck with \"PERKINS\" branding visible.  \n2. The truck is on the right-half of the image, facing perpendicular to the main intersection.  \n3. The crosswalk and intersection are directly ahead of the truck, indicating it is parked just before entering the intersection.  \n4. The truck is on the right side, which based on the panorama's orientation, is on the east side of the intersection.",
+      "final_answer": "The large delivery truck is parked just before the intersection on the east side of the street."
+    },
+    {
+      "question": "What is the spatial relationship between the building with \"RETAIL SPACE AVAILABLE\" signage and the building with arched windows?",
+      "reasoning_chain": "1. The \"RETAIL SPACE AVAILABLE\" building is in the center of the panorama, wrapping slightly to the left.  \n2. The building with arched windows is to the right of this building in the image.  \n3. Given the panoramic view, moving right from the central intersection would correspond to moving east.  \n4. Therefore, the building with arched windows is east of the \"RETAIL SPACE AVAILABLE\" building.",
+      "final_answer": "The building with arched windows is east of the building with the \"RETAIL SPACE AVAILABLE\" signage."
+    },
+    {
+      "question": "Is there a dedicated bicycle lane at the intersection?",
+      "reasoning_chain": "1. The crosswalk area in the middle of the panorama includes lane markings.  \n2. On the street ahead in the central view, a bicycle symbol is painted on the road, indicating a bike lane or shared lane.  \n3. This symbol is located on the near side of the intersection.",
+      "final_answer": "Yes, there is a dedicated bicycle lane or shared lane indicated at the intersection."
+    }
+  ]
+}

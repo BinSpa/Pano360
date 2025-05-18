@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "10_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where is the Target store located relative to the Hungry Jack's, and what buildings are between them in the panoramic image?",
+      "reasoning_chain": "1. The Target store is visible on the left side of the panoramic image, occupying the corner of a prominent building.\n2. Hungry Jack's is seen slightly to the right of the Target store in the image, with its logo and storefront clearly marked.\n3. The building housing Hungry Jack's appears to be directly adjacent to the Target building, with only a small segment (perhaps an entrance or a small corner) separating them.\n4. There are no large buildings or structures between them; only a street intersection and part of the same block.",
+      "final_answer": "The Target store is immediately to the left of Hungry Jack's, with no major buildings between them\u2014just a street corner and a small section of the block."
+    },
+    {
+      "question": "What is the spatial arrangement of the red car, the white truck with the red logo, and the tall blue-glass building in the panoramic image?",
+      "reasoning_chain": "1. The red car is located on the right side of the image, positioned in the foreground and closest to the viewer, on the street.\n2. The white truck with the red logo is further to the right and behind the red car, partially obstructing the view of the tall blue-glass building.\n3. The tall blue-glass building is further in the background and to the right, rising above other buildings.\n4. The red car is closest to the viewer, the white truck is in the middle, and the blue-glass building is furthest away, forming a diagonal line from front to back on the right side of the image.",
+      "final_answer": "The red car is closest to the viewer in the foreground, the white truck is behind the red car, and the tall blue-glass building is in the background further right."
+    },
+    {
+      "question": "How are the people at the crosswalk positioned relative to the Hungry Jack's building and the intersection?",
+      "reasoning_chain": "1. A group of people is standing on the sidewalk at the corner near the Hungry Jack's building.\n2. The Hungry Jack's signage is above them, indicating they are directly in front of or beside this building.\n3. The intersection is directly in front of the group, with visible crosswalk markings.\n4. The people are waiting at the crosswalk, at the intersection\u2019s corner nearest the Hungry Jack's.",
+      "final_answer": "The people are positioned at the intersection\u2019s corner directly in front of the Hungry Jack's building, waiting at the crosswalk."
+    },
+    {
+      "question": "Which directions do the streets visible in the panorama run, based on the orientation of buildings and traffic?",
+      "reasoning_chain": "1. The image is a panoramic view of an intersection with streets running horizontally and vertically across the image.\n2. The street on the far left runs from the Target store past the Hungry Jack's and continues rightward in the panorama.\n3. Another major street runs perpendicularly in the foreground, intersecting in the middle of the image.\n4. The traffic flow, visible road markings, and orientation of vehicles (cars and truck) suggest a conventional grid intersection.",
+      "final_answer": "The streets run horizontally (left to right) and vertically (front to back) across the panorama, meeting in the center at a major intersection."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "247_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which side of the panoramic image contains the red double-decker bus, and what is its spatial relationship to the main historic building with columns?",
+      "reasoning_chain": "- The image spans a wide city street, capturing various buildings and street elements across its width.  \n- The red double-decker bus is a common sight in London and stands out in the right half of the image.  \n- The main historic building with columns, likely a courthouse or similar, is also located in the right half of the image, distinguished by its prominent classical architecture and position across the street from the viewer.  \n- Observing the bus's location, it is in front of a modern glass-fronted building and slightly to the right relative to the historic columned building, on the opposite side of the street.",
+      "final_answer": "The red double-decker bus is on the right side of the panoramic image, and it is positioned to the right of and across the street from the main historic building with columns."
+    },
+    {
+      "question": "Is there a church or historic structure visible, and where is it located relative to the street intersection?",
+      "reasoning_chain": "- The left side of the panorama features a long, stone building with arched windows and gothic elements, enclosed by a red and gold fence, which is characteristic of a church or historic structure.\n- There is a prominent street intersection near the middle of the image, with people crossing and traffic lights.\n- The church or historic structure is located to the left of this intersection, occupying much of the leftmost portion of the image.",
+      "final_answer": "Yes, a church or historic structure is visible on the left side of the panoramic image, situated to the left of the main street intersection."
+    },
+    {
+      "question": "Where are the pedestrians most concentrated in the image, and what is their orientation relative to the street?",
+      "reasoning_chain": "- Pedestrians appear throughout the panorama, but their highest concentration is near the center, close to the intersection and traffic lights.\n- Most pedestrians are seen walking parallel to the street or crossing at the intersection, indicating foot traffic is heaviest where sidewalks converge near the junction.",
+      "final_answer": "Pedestrians are most concentrated near the center of the image, around the intersection, and are oriented both parallel to and across the street."
+    },
+    {
+      "question": "What is the relationship between the historic round building with white pillars and the multi-story stone building with storefronts?",
+      "reasoning_chain": "- The round building with white pillars appears just right of the center of the image, directly facing the intersection.\n- The multi-story stone building with storefronts is further right, across the street, and extends along the road.\n- The round building is diagonally opposite the stone building with storefronts, separated by the intersection and main street.",
+      "final_answer": "The round historic building with white pillars is diagonally opposite the multi-story stone building with storefronts, each on different sides of the main intersection."
+    }
+  ]
+}

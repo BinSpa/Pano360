@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "343_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which business establishment is positioned closest to the street corner in the center of the panorama?",
+      "reasoning_chain": "In the panoramic image, the central street intersection is the focal point where two roads meet at the middle of the image. Looking at the business signs and storefronts nearest to this corner, we observe \"Sander's BAKERY\" on the left side of the corner and \"European\" (with \"Laundromat\" on the sign) on the right. Both are adjacent to the intersection, but \"Sander's BAKERY\" is directly on the corner, with its storefront facing both streets, while the \"European\" laundromat is a few steps away from the actual corner.",
+      "final_answer": "Sander's BAKERY"
+    },
+    {
+      "question": "How many distinct trees are visible on the sidewalks, and where are they mainly located relative to the street intersection?",
+      "reasoning_chain": "To count the trees, I scan both the left and right sections of the panorama along the sidewalks. On the left side of the intersection, I see 3 trees spaced out along the sidewalk. At the intersection and continuing to the right side, I count another 4 trees distributed along the street. The trees are mainly located close to the curbs on both sides of the streets, framing the intersection symmetrically.",
+      "final_answer": "7 trees, mainly located along the sidewalks near and extending away from the intersection."
+    },
+    {
+      "question": "Is there any visible trash or garbage, and if so, where is it mainly concentrated relative to the businesses?",
+      "reasoning_chain": "Surveying the sidewalks, I note multiple black trash bags and bins. On the left, trash bags are clustered near the tree and lamppost in front of Sander's BAKERY, as well as further down the sidewalk close to other storefronts. On the right, more trash bags are found in front of the \"European Laundromat\" and adjacent buildings. The trash is mainly concentrated near lampposts and storefront entrances, especially around the intersection.",
+      "final_answer": "Yes, trash is mainly concentrated near lampposts and in front of businesses close to the intersection."
+    },
+    {
+      "question": "Which direction are the majority of parked cars facing on both visible streets?",
+      "reasoning_chain": "Examining the orientation of the parked cars on both sides of the street, on the left street, cars are facing away from the intersection (leftward in the image), while on the right street, cars are facing towards the intersection (rightward in the image). This suggests the streets are one-way or have parking arranged in opposite directions on each side.",
+      "final_answer": "On the left street, cars face away from the intersection; on the right street, cars face towards the intersection."
+    },
+    {
+      "question": "Are there more businesses or residential entrances directly facing the intersection?",
+      "reasoning_chain": "Looking at the central part of the panorama where two streets meet, I identify several business signs (Sander\u2019s BAKERY, European Laundromat, Williams) and notice a lack of obvious residential doorways directly at the corner. Most visible entrances are storefronts rather than residential doors, which are typically less prominent and set back.",
+      "final_answer": "There are more business entrances directly facing the intersection than residential entrances."
+    }
+  ]
+}

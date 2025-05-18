@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "115_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "How many cars are parked in front of the main buildings visible in this panoramic image?",
+      "reasoning_chain": "1. The image is a panoramic view of a parking area surrounded by buildings on three sides.  \n2. Counting from left to right:\n   - On the far left side, there are 2 cars parked directly in front of the buildings.\n   - As we move toward the center, there are 4 more cars parked near the central buildings (one white, two silver/gray, one dark).  \n   - In the right section, there are 3 cars clearly parked in front of the buildings (one silver, one gray, one white).\n   - Additionally, there is one more silver car parked to the far right in front of the building.\n3. Summing all the cars in front of the buildings yields: 2 (left) + 4 (center) + 3 (right) + 1 (far right) = 10 cars.",
+      "final_answer": "There are 10 cars parked in front of the main buildings in this panoramic image."
+    },
+    {
+      "question": "Which side of the image, left or right, has more visible trees and greenery?",
+      "reasoning_chain": "1. The left part of the panorama mainly shows buildings with a few small plants visible.  \n2. The center of the image features a large tree dominating the space, with its canopy extending across much of the middle and right sections.\n3. The right side of the image, especially the background, also contains several visible trees and green areas, but overall, the majority of the greenery and the largest tree are more central/right.\n4. Comparing the density and prominence of greenery, the right and central-right parts of the panorama have more visible trees and greenery compared to the left.",
+      "final_answer": "The right side of the image (including the center) has more visible trees and greenery than the left side."
+    },
+    {
+      "question": "Is there any car parked directly under a tree in this panoramic image?",
+      "reasoning_chain": "1. The center of the panorama shows a large tree with a wide canopy.\n2. Several cars are parked near and partially beneath this tree, especially the white, gray, and silver cars in the central area.\n3. By observing the shadows and the position of the tree, the white hatchback and the gray car next to it appear to be parked directly under the canopy of the central tree.",
+      "final_answer": "Yes, there are cars parked directly under a tree in the central part of the panoramic image."
+    },
+    {
+      "question": "Are the buildings on the left and right sides of the panorama architecturally similar?",
+      "reasoning_chain": "1. The buildings on both the left and right sides feature light-colored, textured exteriors with flat roofs and prominent balconies.\n2. Both sections have similar rectangular shapes, regular window placements, and parapet designs on the roof.\n3. Signs and garage doors are also present in similar locations on both sides.\n4. Given these repeating architectural features, the buildings on both sides are very similar in style and construction.",
+      "final_answer": "Yes, the buildings on the left and right sides of the panorama are architecturally similar."
+    }
+  ]
+}

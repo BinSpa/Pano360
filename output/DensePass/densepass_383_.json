@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "383_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "What is located directly across the street from the gallery at Laugavegur 44?",
+      "reasoning_chain": "1. The gallery at Laugavegur 44 is prominently featured in the center of the panoramic image, with large glass windows and visible art displays.\n2. The street runs horizontally through the middle of the image, separating the gallery from the opposite side.\n3. Directly across from the gallery, on the opposite side of the street, there are several buildings visible, including one with large windows and a black awning.\n4. The spatial arrangement shows that the buildings directly face the gallery, and there are parked cars and a sidewalk in between.",
+      "final_answer": "The buildings with large windows and a black awning are located directly across the street from the gallery at Laugavegur 44."
+    },
+    {
+      "question": "Where is the red car parked in relation to the gallery entrance?",
+      "reasoning_chain": "1. The entrance to the gallery is located in the central portion of the panoramic image.\n2. The red car is visible to the left of the gallery entrance, parked on the street.\n3. The sidewalk clearly separates the gallery entrance from the row of parked cars, and the red car is closest to the gallery on that side.",
+      "final_answer": "The red car is parked to the left of the gallery entrance, on the street."
+    },
+    {
+      "question": "If a person exits the gallery and wants to cross the street, which direction do they face for the shortest path?",
+      "reasoning_chain": "1. The gallery entrance is situated at the center of the image, facing toward the street.\n2. The sidewalk and the street are immediately in front of the gallery entrance.\n3. Directly across the street are buildings, suggesting that the shortest crossing path is straightforward.\n4. There are no significant obstacles between the gallery entrance and the opposite sidewalk.",
+      "final_answer": "A person should exit the gallery and cross the street directly ahead for the shortest path."
+    },
+    {
+      "question": "Is there a fire hydrant visible near the gallery, and if so, where is it positioned relative to the entrance?",
+      "reasoning_chain": "1. Observing the area near the entrance to the gallery, a yellow fire hydrant is clearly visible on the sidewalk.\n2. The hydrant is located to the right of the gallery entrance when facing outward from the gallery.\n3. It is positioned close to the wall of the building, before the next shop window.",
+      "final_answer": "Yes, there is a fire hydrant, and it is positioned to the right of the gallery entrance."
+    }
+  ]
+}

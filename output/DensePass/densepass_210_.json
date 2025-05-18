@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "210_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "What is the spatial relationship between the three main buildings visible in the panoramic image?",
+      "reasoning_chain": "- The image is a panoramic shot, so the leftmost and rightmost parts are connected in reality.\n- There are three main modern buildings visible: one on the far left, one near the center (slightly to the right), and one to the far right.\n- The building on the left is positioned perpendicular to the one in the center, and they are separated by a grassy area and a walkway.\n- The building in the center curves slightly and faces toward the area between the left and right buildings.\n- The rightmost building is set back, following the curve of the road and is roughly parallel to the building on the far left.\n- The road curves from the right side of the image toward the center, passing between the center and right buildings, and continues leftward.\n- All buildings are separated by roads, parking lots, and grassy areas, but together form a loosely triangular spatial arrangement around the central grassy area.",
+      "final_answer": "The three main buildings form a loose triangle around a central grassy area, with each building separated by roads and open spaces, and oriented to face the center of this shared space."
+    },
+    {
+      "question": "Where is the person casting the long shadow located relative to the buildings?",
+      "reasoning_chain": "- The long shadow is cast from a point near the center-left of the image, extending toward the grassy area.\n- The person\u2019s shadow points toward the central grassy area, indicating the sun is behind them (to the right of the image).\n- The shadow originates from the sidewalk adjacent to the leftmost building.\n- This person is standing on the sidewalk, close to the corner of the building on the left side of the image.",
+      "final_answer": "The person casting the long shadow is standing on the sidewalk near the leftmost building, with their back to the sun (located to the right in the image)."
+    },
+    {
+      "question": "Which direction does the sun appear to be located in this panoramic image?",
+      "reasoning_chain": "- The sun is visibly low in the sky, creating long shadows.\n- The sun appears in the right half of the panorama, above the horizon, close to the center-right edge.\n- The shadows of objects (lamp posts, person) in the left and central portions of the image point leftward and slightly downward in the frame, confirming the sun is to the right.",
+      "final_answer": "The sun is located to the right side of the panoramic image, low above the horizon."
+    },
+    {
+      "question": "What is the relative position of the majority of parked cars in this scene?",
+      "reasoning_chain": "- Most of the parked cars are visible along the right and center-right of the panorama.\n- They are parked in rows adjacent to the central and rightmost buildings, along the curved roadway.\n- There are only a few cars visible on the left side near the leftmost building.",
+      "final_answer": "The majority of parked cars are along the roadway near the central and rightmost buildings, predominantly on the right side of the image."
+    },
+    {
+      "question": "How are the lamp posts distributed throughout the scene?",
+      "reasoning_chain": "- Lamp posts are visible on both the left and right sides of the panorama, following the paths and roads.\n- On the left, lamp posts line both the walkway and road near the leftmost building.\n- In the central and right portions, lamp posts line the curved road and parking areas near the buildings and grassy space.",
+      "final_answer": "The lamp posts are evenly distributed along the roads and walkways on both sides of the scene, following the edges of the pavement and illuminating the paths near buildings and parking areas."
+    }
+  ]
+}

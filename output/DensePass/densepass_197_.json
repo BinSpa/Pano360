@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "197_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "What is located to the left of the large brick building in the image?",
+      "reasoning_chain": "- The large brick building is on the right side of the panoramic image.\n- To determine what is to its left, I look immediately to the left of the building within the image.\n- The left side of the building faces a street with a row of cars parked along it, and further left is a high brick wall.\n- The brick wall runs parallel to the road and divides the street from a lot with additional cars and some green vegetation.",
+      "final_answer": "A street with parked cars and a high brick wall is located to the left of the large brick building."
+    },
+    {
+      "question": "How many vehicles are visible on the street directly in front of the garage area?",
+      "reasoning_chain": "- The garage area is located under the overhang of the brick building on the right side of the image.\n- Directly in front of the garage area, I see several vehicles parked along the street.\n- Counting from right to left, there are two white vehicles very close to the entrance, and just behind them, a silver vehicle, and a van further along.",
+      "final_answer": "There are four vehicles visible on the street directly in front of the garage area."
+    },
+    {
+      "question": "Which side of the image shows more greenery or vegetation?",
+      "reasoning_chain": "- To determine which side has more greenery, I observe the vegetation in both the left and right sections of the panoramic image.\n- The left side has a noticeable patch of green grass and bushes along the wall and roadside.\n- The right side, near the brick building and along the street, is mostly paved and has minimal visible greenery.",
+      "final_answer": "The left side of the image shows more greenery or vegetation."
+    },
+    {
+      "question": "What is located at the far end of the street that runs between the brick wall and the large building?",
+      "reasoning_chain": "- The street in question is situated between the brick wall (middle of the image) and the large brick building (right side).\n- Following this street towards its far end, I observe buildings and some billboards in the distance.\n- The street appears to curve slightly and lead towards a more industrial or urban area with visible city structures and distant billboards.",
+      "final_answer": "The far end of the street leads to an area with buildings and billboards, part of a more urban or industrial district."
+    },
+    {
+      "question": "Is there evidence of vehicle repair activity in the scene? If so, where is it happening?",
+      "reasoning_chain": "- I look for any signs of vehicle repair, such as open hoods, missing parts, or people working on vehicles.\n- On the right side of the image, near the entrance to the large brick building, I see cars with open hoods and people working with tools and parts visible.\n- This activity is clearly associated with a workshop or garage setting.",
+      "final_answer": "Yes, vehicle repair activity is occurring in front of the large brick building on the right side of the image."
+    }
+  ]
+}

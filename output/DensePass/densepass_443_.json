@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "443_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which side of the street has more visible houses in the panoramic image?",
+      "reasoning_chain": "1. The panoramic image shows a wide street with houses on both sides.\n2. On the left side (from the viewer's central position), there are at least three houses clearly visible, including one with a brick driveway and another with a white garage.\n3. On the right side, there are fewer houses entirely visible; some are partially obscured by trees, but at least two can be seen with clear driveways and garages.\n4. The left side of the street features more continuous visibility of multiple houses, while the right is more obscured by vegetation.",
+      "final_answer": "The left side of the street has more visible houses in the panoramic image."
+    },
+    {
+      "question": "What is the spatial relationship between the two streets visible in the panorama?",
+      "reasoning_chain": "1. The panorama depicts a main street running horizontally across the image.\n2. On the leftmost part of the image, there is a perpendicular street intersecting the main street.\n3. The main street continues to the right, curving slightly upward toward the horizon, while the intersecting street runs away from the main street on the far left.\n4. This indicates that the streets intersect at a near-perpendicular angle.",
+      "final_answer": "The two streets intersect at a near-perpendicular angle, with one running horizontally and the other branching off to the left."
+    },
+    {
+      "question": "Are the driveways generally sloped upward or downward toward the houses?",
+      "reasoning_chain": "1. Several driveways are visible in the image, especially near the center.\n2. The driveways rise up from the street level toward the houses, as indicated by retaining walls and the elevation of the houses relative to the street.\n3. The slope is evident from the perspective, with the house foundation visibly higher than the street.",
+      "final_answer": "The driveways are generally sloped upward toward the houses."
+    },
+    {
+      "question": "Where are the majority of the trees located relative to the street?",
+      "reasoning_chain": "1. The panoramic image shows trees both on lawns and on the street-side grassy strips.\n2. Most of the larger trees are positioned on the right side of the street and near the curb.\n3. There are smaller shrubs and bushes on the left, but the mature, tall trees are predominantly on the right side and in the front yards of those houses.",
+      "final_answer": "The majority of the larger trees are located on the right side of the street and near the curb."
+    }
+  ]
+}

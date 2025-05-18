@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "319_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "What separates the open field area from the road with the parked cars in this panoramic image?",
+      "reasoning_chain": "Looking at the panoramic image, the left side shows an open field area with some industrial buildings and overgrown vegetation. Between the open field and the road, there is a green metal fence that runs parallel to the road. On the right side of the image, the road is adjacent to an arched brick wall (likely a railway viaduct), and several cars are parked alongside it. The fence clearly acts as a barrier separating the field from the road and the area with the parked cars.",
+      "final_answer": "A green metal fence separates the open field area from the road with the parked cars."
+    },
+    {
+      "question": "Where are the parked cars located relative to the arched brick wall in the panoramic image?",
+      "reasoning_chain": "On the right half of the panoramic image, several cars are parked directly alongside the arched brick wall. The cars are parallel to the wall, indicating that the parking spaces are right next to the structure, which appears to be a viaduct or railway bridge.",
+      "final_answer": "The parked cars are located directly next to the arched brick wall (viaduct) on the right side of the image."
+    },
+    {
+      "question": "Is the road continuous throughout the panorama, or is there a barrier blocking it?",
+      "reasoning_chain": "By examining the image from left to right, the road starts on the left, runs along the fence and open field, and continues past the viaduct on the right. There are no gates, barricades, or obstacles visible that block the road at any point in the panorama, indicating that the road is continuous.",
+      "final_answer": "The road is continuous throughout the panorama without any visible barriers blocking it."
+    },
+    {
+      "question": "How does the position of the light poles relate to the road and the fence?",
+      "reasoning_chain": "Multiple light poles can be seen along the road, both on the left (near the fence) and on the right (near the viaduct wall). On the left, the poles are situated on the edge of the road, adjacent to the fence, helping to illuminate the road and possibly the field. On the right, the poles are similarly placed along the road next to the viaduct.",
+      "final_answer": "The light poles are positioned along the edge of the road, near the fence on the left side and near the viaduct wall on the right side, providing illumination for both the road and adjacent areas."
+    },
+    {
+      "question": "What is the relative position of the open field to the viaduct in the image?",
+      "reasoning_chain": "The open field area is visible on the left and center parts of the panorama. The viaduct with arched brickwork is situated on the right side of the panoramic image. The two areas are separated by the road, with the field on one side and the viaduct on the opposite side.",
+      "final_answer": "The open field is on the opposite side of the road from the viaduct in the image."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "106_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which direction should you walk from the center of the image to reach the benches that are closest to the green lawn area?",
+      "reasoning_chain": "The panoramic image shows a wide view of a residential area with several tall buildings in the background, a central green lawn, and paved roads on both the left and right. In the middle right section of the image, there are benches placed near the green lawn area, with a red structure next to them. Since these benches are directly adjacent to the lawn and are prominently in the foreground, walking from the center of the image directly to the right (about one quarter of the panorama width) will bring you to these benches.",
+      "final_answer": "Walk to the right from the center of the image to reach the benches closest to the green lawn area."
+    },
+    {
+      "question": "Are there more buildings visible on the left or right side of the panoramic image?",
+      "reasoning_chain": "In the panoramic image, tall residential buildings are visible across the entire central section. On the left side, there are about two major buildings clearly in view. On the right side, there are more buildings, with at least three distinct structures visible, as well as additional partial buildings extending further right. Both sides are framed with trees, but the right side has a denser concentration of buildings.",
+      "final_answer": "There are more buildings visible on the right side of the panoramic image."
+    },
+    {
+      "question": "If you want to walk towards the main entrance of the residential complex, which path should you take from the current viewpoint?",
+      "reasoning_chain": "The central part of the image shows a wide, open path leading directly towards the buildings, along with green spaces and flagpoles, suggesting this is likely a main entrance or access road. Both the extreme left and right sides of the image show side roads that curve away from the buildings and are flanked by trees and fences, indicating they are not the main approaches.",
+      "final_answer": "Take the path straight ahead from the center of the image to reach the main entrance of the residential complex."
+    },
+    {
+      "question": "What is the spatial relationship between the trees and the buildings in the image?",
+      "reasoning_chain": "The image shows two rows of trees: one along the left road and another along the right road, both running parallel to the roads. The buildings are situated further back, behind green lawns, and are separated from the roads by the trees, benches, and green areas. The trees act as a visual and likely physical buffer between the buildings and the roads.",
+      "final_answer": "The trees are positioned in front of the buildings, forming rows along the roads and green areas, separating the buildings from the roads."
+    }
+  ]
+}

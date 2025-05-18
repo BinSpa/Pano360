@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "410_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the yellow building with the curved facade to the right or left of the tall white-walled structure in the panorama?",
+      "reasoning_chain": "1. The panorama features a tall structure with a large white-tiled wall running vertically near the center of the image.\n2. To the right of this white-walled structure, a yellow building with a curved facade and many windows is visible.\n3. The left side of the white-walled structure displays a smaller, white-roofed building surrounded by trees and vegetation.\n4. The spatial arrangement indicates the yellow building is positioned to the right side of the white-walled structure.",
+      "final_answer": "The yellow building with the curved facade is to the right of the tall white-walled structure."
+    },
+    {
+      "question": "If a person moves from the road in the middle of the panorama towards the rightmost side, what main architectural feature will they encounter?",
+      "reasoning_chain": "1. The central road in the panorama runs between the white-walled structure and the yellow building.\n2. Moving right from the center, the yellow building becomes more prominent.\n3. The rightmost section of the panorama shows a wheelchair-accessible ramp leading up to the yellow building.\n4. This ramp is the most noticeable architectural feature on the right side of the image.",
+      "final_answer": "They will encounter the wheelchair-accessible ramp leading to the yellow building."
+    },
+    {
+      "question": "What natural element provides shade near the leftmost building in the panorama?",
+      "reasoning_chain": "1. The leftmost building in the panorama is a small white-roofed structure.\n2. Surrounding this building are several tall, leafy trees.\n3. The shadows on the ground and the placement of the trees indicate that they are providing shade to the area around the building.",
+      "final_answer": "Tall leafy trees provide shade near the leftmost building."
+    },
+    {
+      "question": "What separates the two main buildings visible in the panorama?",
+      "reasoning_chain": "1. The two main buildings are the white-walled structure (center) and the yellow building (right).\n2. Between them is a wide, unpaved road or path running from the foreground to the background.\n3. This road clearly divides the two buildings, serving as a boundary between their respective spaces.",
+      "final_answer": "A wide, unpaved road separates the two main buildings."
+    }
+  ]
+}

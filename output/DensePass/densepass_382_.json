@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "382_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which direction does the grey building with the red roof face relative to the large white house on the right edge of the panorama?",
+      "reasoning_chain": "1. The large white house is located at the extreme right of the image, occupying the rightmost segment.\n2. The grey building with the red roof is seen centrally in the panorama, behind a row of tall, thin trees.\n3. Panoramic images wrap the scene horizontally, meaning the leftmost and rightmost edges are opposite ends of the 360-degree view.\n4. The road in front of the white house curves towards the central portion of the image, leading to the grey building with the red roof.\n5. Therefore, the grey building with the red roof is positioned to the left and slightly ahead when moving from the white house.",
+      "final_answer": "The grey building with the red roof is in front and to the left of the large white house on the right edge of the panorama."
+    },
+    {
+      "question": "How many distinct roads can be seen diverging from the intersection at the center of the panorama?",
+      "reasoning_chain": "1. The center of the panorama shows a prominent intersection.\n2. From left to right, observe the following roads: one heading leftward (where white cars are parked), one straight ahead (lined with trees), and one to the right (where the white house is located).\n3. Each road is visually distinct and leads in a separate direction from the central intersection.",
+      "final_answer": "Three distinct roads diverge from the intersection at the center of the panorama."
+    },
+    {
+      "question": "If you are standing on the sidewalk directly in front of the white house at the right edge, which direction do you need to turn to see the row of parked white cars on the left side of the panorama?",
+      "reasoning_chain": "1. The white house is on the rightmost side of the panorama.\n2. The row of parked white cars is located on the leftmost side of the panorama, on a street running parallel to the house.\n3. In a panoramic view, to face the left edge from the right edge, you need to rotate approximately 180 degrees.",
+      "final_answer": "You need to turn around (180 degrees) to see the row of parked white cars from the sidewalk in front of the white house."
+    },
+    {
+      "question": "Is there a pedestrian crossing visible anywhere in the image, and if so, where is it located in relation to the central intersection?",
+      "reasoning_chain": "1. At the center of the image, where the roads meet, observe the road markings.\n2. There is a white-striped pedestrian crossing visible just before the road that heads straight (lined with trees and parked cars).\n3. The crossing is perpendicular to the central intersection, placed before the cluster of white parked cars.",
+      "final_answer": "Yes, there is a pedestrian crossing just before the road leading straight from the central intersection, in front of the parked cars."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "161_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Are the two red telephone booths located on the same side of the street or on opposite sides?",
+      "reasoning_chain": "By examining the panoramic image, we see one red telephone booth in the foreground, close to the building with arched windows (left side of the image). The second red telephone booth is farther down the same sidewalk, following the building line, and both are positioned along the same pavement, separated by a stretch of sidewalk but not crossing the road. The street is on the right side of both booths, suggesting they are on the same side.",
+      "final_answer": "The two red telephone booths are located on the same side of the street."
+    },
+    {
+      "question": "Which direction are the majority of the parked cars facing relative to the viewer\u2019s vantage point?",
+      "reasoning_chain": "There are two visible parked cars on the right-hand side of the panoramic image. Both cars are parallel to the curb and facing away from the viewer\u2019s central perspective, which is looking slightly down the road and toward the main intersection. The road markings and curb alignments confirm the direction of travel and parking, indicating that the cars are facing in the direction away from where the viewer is standing.",
+      "final_answer": "The majority of the parked cars are facing away from the viewer\u2019s vantage point."
+    },
+    {
+      "question": "If a person exits the building with the \"Post Office\" sign and immediately turns right, which street will they be facing?",
+      "reasoning_chain": "The \"Post Office\" sign is visible on the building at the central-left part of the image. If someone exits this building and turns immediately right, based on the pavement and road orientation, they will face the street that runs perpendicular to the front of the post office. This is the street that runs horizontally across the panorama, towards the buildings on the right side of the image.",
+      "final_answer": "They will be facing the main street that runs from left to right in the image foreground."
+    },
+    {
+      "question": "Is there a pedestrian crossing visible in the immediate vicinity of the intersection?",
+      "reasoning_chain": "Careful inspection of the image around the intersection area (middle section of the panorama) shows no visible zebra stripes or pedestrian crossing signals or road markings. The sidewalks are flush with the streets but no designated crosswalk is apparent.",
+      "final_answer": "No, there is no pedestrian crossing visible in the immediate vicinity of the intersection."
+    },
+    {
+      "question": "How are the buildings on the left and right sides of the image different in architectural style?",
+      "reasoning_chain": "The building on the left side is characterized by arched windows with ornate stonework and decorative elements, suggesting a classical or neoclassical style. The building on the right side (specifically, the one with the crenellated parapet) has more gothic or neo-gothic features, such as pointed arches and battlements, with less ornamentation and a more fortress-like appearance.",
+      "final_answer": "The left-side building displays a classical/neoclassical style, while the right-side building exhibits gothic or neo-gothic architectural features."
+    }
+  ]
+}

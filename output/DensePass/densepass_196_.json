@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "196_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where is the entrance to the tall brick building with blue signage located relative to the white van in the foreground?",
+      "reasoning_chain": "The image shows a tall brick building with blue banners and signage on the right side of the panorama. In front of this building, there is a white van parked on the street. The building\u2019s main entrance is visible to the left of the white van, marked by a blue awning and a door next to a kiosk. The spatial relationship indicates the entrance is directly adjacent to and slightly to the left of the van.",
+      "final_answer": "The entrance is directly adjacent to and slightly to the left of the white van in the foreground."
+    },
+    {
+      "question": "Is the large green dump truck closer to the blue fence or the white building with multiple windows (in the left section of the image)?",
+      "reasoning_chain": "The green dump truck is parked on a rough road area towards the left side of the panorama. The blue fence runs parallel to the road, behind the truck, while the white building with multiple windows is situated farther back, across the fenced area. The shadow and ground placement indicate the truck is much closer to the blue fence than the distant white building.",
+      "final_answer": "The large green dump truck is closer to the blue fence."
+    },
+    {
+      "question": "What is the relative position of the pink-painted building entrance to the tall brick building?",
+      "reasoning_chain": "On the right section of the panorama, the pink-painted building entrance, marked with the letter 'A,' is visible further down the street to the right of the tall brick building. The street forms an L-shape, and the pink building is set back from the corner where the brick building ends. The spatial relationship is such that the pink entrance is down the road, to the right of the brick building.",
+      "final_answer": "The pink-painted building entrance is further down the street, to the right of the tall brick building."
+    },
+    {
+      "question": "Are most vehicles parked parallel or perpendicular to the road in this panorama?",
+      "reasoning_chain": "Observing the arrangement of vehicles along both sides of the street, most of the visible cars (including those near the brick building, the pink building, and along the far left side) are parked parallel to the curb, facing along the direction of the street, rather than head-in (perpendicular) parking.",
+      "final_answer": "Most vehicles are parked parallel to the road."
+    },
+    {
+      "question": "Which side of the panorama (left or right) has a greater concentration of commercial signage and storefronts?",
+      "reasoning_chain": "On the right, there is a brick building with many commercial signs and a row of storefronts, including visible signage above each door and window. The left side mainly features industrial and residential-looking buildings with minimal signage. The presence and density of visible signs are much greater on the right.",
+      "final_answer": "The right side has a greater concentration of commercial signage and storefronts."
+    }
+  ]
+}

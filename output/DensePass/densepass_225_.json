@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "225_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the taxi positioned closer to the modern building with palm trees or the residential building with a red gate?",
+      "reasoning_chain": "The taxi is located near the center of the panoramic image, adjacent to a person walking and a black car. Behind the taxi, we can see a large building with tall palm trees and a clear sign for \"AmBank Group,\" indicating a modern commercial building. To the far left of the image, there is a residential building with a red gate. Comparing the distance, the taxi is right next to the sidewalk in front of the building with palm trees and farther from the residential building, which is across the side street.",
+      "final_answer": "The taxi is positioned closer to the modern building with palm trees."
+    },
+    {
+      "question": "What is directly opposite the bus stop with the \"AmBank Group\" sign?",
+      "reasoning_chain": "The bus stop with the \"AmBank Group\" sign is located near the middle of the image, in front of the modern high-rise building lined with palm trees. Directly opposite (across the street) from the bus stop is a large, distinctive concrete building with angular architecture and steps leading upwards. This building faces the street and the bus stop directly.",
+      "final_answer": "A large concrete building with angular architecture and steps is directly opposite the bus stop."
+    },
+    {
+      "question": "If someone is standing at the stop sign on the left side, which direction do they need to walk to reach the pink car?",
+      "reasoning_chain": "The stop sign is located at the left part of the panoramic image, near the residential building and before the main intersection. The pink car can be seen towards the far right of the image, parked on a brick sidewalk beside several motorcycles and a street lined with trees. In order to move from the stop sign to the pink car, the person would need to walk along the curve of the road from the left side of the image to the right, following the panoramic continuity.",
+      "final_answer": "They need to walk to the right along the road to reach the pink car."
+    },
+    {
+      "question": "Is there any visible crosswalk that connects the two sides of the main road in the middle of the image?",
+      "reasoning_chain": "Examining the main road in the center of the panoramic image, where the road curves and splits the bus stop and large buildings, there do not appear to be any marked pedestrian crosswalk lines visible on the surface of the road. The sidewalks and curbs are present but no designated crossing markings are seen.",
+      "final_answer": "No, there is no visible crosswalk connecting the two sides of the main road."
+    },
+    {
+      "question": "What type of vehicles are primarily parked near the small building under the trees on the right side?",
+      "reasoning_chain": "On the right side of the image, underneath the trees and beside the small, single-story building, several two-wheeled vehicles (motorcycles or scooters) are parked closely together. There is also a red car visible, but the majority of parked vehicles are motorcycles.",
+      "final_answer": "Motorcycles (or scooters) are primarily parked near the small building under the trees."
+    }
+  ]
+}

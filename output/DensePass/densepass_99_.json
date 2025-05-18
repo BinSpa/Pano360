@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "99_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where are the entrances to the buildings located in this panoramic image?",
+      "reasoning_chain": "The panoramic image shows two large multi-story buildings on either side (left and right) with open areas and pathways between them. In the center of each building, there is a covered section with doors and lights, indicating main entrances. The placement of people and bicycles also suggests that these locations are access points. The entrances are symmetrically located at the bottom middle of each building, with clear pathways leading toward them from the courtyard area.",
+      "final_answer": "The entrances are located at the bottom center of each building, facing the open courtyard area."
+    },
+    {
+      "question": "What is situated directly between the two buildings in the image?",
+      "reasoning_chain": "In the center of the panoramic image, between the two buildings, there is a wide paved area that serves as a courtyard or walkway. This area is clear of vehicles and is bordered by green spaces with bushes, trees, and lamp posts. There are also pathways leading from the entrances of the buildings to the main gate visible in the distant left center of the image, implying this space is a shared open area.",
+      "final_answer": "A wide paved courtyard with landscaping and pathways is situated directly between the two buildings."
+    },
+    {
+      "question": "On which side of the image are the majority of bicycles parked?",
+      "reasoning_chain": "Examining the right side of the image, next to the right building, there is a designated area where many bicycles are parked in rows. The left side of the image, near the left building, does not show any bicycles; instead, it features more greenery and open lawn. This indicates that the majority of bicycles are concentrated on the right side of the panoramic image.",
+      "final_answer": "The majority of bicycles are parked on the right side of the image."
+    },
+    {
+      "question": "Is the main entrance gate to the compound closer to the left edge or right edge of the panorama?",
+      "reasoning_chain": "The main entrance gate to the compound, with metal fencing and an arch above it, is visible near the left-center of the panoramic image. There is no equivalent gate structure on the right side of the image, which shows more of the building and the bicycle area. Thus, the main entrance gate is spatially closer to the left edge of the image.",
+      "final_answer": "The main entrance gate is closer to the left edge of the panorama."
+    },
+    {
+      "question": "Are there more green spaces and trees on the left side or right side of the image?",
+      "reasoning_chain": "On the left side of the panorama, there are several trees, bushes, and a landscaped lawn between the building and the fence. On the right side, the area is mostly paved with limited greenery, except for a narrow strip next to the bicycles. The visual density of vegetation is higher on the left side.",
+      "final_answer": "There are more green spaces and trees on the left side of the image."
+    }
+  ]
+}

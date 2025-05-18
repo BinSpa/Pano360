@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "100_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the blue-and-white bicycle closer to the left or the right edge of the panoramic image?",
+      "reasoning_chain": "The panoramic image is 2048 pixels wide, with clear spatial differentiation between the left and right sides. The blue-and-white bicycle is positioned slightly left of the image center, visible near a building and adjacent to a curb. On the left side of the image, there is a silver car, while the right side features another car farther from the camera. The bicycle is positioned such that there is more visible image width to its right than to its left, indicating it is closer to the left edge than the right edge.",
+      "final_answer": "The blue-and-white bicycle is closer to the left edge of the panoramic image."
+    },
+    {
+      "question": "What is the relative position of the silver car in relation to the main building entrance with the open door?",
+      "reasoning_chain": "The silver car is seen on the far left side of the image. The main building entrance, with its door open and a visible step, is located toward the right of the image center. Considering the spatial spread, the silver car is leftmost, while the entrance is closer to the right edge. Therefore, the silver car is to the left of the main building entrance with the open door.",
+      "final_answer": "The silver car is to the left of the main building entrance with the open door."
+    },
+    {
+      "question": "Is there a tree closer to the blue-and-white bicycle or to the main building entrance with the open door?",
+      "reasoning_chain": "The blue-and-white bicycle is parked next to a curb, with a large tree immediately behind and slightly to the left of it. The main building entrance with the open door does not have a tree immediately adjacent; instead, there are grassy areas and a stone wall. The nearest tree to the entrance is farther away compared to the one beside the bicycle.",
+      "final_answer": "There is a tree closer to the blue-and-white bicycle than to the main building entrance with the open door."
+    },
+    {
+      "question": "How are the two visible cars positioned relative to each other in the scene?",
+      "reasoning_chain": "On the far left of the image, there is a silver car, while near the center-right background, another car (white or light-colored) is visible, facing toward the scene. The road in the image curves, and the second car is farther from the camera, positioned along a different segment of the road. Thus, the silver car is in the foreground left, while the other car is farther away and to the right.",
+      "final_answer": "The two visible cars are positioned such that the silver car is in the foreground left, and the other car is in the background right."
+    },
+    {
+      "question": "Is the open window with visible lights located above or below the green awning?",
+      "reasoning_chain": "On the building near the center-right, there is a green awning above a ground-floor window. Just above this awning, a window is open and illuminated from within. The spatial stacking in the image shows the lit window is directly above the awning.",
+      "final_answer": "The open window with visible lights is above the green awning."
+    }
+  ]
+}

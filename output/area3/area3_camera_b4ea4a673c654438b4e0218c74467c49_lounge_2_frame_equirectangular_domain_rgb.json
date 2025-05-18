@@ -1,0 +1,27 @@
+{
+  "dataset": "area3",
+  "image_id": "camera_b4ea4a673c654438b4e0218c74467c49_lounge_2_frame_equirectangular_domain_rgb",
+  "prompt": "You are a language model tasked with generating spatial reasoning questions based on a panoramic scene with (h, w)=(2048, 4096).\n\nYour task is to generate complex spatial reasoning tasks using given object information, such as:\n- An object that satisfies multiple spatial constraints at once.\n- An object positioned between two others.\n- Comparison tasks involving sorting or ranking (by distance, height, etc.)\n- An object spatial position related to other objects.\nThe data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\nUse natural and diverse language. Do not include coordinate values or measurements in your output.",
+  "reasoning": [
+    {
+      "question": "Consider the cushioned chair positioned near a round table, likely intended for seating in a communal or waiting area. Based on its location, which major pathway or room feature is it closest to: the central elevator area, the main staircase, or the hallway leading to other rooms?",
+      "reasoning_chain": "The cushioned chair is described as being part of a small seating arrangement near a round table, which places it in one of the open communal spots visible in the panoramic scene. Observing the room layout, the central elevator area is situated directly across the main open space, while the main staircase is off to the right, and the hallway is on the left. Given the chair's position relative to the visible furniture groupings and proximity to the round table arrangement, it appears closer to the central elevator area than to the staircase or hallway.",
+      "final_answer": "The cushioned chair is closest to the central elevator area."
+    },
+    {
+      "question": "The rectangular bulletin board mounted on the wall is used for sharing information in public or communal spaces. Which object is more likely to be directly visible to someone standing in front of the bulletin board: the cushioned chair near the round table, the main staircase, or the plant in the large square pot?",
+      "reasoning_chain": "The bulletin board is positioned on the wall, typically facing into the central part of the room. Standing in front of it means facing toward the open communal area. The cushioned chair near the round table is likely located in this central area, making it directly visible. The main staircase is further off to the side, and the plant in the large square pot is positioned closer to the periphery, near a corner. Therefore, someone standing at the bulletin board would have a clear line of sight to the cushioned chair by the round table, but not as directly to the plant or the staircase.",
+      "final_answer": "The cushioned chair near the round table is more likely to be directly visible from the bulletin board."
+    },
+    {
+      "question": "Imagine you are sitting on the upholstered chair placed adjacent to a round wooden table in the lounge or waiting area. Which feature is directly behind you: the rectangular bulletin board mounted on the wall, the main staircase, or the plant in the large square pot?",
+      "reasoning_chain": "The upholstered chair is located next to a round wooden table in the central gathering area. Based on the layout, if you are seated on this chair facing the table, your back would be toward a feature positioned further away from the central seating. The bulletin board is typically mounted on a wall bordering this space, while the main staircase and the plant are situated more to the sides. Given the chair\u2019s location near the communal center and the likely orientation of the table and seating, the bulletin board would be directly behind someone seated on this chair.",
+      "final_answer": "The rectangular bulletin board mounted on the wall would be directly behind you."
+    },
+    {
+      "question": "If you are standing directly in front of the glass display case set against the wall, which object would be located to your right: the rectangular bulletin board mounted on the wall, the cushioned chair positioned near a round table, or the main staircase?",
+      "reasoning_chain": "The glass display case is positioned along the wall in the common area. When facing the display case, the orientation of the panoramic room places the rectangular bulletin board further along the same wall, while the cushioned chair near the round table is situated toward the center of the communal space, and the main staircase is across and off to one side. Therefore, when facing the display case, the rectangular bulletin board would be to your right, following the wall\u2019s direction.",
+      "final_answer": "The rectangular bulletin board mounted on the wall would be located to your right."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "113_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which direction should you go if you want to reach the building with a red gate from the location near the two parked red and silver cars in the center of the image?",
+      "reasoning_chain": "First, identify the location of the two parked cars in the center of the panoramic image. Next, find the building with the red gate, which can be seen to the left side of the image. Since the red gate is to the left of the cars, walking leftwards (from the viewer's perspective) will lead you toward the entrance of that building.",
+      "final_answer": "Go left from the position of the two parked cars to reach the building with the red gate."
+    },
+    {
+      "question": "Where is the long red brick wall in relation to the parked silver car near the right side of the image?",
+      "reasoning_chain": "First, locate the silver car on the right side of the image. Then, observe the long red brick wall, which extends parallel to the road and continues toward the left side of the image. The wall is directly in front of and stretches to the left from the parked silver car's position.",
+      "final_answer": "The long red brick wall is directly in front of and to the left of the parked silver car on the right side."
+    },
+    {
+      "question": "If you enter the main gate on the left side of the image, which direction will you need to walk to reach the red building visible on the far right side of the image?",
+      "reasoning_chain": "First, identify the main gate on the left side of the image and the red building on the far right. Since panoramic images wrap the scene, moving from the leftmost point to the rightmost point involves traversing the entire visible area, following the path that curves around the foreground. You would walk straight inward from the gate, then curve right along the road.",
+      "final_answer": "Enter the gate and follow the road by curving right to reach the red building on the far right."
+    },
+    {
+      "question": "Is there any direct visual connection between the area behind the red-brick wall (center-right) and the area behind the red gate (left-center)?",
+      "reasoning_chain": "The red-brick wall (center-right) separates the road from the inner area of the building, and the red gate (left-center) gives access to another building. By observing the panorama, there appears to be dense greenery and additional fencing between the two, with no clear visual or physical passage shown between these areas.",
+      "final_answer": "No direct visual connection is present between the area behind the red-brick wall and the area behind the red gate."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "258_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which side of the panoramic image, left or right, has more people visible in the alleyway scene?",
+      "reasoning_chain": "1. The panoramic image is divided into left, center, and right sections.\n2. The left side of the image features three people: two standing near the building and one walking further to the left.\n3. The right side of the image does not appear to have any people visible; it mainly shows buildings and an empty alley.\n4. By comparing both sides, the left side clearly has more people present.",
+      "final_answer": "Left side"
+    },
+    {
+      "question": "Is the large colorful mural positioned in the center or towards one end of the alleyway scene?",
+      "reasoning_chain": "1. The mural spans a significant portion of the visible wall in the image.\n2. The curvature and placement of the wall suggest it is in the central region of the panoramic view.\n3. The left and right ends of the image show building facades and the alley extending away, while the mural dominates the middle.",
+      "final_answer": "The mural is positioned in the center."
+    },
+    {
+      "question": "Are the buildings on either side of the mural similar in architectural style?",
+      "reasoning_chain": "1. Observing the buildings on both the left and right sides of the mural, both have brick facades, large windows with white frames, and similar height.\n2. Both buildings appear to be commercial or industrial in style, and their symmetry suggests they are part of the same structure or complex.\n3. There are no significant architectural differences visible between the two sides.",
+      "final_answer": "Yes, the buildings on both sides are similar in architectural style."
+    },
+    {
+      "question": "Is there any evidence of recent activity related to the mural in the scene?",
+      "reasoning_chain": "1. There are multiple spray paint cans and other items on the ground directly in front of the mural.\n2. Two individuals are standing close to these items, in proximity to the mural, implying interaction with the artwork.\n3. This suggests that the mural is either being painted or has been recently worked on.",
+      "final_answer": "Yes, there is evidence of recent mural activity."
+    },
+    {
+      "question": "Which direction does the alley extend to, relative to the mural wall?",
+      "reasoning_chain": "1. The mural wall runs horizontally across the center of the panoramic image.\n2. Both the left and right sides of the image show the alleyway extending away from the mural wall, with visible vanishing points.\n3. This indicates the alley extends both to the left and right of the mural wall.",
+      "final_answer": "The alley extends in both directions from the mural wall."
+    }
+  ]
+}

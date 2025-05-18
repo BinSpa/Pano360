@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "252_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which direction should a person walk after exiting the shop to reach the nearest bus?",
+      "reasoning_chain": "1. The panoramic image shows the entrance of a shop in the center, with two red double-decker buses, one on the far left and one on the far right of the image.\n2. Both buses are located adjacent to the sidewalk, close to the shop entrance.\n3. The bus on the right is closer to the shop entrance, as its doors are nearly aligned with the shop's entrance, while the bus on the left is further away and separated by more parked cars.\n4. The shop entrance faces the street, and the bus on the right is immediately accessible after stepping out and turning right.",
+      "final_answer": "Exit the shop and turn right to reach the nearest bus."
+    },
+    {
+      "question": "Are there more parked cars on the left or the right side of the shop entrance?",
+      "reasoning_chain": "1. Identify the shop entrance at the center of the image.\n2. On the left side of the entrance, there are at least two visible parked cars between the shop and the bus, and possibly more further down the street.\n3. On the right side, there is one parked car immediately next to the bus and another visible further down the street.\n4. Comparing both sides, the left side has a slightly denser arrangement of parked cars immediately visible.",
+      "final_answer": "There are more parked cars on the left side of the shop entrance."
+    },
+    {
+      "question": "What objects are directly opposite the shop entrance across the street?",
+      "reasoning_chain": "1. The shop entrance is in the center of the panoramic image, facing outward.\n2. Looking directly opposite (across the street), you can see a tall brick residential building and a fence.\n3. There are no businesses, shops, or prominent vehicles directly opposite, only the building and sidewalk.",
+      "final_answer": "A residential building and a fence are directly opposite the shop entrance across the street."
+    },
+    {
+      "question": "If a person wants to visit a beauty salon after leaving the food shop, which direction should they walk?",
+      "reasoning_chain": "1. The sign for a \"Beauty Salon\" is visible above the shop fronts to the right side of the food shop entrance.\n2. This salon is within a few storefronts to the right, as indicated by the signage and shop layout.\n3. No similar businesses are visible on the left side.",
+      "final_answer": "Walk to the right after leaving the food shop to reach the beauty salon."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "107_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where is the entrance to the \"Madaan Dental Care\" clinic located in relation to the street and nearby vehicles in the panorama?",
+      "reasoning_chain": "- The sign for \"Madaan Dental Care\" is prominently displayed at the center-right of the image, with a glass door and a list of facilities visible.\n- The glass entrance door is directly adjacent to the sidewalk and faces a relatively open part of the street.\n- Multiple two-wheelers are parked directly in front of the clinic, with one scooter parked very close to the entrance.\n- The main road is visible running horizontally across the panorama, and the entrance is aligned facing this road, slightly recessed from the main street.\n- To the immediate left of the clinic entrance (when facing it), there is another scooter and a signboard, suggesting this is a primary access point.\n- The right side of the image shows more buildings and an alleyway, indicating the entrance is positioned centrally on the street within the context of the panorama.",
+      "final_answer": "The entrance to the \"Madaan Dental Care\" clinic is centrally located on the street, facing the main road, with several scooters parked directly in front of it, making it accessible from the sidewalk and prominent within the streetscape."
+    },
+    {
+      "question": "What is the spatial relationship between the white car and the nearest building entrances in the panoramic image?",
+      "reasoning_chain": "- The white car is parked on the left side of the panorama.\n- It is parked in front of a dark wooden building facade, which has an overhanging balcony and some clothes hanging above.\n- To the immediate left of the car, there is a yellow building with no obvious entrance directly facing the car.\n- The white car is parked parallel to the sidewalk, facing away from the panorama\u2019s center, directly adjacent to a scooter.\n- The nearest visible entrance relative to the car is the dark wooden door, which is slightly to the right of the car, integrated into the same building where the car is parked.\n- The next closest entrance is the one to the \"Madaan Dental Care,\" farther right from the car, separated by a few meters.",
+      "final_answer": "The white car is parked directly in front of a dark wooden building entrance, which is the closest entrance to it; the next closest entrance is the \"Madaan Dental Care\" clinic, a few meters to the right."
+    },
+    {
+      "question": "On which side of the street in the panorama are most two-wheelers (scooters/motorcycles) parked, and how are they positioned relative to the buildings?",
+      "reasoning_chain": "- Observing the panorama from left to right, several two-wheelers are visible.\n- On the leftmost part, a scooter is parked next to a yellow building, facing towards the center of the panorama.\n- In front of the dark wooden building and near the \"Madaan Dental Care\" entrance, there are multiple scooters, most of which are parked on the right side of the street (relative to the viewer facing the center).\n- Further right, near the white building with air conditioners, another scooter is visible.\n- Most of the scooters are positioned parallel to the buildings, close to the entrances and just off the main path of the road, indicating on-street parking adjacent to the buildings.\n- The left-most and right-most scooters are on opposite sides of the street, but the majority (center and right) are on the right side as viewed in the panorama.",
+      "final_answer": "Most two-wheelers are parked on the right side of the street (as seen in the panorama), positioned parallel and close to the buildings and entrances."
+    },
+    {
+      "question": "Is the main street in the panorama straight or does it have a bend, based on visual clues and building alignment?",
+      "reasoning_chain": "- Observing the alignment of the buildings and the road across the panoramic image, both sides of the street are visible.\n- On both the left and right edges of the image, the road appears to extend straight ahead in each direction.\n- The buildings are aligned parallel to the road throughout, without noticeable angular deviation or perspective shift indicating a bend.\n- The overlap of building facades and the consistent spacing of parked vehicles further suggest the road is straight through the visible stretch.",
+      "final_answer": "The main street shown in the panorama is straight, with no visible bends."
+    },
+    {
+      "question": "What is the relationship between the signs for \"Madaan Dental Care\" and the entrance to the clinic?",
+      "reasoning_chain": "- There are several signs for \"Madaan Dental Care\" visible in the center-right of the panorama.\n- These signs are mounted directly above and adjacent to the glass entrance door of the clinic.\n- The signs provide information about the clinic\u2019s services and specialties.\n- The placement of the signs ensures they are visible to anyone approaching the entrance from the street.\n- The main entrance is directly below and beside these signs, making it easy for visitors to identify and access the clinic.",
+      "final_answer": "The signs for \"Madaan Dental Care\" are mounted directly above and adjacent to the clinic entrance, clearly marking its location for visitors from the street."
+    }
+  ]
+}

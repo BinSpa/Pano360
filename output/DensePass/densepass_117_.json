@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "117_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where is the main entrance gate to the building (PALIKA HEALTH COMPLEX) located relative to the street and the large trees?",
+      "reasoning_chain": "1. The panoramic image shows the PALIKA HEALTH COMPLEX building prominently in the center-right portion.\n2. The entrance gate is visible along the fence in front of the building, just right of center.\n3. The street runs parallel to the building\u2019s fence, with the sidewalk in between.\n4. Large trees are located both to the left and the right of the entrance, with one tree standing very close to the gate on the right side.\n5. The entrance gate is positioned directly opposite the sidewalk, near the intersection of the two streets visible in the panorama.",
+      "final_answer": "The main entrance gate is located along the fence, directly opposite the sidewalk and street, and is positioned just to the left of a large tree near the building."
+    },
+    {
+      "question": "Is the sun shining from the left, right, or center of the panoramic image?",
+      "reasoning_chain": "1. The panoramic image shows a strong sunlight glare and rays coming from the right-center side of the image.\n2. Shadows of trees and objects are cast towards the left side, indicating the sun is positioned on the right.\n3. The brightness is concentrated in the right-center, with less intense light towards the left and center of the image.",
+      "final_answer": "The sun is shining from the right-center side of the panoramic image."
+    },
+    {
+      "question": "How are the two streets positioned relative to the building in the image?",
+      "reasoning_chain": "1. The panoramic image reveals a building (PALIKA HEALTH COMPLEX) at the center-right.\n2. There are two visible streets: one on the far left, running horizontally, and one on the far right, running vertically and curving toward the building.\n3. Both streets form a corner or intersection, with the building situated at this corner.\n4. This corner is accentuated by the sidewalk and curb layout visible in the foreground.",
+      "final_answer": "The building is located at the intersection of two streets, with one street running along the left side and another along the right and curving to the front."
+    },
+    {
+      "question": "Where are the advertisement boards placed in relation to the building and the road?",
+      "reasoning_chain": "1. Multiple advertisement boards are visible on the fence directly in front of the PALIKA HEALTH COMPLEX.\n2. These boards are mounted on the fence separating the sidewalk and the building.\n3. The boards face outward toward the road and sidewalk, maximizing their visibility to pedestrians and vehicles.",
+      "final_answer": "The advertisement boards are placed on the fence directly in front of the building, facing the road and sidewalk."
+    },
+    {
+      "question": "Are there any traffic or street signs visible, and where are they located?",
+      "reasoning_chain": "1. The image shows a rectangular street sign on a pole positioned near the left-center sidewalk, directly in front of a tree.\n2. Another sign with a yellow background and marking is visible on the far right sidewalk, close to the intersection and curb.",
+      "final_answer": "Yes, there are street signs\u2014one is near the left-center sidewalk, and another is on the far right sidewalk near the intersection."
+    }
+  ]
+}

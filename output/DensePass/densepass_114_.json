@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "114_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the red car closer to the multi-storey brick building or to the single-storey brick building with the green mesh fence?",
+      "reasoning_chain": "The red car is visible near the center-left section of the panorama. There are two types of buildings nearby: a multi-storey brick building to the left and a single-storey brick building with a green mesh fence to the right. The car is parked adjacent to the multi-storey building, with very little distance between them. In contrast, there is a road and green vegetation separating the car from the single-storey building and mesh fence, which are further to the right. The spatial relationship in the panorama makes it clear that the car is immediately next to the multi-storey building.",
+      "final_answer": "The red car is closer to the multi-storey brick building."
+    },
+    {
+      "question": "If a person starts at the single-storey building with the green mesh fence and wants to walk to the multi-storey building, which direction should they head?",
+      "reasoning_chain": "The single-storey brick building with green mesh fencing is to the right of the panorama, while the multi-storey brick building is to the left. The road runs along the mesh fence and curves to the left. To reach the multi-storey building from the single-storey building, a person must follow this road towards the left side of the panorama, passing by the vegetation and lamp posts along the way.",
+      "final_answer": "They should head to the left along the road."
+    },
+    {
+      "question": "Is there a direct line of sight between the person walking on the right sidewalk and the red car?",
+      "reasoning_chain": "The person walking is on the right side of the panorama, on the sidewalk next to the green mesh fence and lamp posts. The red car is on the left side of the panorama, partially obscured by trees and vegetation. The vegetation and building structures between the two positions create visual obstacles that would prevent a direct line of sight.",
+      "final_answer": "No, there is no direct line of sight due to trees and buildings in between."
+    },
+    {
+      "question": "Which building is closer to the intersection: the multi-storey brick building or the nearest single-storey brick building?",
+      "reasoning_chain": "The intersection is visible towards the left side of the panorama, where two roads meet. The multi-storey brick building is situated immediately adjacent to this intersection, with the red car parked nearby. The nearest single-storey brick building is farther along the road to the right, separated by vegetation and a lamp post, requiring a longer walk from the intersection.",
+      "final_answer": "The multi-storey brick building is closer to the intersection."
+    },
+    {
+      "question": "Where are the majority of lamp posts located relative to the road?",
+      "reasoning_chain": "Observing the panorama, multiple lamp posts are visible along the right side of the road, positioned between the road and the green mesh fence that borders the single-storey buildings. Fewer posts are visible on the left or directly in the center of the road area.",
+      "final_answer": "The majority of lamp posts are located on the right side of the road."
+    }
+  ]
+}

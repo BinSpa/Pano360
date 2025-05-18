@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "309_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where is the entrance to the NatWest bank located relative to the two large Y-shaped columns?",
+      "reasoning_chain": "The entrance to the NatWest bank can be identified by the glass doors and the signage above them. There are two large, distinctive Y-shaped columns visible in front of the NatWest fa\u00e7ade. By observing their placement, it is clear that the bank\u2019s entrance is positioned directly between these two columns, with the doors in the center and the columns framing the entrance on both sides. This spatial relationship can be confirmed by the alignment of the columns with the edges of the entrance area and the continuation of the bank's signage above.",
+      "final_answer": "The entrance to the NatWest bank is located directly between the two large Y-shaped columns."
+    },
+    {
+      "question": "If a person is standing in front of the reflective glass building (right side of the image) and wants to reach the NatWest bank, which direction should they walk?",
+      "reasoning_chain": "The panoramic image shows the reflective glass building on the right, with the NatWest bank entrance located towards the left center of the image. To move from the reflective glass building to the NatWest bank, one needs to walk leftwards along the paved pedestrian way, heading towards the area with the NatWest signage and Y-shaped columns. The spatial relationship suggests that moving left (from the perspective shown) brings a person closer to the bank entrance.",
+      "final_answer": "They should walk to the left along the pedestrian area to reach the NatWest bank."
+    },
+    {
+      "question": "Are the two buildings in the image directly opposite each other or at an angle?",
+      "reasoning_chain": "By analyzing the panoramic view, the building hosting the NatWest bank and the reflective glass building are both visible, with the pathway between them. The curvature and reflections on the reflective building indicate an angular relationship rather than being directly opposite each other. The alignment of the paving and the building facades further suggests they are oriented at an angle to each other, forming a plaza-like space in between.",
+      "final_answer": "The two buildings are at an angle to each other, not directly opposite."
+    },
+    {
+      "question": "Is there a direct path from the NatWest bank entrance to the far building with the reddish-brown facade seen at the image's left and right edges?",
+      "reasoning_chain": "The reddish-brown building is visible on both the far left and far right of the panorama, indicating it is across the plaza from both buildings in the foreground. The open pedestrian space in front of the NatWest bank appears to extend toward this reddish-brown building without visible obstructions such as fences or barriers, suggesting a direct route is possible.",
+      "final_answer": "Yes, there is a direct path from the NatWest bank entrance to the far building with the reddish-brown facade."
+    }
+  ]
+}

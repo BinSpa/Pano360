@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "102_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which vehicle is closest to the entrance of the SS Dental Clinic?",
+      "reasoning_chain": "1. Identify the entrance of the SS Dental Clinic, which is centrally located in the image, with clear signage and a glass door.\n2. Observe the vehicles parked around the clinic entrance. There are two vehicles directly in front: a black motorcycle and a silver car.\n3. Compare the distances: The black motorcycle is parked right at the steps of the clinic, while the silver car is parked just to the right, slightly farther away.\n4. Since the motorcycle is on the sidewalk next to the stairs and the car is on the road, the motorcycle is closest to the entrance.",
+      "final_answer": "The black motorcycle is the closest vehicle to the entrance of the SS Dental Clinic."
+    },
+    {
+      "question": "Where is the scooter with the spare tire mounted on the back located in relation to the SS Dental Clinic entrance?",
+      "reasoning_chain": "1. Locate the SS Dental Clinic entrance at the center of the panorama.\n2. Look for the scooter with a spare tire on the back; it is visible in the right portion of the image.\n3. Determine its spatial relation: The scooter is further right from the clinic entrance, across the small garden area with large leafy green plants.\n4. The scooter is positioned on the side of the road, near the curb, and is not directly in front of the clinic.",
+      "final_answer": "The scooter with the spare tire is located to the right of the SS Dental Clinic entrance, across a small garden area and near the curb."
+    },
+    {
+      "question": "Is there any pedestrian visible on the left side of the image, and if so, where are they in relation to the vehicles?",
+      "reasoning_chain": "1. Focus on the left portion of the panoramic image.\n2. Identify pedestrians: There are two people, one in red traditional attire and one in white, walking across the street.\n3. Compare their position with vehicles: They are walking in front of a row of parked cars and a passing motorcycle.\n4. The pedestrians are closer to the sidewalk than to the moving vehicles.",
+      "final_answer": "Yes, there are pedestrians visible on the left side of the image, walking in front of the parked cars and closer to the sidewalk."
+    },
+    {
+      "question": "What is directly above the SS Dental Clinic entrance?",
+      "reasoning_chain": "1. Find the SS Dental Clinic entrance in the center of the image.\n2. Look directly above the entrance; there is a balcony with a blue signboard for the SS Dental Clinic.\n3. The signboard contains clinic information, and the balcony is part of the building\u2019s first floor.",
+      "final_answer": "Directly above the SS Dental Clinic entrance is a balcony with a blue signboard for the clinic."
+    }
+  ]
+}

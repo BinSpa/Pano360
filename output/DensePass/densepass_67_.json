@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "67_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "What is the relative position of the yellow taxi compared to the central green area with trees and statues?",
+      "reasoning_chain": "1. The yellow taxi is visible at the right-front of the image, close to a pedestrian crossing.\n2. The central green area, featuring trees and at least one visible statue, is located in the middle of the panorama.\n3. By analyzing the road markings and the layout, the yellow taxi is on the right side of the central green area, positioned in front of it from this viewpoint.",
+      "final_answer": "The yellow taxi is positioned to the front-right of the central green area with trees and statues."
+    },
+    {
+      "question": "How many major pedestrian crosswalks intersect at this junction and where are they located relative to one another?",
+      "reasoning_chain": "1. In the panoramic image, multiple pedestrian crosswalks with bold white stripes are visible.\n2. There is one crosswalk directly in the foreground, one to the left, one to the right, and at least one more visible in the background of the central area.\n3. These crosswalks intersect at the central junction, creating a grid pattern for pedestrian movement.",
+      "final_answer": "There are four major pedestrian crosswalks intersecting at this junction, located to the front, left, right, and back relative to the central point."
+    },
+    {
+      "question": "Where is the traffic light post with a blue pedestrian sign located in relation to the central grassy area?",
+      "reasoning_chain": "1. The central grassy area, containing statues and bordered by hedges, forms the core of the junction.\n2. The traffic light post with a blue pedestrian sign is seen near the center of the image, on the sidewalk, between two crosswalks.\n3. It is situated directly on the edge of the central grassy area, slightly right of the image\u2019s midpoint.",
+      "final_answer": "The traffic light post with a blue pedestrian sign is located at the near right edge of the central grassy area."
+    },
+    {
+      "question": "Are there more cars or pedestrians visible on the right-hand side (from center to right edge) of the image?",
+      "reasoning_chain": "1. Visually counting, the right-hand side contains several visible cars (yellow taxi, blue car, and additional cars further back).\n2. The number of pedestrians on the same side is fewer (one in the foreground near the taxi, and a couple more near the crosswalks).\n3. The total number of visible cars exceeds the number of visible pedestrians on the right side.",
+      "final_answer": "There are more cars than pedestrians visible on the right-hand side of the image."
+    },
+    {
+      "question": "Which direction do the majority of the cars on the street in front of the central building appear to be traveling?",
+      "reasoning_chain": "1. The central building is the focal, ornate structure in the middle of the image.\n2. The cars in front of this building are positioned with their fronts facing to the right of the image.\n3. The road markings and traffic flow indicate that these cars are moving from left to right.",
+      "final_answer": "The majority of the cars in front of the central building are traveling from left to right."
+    }
+  ]
+}

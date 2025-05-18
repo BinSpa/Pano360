@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "11_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which side of the street, left or right, has taller buildings in the panoramic image?",
+      "reasoning_chain": "1. The image is a panoramic street view with the leftmost side showing shorter, older-style buildings, while the right side (from the center to the far right) features modern high-rise structures that are clearly taller than any of the buildings on the left.\n2. Comparing the vertical height of the buildings from both sides, the right side includes a multi-story apartment or office building, which significantly exceeds the height of the two-story historic buildings on the left.\n3. The perspective and scale of the image indicate that the tallest structures are concentrated on the right side of the panorama.",
+      "final_answer": "The right side of the street has taller buildings."
+    },
+    {
+      "question": "Is the intersection in the center of the image controlled by traffic lights, and how are they spatially arranged?",
+      "reasoning_chain": "1. The central area of the panoramic image shows a major intersection with multiple lanes converging.\n2. There are visible traffic lights on all corners of the intersection, with some pole-mounted lights facing different directions to control traffic flow.\n3. The left and right edges of the panorama both show traffic lights as well, indicating all four corners of the intersection are equipped with lights.",
+      "final_answer": "Yes, the intersection is controlled by traffic lights, spatially arranged at all four corners of the intersection."
+    },
+    {
+      "question": "Where are the majority of cars waiting at the intersection located in this panoramic image?",
+      "reasoning_chain": "1. Observing the panoramic image, several cars are seen waiting at the intersection.\n2. Most of these cars are grouped on the left half of the image, heading towards the center (possibly waiting for a light change).\n3. The right side of the intersection has fewer stationary cars, with some vehicles in motion.",
+      "final_answer": "The majority of cars waiting at the intersection are located on the left half of the image."
+    },
+    {
+      "question": "Is there pedestrian infrastructure (such as crosswalks or signals) visible at this intersection, and if so, where?",
+      "reasoning_chain": "1. The panoramic image shows road markings and signals.\n2. On the left side near the front, there are painted crosswalk lines and a \"walk\" signal visible.\n3. There are also pedestrian signals on the center and right side near the corners of the intersection.\n4. Some pedestrians are visible, confirming the use of this infrastructure.",
+      "final_answer": "Yes, there is pedestrian infrastructure (crosswalks and pedestrian signals) visible at all four corners of the intersection."
+    }
+  ]
+}

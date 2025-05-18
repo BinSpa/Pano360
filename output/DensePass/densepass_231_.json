@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "231_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where is the white van located in relation to the curved brown building and the road?",
+      "reasoning_chain": "The panoramic image shows a curved brown building prominently on the left and center. The road runs around this building, encircling it. The white van is situated to the far right in the image, adjacent to the gray wall that is connected to the brown building. The van is parked on the road, very close to the building structure, aligning itself parallel to the wall.",
+      "final_answer": "The white van is located to the right of the curved brown building, parked parallel to its adjacent gray wall along the road."
+    },
+    {
+      "question": "What is the spatial relationship between the trees and the main brown building in the image?",
+      "reasoning_chain": "Observing the image, several trees are planted in raised concrete planters directly in front of the curved brown building. These planters run along the base of the building, and the trees are situated between the building and the road. Their leaves extend outward, partially covering windows and doors of the building.",
+      "final_answer": "The trees are positioned in raised planters immediately in front of the brown building, between the building and the road."
+    },
+    {
+      "question": "How can one move from the left side of the image to the right side using the road?",
+      "reasoning_chain": "The image presents a continuous road that curves along the perimeter of the brown building. Starting from the left side, where a white car is parked, the road follows the building curve, passes in front of the main entrances, and continues to the right where the white van is parked. There are no visible barriers, so traveling along the road from left to right is possible.",
+      "final_answer": "One can move from the left to the right side by following the curved road that runs along the brown building\u2019s front."
+    },
+    {
+      "question": "Are the taller skyscrapers closer to the left or right side of the panoramic image?",
+      "reasoning_chain": "In the background, several tall skyscrapers are visible. The tallest structures, including a distinct twin-tower silhouette, appear on the left. Toward the right, some high-rise buildings are also visible, but they are fewer and less prominent in the skyline.",
+      "final_answer": "The taller skyscrapers are closer to the left side of the panoramic image."
+    },
+    {
+      "question": "Is the road in the image one-way or two-way, based on visible clues?",
+      "reasoning_chain": "Analyzing the road markings, the shape of the road, and the parked vehicles, there are no clear lane lines or directional arrows. However, vehicles are parked on both sides, and the road is relatively narrow, with most cars facing the same direction. This suggests it is likely a one-way road, but there is no explicit signage confirming this.",
+      "final_answer": "The road appears to be one-way, but there is no definitive signage to confirm this."
+    }
+  ]
+}

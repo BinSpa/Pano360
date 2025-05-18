@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "402_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which direction is the silver sedan facing relative to the intersection in the center of the panorama?",
+      "reasoning_chain": "1. The panoramic image shows an intersection with two streets crossing at a right angle.\n2. The center of the panorama aligns with the intersection, splitting the image into a left and right half.\n3. The silver sedan is located on the right side of the image, parallel to the sidewalk, with its front facing to the right.\n4. Since the image is panoramic and the intersection is centered, the street that the silver sedan is parked on runs horizontally in the image.\n5. The sedan is on the near side of the intersection, indicating it is facing away from the intersection along the street to the right.",
+      "final_answer": "The silver sedan is facing away from the intersection, heading rightward along the street on the right side of the panorama."
+    },
+    {
+      "question": "Is the white van closer to the intersection or to the yellow building with the balcony on the far left?",
+      "reasoning_chain": "1. The white van is visible near the center-right of the panorama, close to the intersection.\n2. The yellow building with the balcony is on the far left of the image, at the end of the left-hand street.\n3. The van is parked just beside the intersection, with only a small gap between it and the corner.\n4. The distance from the van to the intersection is much smaller than the distance from the van to the yellow building.",
+      "final_answer": "The white van is much closer to the intersection than to the yellow building with the balcony on the far left."
+    },
+    {
+      "question": "How many cars are parked on the street visible to the right of the intersection?",
+      "reasoning_chain": "1. The right side of the intersection is the area right of center in the panorama.\n2. Observing this area, there are two vehicles clearly parked: the white van and the silver sedan parked behind it.\n3. Further down the street, additional cars are visible, but they are farther away and less distinct.\n4. To ensure an accurate count, each vehicle with visible wheels and clear parking positioning on the right side is considered.",
+      "final_answer": "There are at least four cars parked on the street visible to the right of the intersection."
+    },
+    {
+      "question": "Which side of the intersection has more visible trees?",
+      "reasoning_chain": "1. The intersection divides the panorama into segments: left, center (intersection), and right.\n2. On the right side, there is a prominent tree beside the wall with graffiti and another palm tree further down the street.\n3. On the left side, there do not appear to be visible trees\u2014only buildings and walls are seen.\n4. Comparing both sides, the right has at least two visible trees, while the left has none.",
+      "final_answer": "The right side of the intersection has more visible trees."
+    }
+  ]
+}

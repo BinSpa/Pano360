@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "496_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the entrance with the brown awning closer to the street on the left or to the street on the right in the panoramic image?",
+      "reasoning_chain": "1. The image is a wide panoramic view of a narrow street bordered by buildings.  \n2. The entrance with the brown awning is located roughly in the left-center of the image, attached to a building with reddish-brown bricks.  \n3. To the left side of the image, there is an intersection visible, leading to a wider street.  \n4. To the right side of the image, there is another intersection with a wider street, visible past the dark blue-tiled building.  \n5. The entrance with the brown awning is much closer to the street on the left (as it is right next to the intersection on that side), while there is a longer stretch of street between the entrance and the street on the right.",
+      "final_answer": "The entrance with the brown awning is closer to the street on the left."
+    },
+    {
+      "question": "Is the car parked under the beige building\u2019s overhang closer to the blue-tiled building or to the red-brick building with the brown awning?",
+      "reasoning_chain": "1. The car is parked under a beige building\u2019s overhang, located towards the middle-right part of the image.  \n2. The blue-tiled building is on the far right of the image, past the beige building.  \n3. The red-brick building with the brown awning is located towards the left side of the image, separated from the beige building by the road and some space.  \n4. The car is parked directly adjacent to the blue-tiled building, with only a narrow driveway in between, while the red-brick building with the brown awning is farther away.",
+      "final_answer": "The car is closer to the blue-tiled building."
+    },
+    {
+      "question": "Which side of the street has more visible greenery (plants or bushes), the left or right?",
+      "reasoning_chain": "1. On the left side of the image, near the red-brick building and along the wall, there are several visible potted plants and small bushes.  \n2. On the right side of the image, near the blue-tiled building, there is very little visible greenery, mostly pavement and walls.  \n3. The middle area near the beige building also shows some greenery near the entrance, but less than the plants clustered on the left.",
+      "final_answer": "The left side of the street has more visible greenery."
+    },
+    {
+      "question": "Are there more parked vehicles visible under the overhang on the right, or on the street to the left?",
+      "reasoning_chain": "1. Under the beige building\u2019s overhang (middle-right), two cars are clearly visible parked side by side.  \n2. On the street to the left, there are no clearly visible parked vehicles; the street appears mostly clear.  \n3. Therefore, the number of parked vehicles is greater under the overhang.",
+      "final_answer": "There are more parked vehicles under the overhang on the right."
+    }
+  ]
+}

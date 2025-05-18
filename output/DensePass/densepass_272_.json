@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "272_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "What is the relative position of the large white building labeled \"THE REEF\" compared to the central parking lot in the panoramic image?",
+      "reasoning_chain": "The image is a wide panoramic view of a parking lot. The parking lot covers most of the lower and central part of the image with multiple rows of parked cars. The large white building labeled \"THE REEF\" appears in the upper center-right portion of the image, rising above the cars. Its entrance structure, with wooden beams, is clearly visible and stands prominently in front of the building. The building and its entrance are located behind the rows of cars, taking a dominant position in the right-central part of the panorama.",
+      "final_answer": "The large white building labeled \"THE REEF\" is located behind the central parking lot, slightly to the right of the image center."
+    },
+    {
+      "question": "Where is the sun located relative to the parking lot and the visible buildings?",
+      "reasoning_chain": "The sun is visible as a bright spot in the sky in the far-right portion of the panoramic image. Its high position casts shadows of the cars and other objects in the parking lot toward the left and slightly downward in the image, indicating the sun is on the right and slightly upward side relative to the parking lot and the buildings, which are mostly toward the center and left of the image.",
+      "final_answer": "The sun is located in the upper-right part of the image, to the right of the parking lot and buildings."
+    },
+    {
+      "question": "How does the arrangement of cars differ between the left and right sides of the parking lot?",
+      "reasoning_chain": "On the left side of the image, the parking lot appears more spacious with cars parked in fewer rows, and there is a visible wide driving lane. There are also visible directional arrows on the ground. On the right side, the parking lot seems more densely packed with cars parked closer together in more organized rows. The cars on the right side are generally parked head-in, while those on the left may include more varied angles and some head-out.",
+      "final_answer": "The left side of the parking lot is more spacious with fewer cars and more driving space, while the right side is more densely packed with multiple rows of head-in parked cars."
+    },
+    {
+      "question": "What is the spatial relationship between the large entrance structure (with wooden beams) and the surrounding trees?",
+      "reasoning_chain": "The large entrance structure with wooden beams stands in the image's right-center area, in front of the building labeled \"THE REEF.\" A row of trimmed green trees is visible in the background, behind and to the left of the entrance structure. The structure itself is isolated from the trees, with an open parking area between them.",
+      "final_answer": "The entrance structure stands in front of and to the right of a row of green trees, separated by open parking spaces."
+    },
+    {
+      "question": "Which side of the parking lot offers a clearer view of the horizon and distant buildings?",
+      "reasoning_chain": "By examining both edges of the panorama, the left side of the image opens to a wider, less obstructed view of the horizon, with distant buildings and more sky visible. The right side is blocked by more parked cars and the bright sun, which obscures details.",
+      "final_answer": "The left side of the parking lot offers a clearer, unobstructed view of the horizon and distant buildings."
+    }
+  ]
+}

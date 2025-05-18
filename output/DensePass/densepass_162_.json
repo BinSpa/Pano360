@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "162_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which vehicle is closest to the entrance of the building with the green roof in the center of the panorama?",
+      "reasoning_chain": "1. The image shows a panoramic view of a parking lot with several cars and buildings.\n2. The building with the green roof is located in the center of the panorama.\n3. The entrance to this building can be identified by the door and the path leading up to it.\n4. There are several cars parked around this building.\n5. The yellow car (Mini Cooper) is parked directly in front of the entrance of the building with the green roof, closer than the other cars nearby.",
+      "final_answer": "The yellow Mini Cooper is the vehicle closest to the entrance of the building with the green roof in the center."
+    },
+    {
+      "question": "Is the red car on the right side of the image located closer to the building with multiple large windows or to the small wooden structure?",
+      "reasoning_chain": "1. On the right side of the image, a red car is parked near two structures: a building with multiple large windows (upper right) and a small wooden structure (center-right, with a green roof).\n2. The red car is situated in the middle-right section, adjacent to the small wooden structure and in front of the larger building.\n3. The small wooden structure is directly next to the red car, while the building with large windows is further away, across the parking area.\n4. The spatial relationship shows that the red car is parked immediately beside the small wooden structure.",
+      "final_answer": "The red car is located closer to the small wooden structure."
+    },
+    {
+      "question": "Are there more vehicles parked on the left half or the right half of the panorama?",
+      "reasoning_chain": "1. Divide the panoramic image into two equal halves: left (0\u20131024 px) and right (1024\u20132048 px).\n2. Count the vehicles in each half.\n3. Left half: At least 8 cars are visible (silver, blue, black, etc.).\n4. Right half: At least 6 vehicles are visible (yellow Mini, black car, red car, white van, silver car, another car at the edge).\n5. Compare the counts from both halves.",
+      "final_answer": "There are more vehicles parked on the left half of the panorama."
+    },
+    {
+      "question": "Which side of the parking lot, left or right, is closer to a tall brick chimney?",
+      "reasoning_chain": "1. The tall brick chimney is visible on the far left side of the panorama.\n2. The parking lot extends from the left to the right, with vehicles on both sides.\n3. The left side, near the chimney, features several parked vehicles and is closest to the chimney structure.\n4. The right side of the image is farther from the chimney, toward the stone buildings.",
+      "final_answer": "The left side of the parking lot is closer to the tall brick chimney."
+    }
+  ]
+}

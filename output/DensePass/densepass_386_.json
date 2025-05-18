@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "386_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which building is positioned at the intersection of the two roads, and what is its orientation relative to the viewer?",
+      "reasoning_chain": "1. The panoramic image shows a street intersection with several buildings around it.  \n2. The intersection is clearly visible near the center, where two perpendicular streets meet.  \n3. The building closest to the intersection has a white exterior, a blueish roof, and is located just to the left of the center of the panorama.  \n4. The orientation of the building places its entrance and main facade facing the intersection, with one side running parallel to the street on the left and the other side parallel to the street on the right.  \n5. This building is separated from the street by a narrow strip of grass and a sidewalk, indicating it is at the corner of the intersection.",
+      "final_answer": "The building at the intersection is the one with a white exterior and blueish roof, oriented diagonally so that its main entrance and facade face the intersection, with two sides running parallel to the streets on either side."
+    },
+    {
+      "question": "What is the relative position of the red car to the intersection and to the corner building?",
+      "reasoning_chain": "1. In the panoramic image, the red car is visible on the left side, parked along the curb.\n2. The car is positioned just before the intersection, on the street running horizontally from the left.\n3. The red car is adjacent to the corner building (white exterior, blue roof), but is slightly offset in front of it along the street.\n4. Therefore, the red car is immediately to the left of the intersection and in front of the corner building.",
+      "final_answer": "The red car is parked just left of the intersection and directly in front of the corner building with the blue roof."
+    },
+    {
+      "question": "Are there more trees on the left side or the right side of the intersection?",
+      "reasoning_chain": "1. The panoramic image provides a 360-degree view, allowing us to compare both sides.\n2. On the left side (from the viewer\u2019s perspective), there are several large trees next to and behind the white building.\n3. On the right side, there are also many trees, some of which are lining the building and sidewalk.\n4. Counting clusters, the right side (from the center towards the right edge) has a denser tree line compared to the left side.\n5. The area on the right side appears to have more continuous greenery and trees.",
+      "final_answer": "There are more trees on the right side of the intersection than on the left."
+    },
+    {
+      "question": "Which direction does the silver car in the middle of the image appear to be moving relative to the intersection?",
+      "reasoning_chain": "1. The silver car is located towards the center of the panorama, at the intersection, on the left of the triangle-shaped pedestrian crossing lines.\n2. The car\u2019s orientation and the visible street markings suggest it is turning right from the left street onto the street heading towards the right.\n3. The position of the car\u2019s front wheels and the angle of the vehicle indicate it is in the process of making a right turn at the intersection.",
+      "final_answer": "The silver car appears to be making a right turn at the intersection, moving from the left street onto the street heading right."
+    }
+  ]
+}

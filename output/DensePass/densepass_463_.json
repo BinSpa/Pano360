@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "463_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which direction from the main entrance of the building with the \"HuaFeng Driving School\" sign is the tall water tower located?",
+      "reasoning_chain": "1. The \"HuaFeng Driving School\" sign and entrance are located on the right side of the panoramic image, attached to a white, curved building.  \n2. The main entrance is visible below the sign, facing the open parking lot.  \n3. To the far right of the entrance and the building, there is a tall cylindrical water tower visible near the edge of the image.  \n4. The water tower is positioned further right and slightly behind the building relative to the entrance.",
+      "final_answer": "The water tower is located to the right and slightly behind the main entrance of the building with the \"HuaFeng Driving School\" sign."
+    },
+    {
+      "question": "Are there more cars parked on the left side or the right side of the parking lot as seen from the center of the image?",
+      "reasoning_chain": "1. The panorama is centered on the open space in the parking lot, with the white building and driving school on the right, and a row of older buildings on the left.  \n2. On the left side, there are fewer cars, most of which are parked along the white fence and the adjacent building.  \n3. On the right side, in front of the driving school and along the white building, there are more cars parked in designated spaces.  \n4. Visually, the right side has more cars lined up and occupying more parking spaces.",
+      "final_answer": "There are more cars parked on the right side of the parking lot."
+    },
+    {
+      "question": "Is the multi-story building with blue-tinted windows closer to the center or the edges of the panorama?",
+      "reasoning_chain": "1. The multi-story building with blue-tinted windows is visible toward the middle of the image, behind a set of parked cars and some vertical poles.  \n2. The building is not at either far edge of the panorama; instead, it is located almost at the central vertical axis of the image, slightly left of the true center.  \n3. This positioning indicates proximity to the panoramic center, rather than the edges.",
+      "final_answer": "The multi-story building with blue-tinted windows is closer to the center of the panorama."
+    },
+    {
+      "question": "What is positioned directly in front of the \"HuaFeng Driving School\" entrance?",
+      "reasoning_chain": "1. The entrance to \"HuaFeng Driving School\" is directly beneath the large sign on the right side of the image.  \n2. In front of the entrance, there is a small section of greenery and a walkway, but notably, there are two motorcycles parked immediately in front of the windows next to the entrance.  \n3. The nearest car is parked to the left of the motorcycles (from the entrance perspective).",
+      "final_answer": "Two motorcycles are positioned directly in front of the \"HuaFeng Driving School\" entrance."
+    },
+    {
+      "question": "Does the parking lot have any directional arrows, and if so, where are they located?",
+      "reasoning_chain": "1. The panoramic image of the parking lot shows painted markings on the ground.  \n2. In the center portion of the parking lot, two white directional arrows are visible, pointing forward from the bottom center of the image towards the middle.  \n3. These arrows indicate traffic flow direction for vehicles moving toward the buildings from the open parking area.",
+      "final_answer": "Yes, there are directional arrows located in the central area of the parking lot, pointing toward the buildings."
+    }
+  ]
+}

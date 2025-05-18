@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "119_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where is the main entrance of Surya Hospital located in the panoramic image relative to the overall scene?",
+      "reasoning_chain": "1. The panoramic image spans a wide view of an urban street with various elements, including vehicles, buildings, and people.\n2. The center of the image prominently shows the main entrance of Surya Hospital, indicated by the large sign above a set of stairs and glass doors.\n3. The left side of the image features a fenced transformer station, a scooter, and a bicycle, while the right side displays several parked vehicles and a man standing near motorbikes.\n4. The hospital entrance is positioned directly between these two zones, making it the focal point and central feature of the scene.",
+      "final_answer": "The main entrance of Surya Hospital is located at the center of the panoramic image."
+    },
+    {
+      "question": "What objects are immediately to the left of the hospital entrance, and how are they arranged spatially?",
+      "reasoning_chain": "1. Moving left from the main entrance, a row of parked motorcycles can be clearly seen.\n2. These motorcycles are positioned parallel to the hospital building, facing the road.\n3. Further left, a large hospital information board is mounted on the wall.\n4. All these objects are located on the sidewalk adjacent to the hospital, before reaching the fenced transformer area.",
+      "final_answer": "Immediately to the left of the hospital entrance are a row of motorcycles parked parallel to the building and a hospital information board on the wall."
+    },
+    {
+      "question": "What is the spatial relationship between the transformer station and the hospital entrance?",
+      "reasoning_chain": "1. The transformer station is visible on the far left side of the panorama, enclosed in a red metal fence.\n2. The hospital entrance is near the center of the image.\n3. Comparing their positions, the transformer station is to the left (west) of the hospital entrance, separated by the row of motorcycles and the sidewalk.\n4. The transformer and the hospital entrance are aligned along the same street but with clear spatial separation by the sidewalk and parking area.",
+      "final_answer": "The transformer station is to the left of the hospital entrance, separated by a row of parked motorcycles and the sidewalk."
+    },
+    {
+      "question": "Where is the man standing in relation to the hospital entrance and the parked vehicles?",
+      "reasoning_chain": "1. The man is visible in the right section of the panorama, standing near some motorcycles and cars.\n2. The hospital entrance is at the center, so the man is toward the right (east) of the entrance.\n3. He is positioned between the hospital building and the main road, near a parked scooter and other vehicles.\n4. The man appears to be closer to the street, possibly serving as a security guard or attendant.",
+      "final_answer": "The man is standing to the right of the hospital entrance, near parked motorcycles and cars, and close to the street."
+    },
+    {
+      "question": "Are there any objects or features above the hospital entrance, and what are they?",
+      "reasoning_chain": "1. Above the hospital entrance, there is a large red arch with the words \"SURYA HOSPITAL\" written on it.\n2. The arch spans the width of the entrance and is part of the building\u2019s facade.\n3. There are no other significant objects or overhanging features immediately above the entrance, except for the building's wall and windows higher up.",
+      "final_answer": "Above the hospital entrance is a large red arch with the hospital\u2019s name, and above that, only the building\u2019s wall and windows."
+    }
+  ]
+}

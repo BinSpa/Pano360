@@ -1,0 +1,7 @@
+{
+  "dataset": "Indoor360",
+  "task": "basic",
+  "image_id": "28267693282_c97a9f0bb3_f",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (1920, 960).\n    The image contains detection boxes in multiple colors, each representing a different region. Based on these regions, \n    please generate a series of spatial reasoning data that includes detailed reasoning steps. \n    The questions should describe the spatial relationships between certain objects or infer the functional use of the region based on the objects present.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n",
+  "reasoning": []
+}

@@ -1,0 +1,28 @@
+{
+  "dataset": "Indoor360",
+  "task": "basic",
+  "image_id": "7l2t6",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (1920, 960).\n    The image contains detection boxes in multiple colors, each representing a different region. Based on these regions, \n    please generate a series of spatial reasoning data that includes detailed reasoning steps. \n    The questions should describe the spatial relationships between certain objects or infer the functional use of the region based on the objects present.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n",
+  "reasoning": [
+    {
+      "question": "What is the main functional area of the region with the white sectional sofa and coffee table?",
+      "reasoning_chain": "- The region contains a large white sectional sofa with several decorative pillows, a coffee table with magazines, and is oriented towards a flat-screen TV mounted on a stone wall.\n- The presence of comfortable seating, decorative elements, and a TV suggests it is designed for relaxation and social activities.\n- This configuration is typical of living or lounge areas in homes, where people gather to converse, watch TV, or relax.",
+      "final_answer": "The main functional area is a living room/lounge intended for relaxation and social interaction."
+    },
+    {
+      "question": "How are the dining area and the living area spatially related in this layout?",
+      "reasoning_chain": "- The dining area is visible to the left of the white sectional sofa, with a long table and several chairs arranged around it.\n- There is no wall partition between the living area (with the sofa and TV) and the dining area, indicating an open-plan layout.\n- The dining area is adjacent to the living area, separated only by furniture arrangement, allowing visual and physical connection.",
+      "final_answer": "The dining area is directly adjacent to the living area in an open-plan layout, with no physical partitions between them."
+    },
+    {
+      "question": "Based on the presence of the bar cart and potted plant near the two armchairs, what secondary function might this region serve?",
+      "reasoning_chain": "- The region features two armchairs, a bar cart with decorative objects on it, and a large potted plant.\n- Placement of armchairs and a bar cart suggests a more intimate setting, potentially for conversation or enjoying drinks.\n- This setup is often found in reading corners, mini-lounges, or casual entertaining spots within a larger living space.",
+      "final_answer": "This region likely serves as a secondary conversation or casual entertaining area within the larger living space."
+    },
+    {
+      "question": "What can be inferred about the connection between the indoor and outdoor spaces based on the panoramic image?",
+      "reasoning_chain": "- The space has extensive floor-to-ceiling windows and sliding glass doors along the outer walls.\n- The view through these windows shows a green outdoor area, and the doors appear to open directly to this space.\n- The seamless transition between indoor and outdoor spaces suggests the design aims to integrate nature and increase natural light.",
+      "final_answer": "There is a strong visual and physical connection between the indoor living areas and the outdoor environment, reinforcing an open, integrated design."
+    }
+  ]
+}

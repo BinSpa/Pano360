@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "122_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where is the large stone lion statue located in relation to the main intersection shown in the panoramic image?",
+      "reasoning_chain": "1. First, observe the overall layout in the panoramic image, which is 2048 pixels wide and 400 pixels high, covering a wide urban intersection and nearby sidewalks.\n2. Identify the main intersection: It is located centrally in the panorama, where the crosswalks from different directions converge and several pedestrians are waiting.\n3. Locate the large stone lion statue: It appears twice, on the far left and far right of the image, indicating it is positioned at the extreme ends of the panorama due to the wrap-around nature of panoramic photography.\n4. Both instances of the stone lion statue are next to the entrance of a building with pillars, visible in both the leftmost and rightmost portions of the image.\n5. The sidewalk with the lion statue is adjacent to the crosswalk that leads directly into the main intersection.\n6. This means the lion statue is at the corner of the building, very close to the intersection, but spatially it sits just to the side and slightly behind the main pedestrian area at the intersection.",
+      "final_answer": "The large stone lion statue is located at the corner of the building, immediately adjacent to the main intersection, on the sidewalk next to the building entrance."
+    },
+    {
+      "question": "Where are the majority of the waiting pedestrians situated relative to the intersection and crosswalks?",
+      "reasoning_chain": "1. Observe the center-right portion of the panoramic image, where a group of people are standing together.\n2. Note that they are positioned at the edge of the sidewalk, close to the start of the crosswalk lines leading across the main road.\n3. These pedestrians are facing the intersection, likely waiting for the traffic signal to change so they can cross.\n4. Relative to the intersection, they are on the near side of the crosswalk (closer to the camera position) and are grouped just before stepping onto the roadway.",
+      "final_answer": "The majority of the waiting pedestrians are on the sidewalk at the near side of the crosswalk, facing the main intersection, and waiting to cross the street."
+    },
+    {
+      "question": "In which direction are most of the cyclists traveling relative to the main intersection?",
+      "reasoning_chain": "1. Identify cyclists in the image: one is near the left of the center, another is near the far right, and one more is further back.\n2. Notice the position and orientation of the cyclists. The left-of-center cyclist is moving from the right side of the image (their left) toward the left side of the image (their right), following the crosswalk that leads out from the intersection.\n3. The cyclist on the right is oriented similarly, moving away from the intersection.\n4. Both are using the pedestrian crossing areas, suggesting their movement is generally perpendicular to the main traffic flow.",
+      "final_answer": "Most of the cyclists are traveling away from the main intersection, crossing perpendicular to the main road using the crosswalks."
+    },
+    {
+      "question": "Where is the tall glass building positioned in relation to the intersection and the other main buildings?",
+      "reasoning_chain": "1. The tall glass building is located near the center of the panoramic image.\n2. It stands out due to its height, blue-tinted glass, and reflective surface.\n3. Relative to the intersection, the building is directly across from the position of the camera, beyond the intersection itself.\n4. Other main buildings in the image are lower and positioned to the sides, while this glass building is centrally located beyond the far side of the intersection.",
+      "final_answer": "The tall glass building is directly across the intersection from the camera\u2019s viewpoint, centrally located beyond the intersection."
+    },
+    {
+      "question": "What is the spatial relationship between the bus stop and the intersection in the image?",
+      "reasoning_chain": "1. The bus stop is visible just left of center in the image, with a shelter and a sign.\n2. It is located on the sidewalk parallel to the main road, adjacent to the intersection.\n3. The bus stop is positioned before the crosswalk, on the same side as the camera, allowing waiting passengers to easily access the crosswalk when ready.",
+      "final_answer": "The bus stop is on the sidewalk parallel to the main road, just before the intersection and adjacent to the crosswalk."
+    }
+  ]
+}

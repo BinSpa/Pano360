@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "38_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "What is the spatial relationship between the tall building on the left and the blue parking sign visible in the center-left of the panoramic image?",
+      "reasoning_chain": "1. The panoramic image captures a 360-degree view, allowing us to see the spatial arrangement of elements.\n2. On the far left of the image, a tall building with large windows and a red accent is visible.\n3. Just right of the building and partially in front of it, a blue parking sign ('P') can be seen.\n4. The blue parking sign is located on the sidewalk near the road, while the building stands farther back, forming a background for the sign.\n5. The positioning indicates the parking sign is in the foreground, while the building is behind it and to the left when facing the scene.",
+      "final_answer": "The blue parking sign is located in the foreground near the road, in front of and slightly to the right of the tall building on the left side of the image."
+    },
+    {
+      "question": "How are the main road and the paved pedestrian area arranged in the scene?",
+      "reasoning_chain": "1. The main road can be identified by the presence of yellow dividing lines and the curvature visible in the image.\n2. The paved pedestrian area is demarcated by lighter colored paving stones and curves along the bottom of the image, suggesting it encircles or borders the road.\n3. The pedestrian area is consistently separated from the main road by a curb, bollards, and changes in paving material.\n4. The panoramic format distorts the view so both the left and right sides of the image represent areas behind the viewer, but the road makes a gentle curve from left to right through the center.\n5. The paved pedestrian area runs parallel to the road on both sides, facilitating pedestrian movement around the road's perimeter.",
+      "final_answer": "The main road curves through the center of the image, while the paved pedestrian area runs parallel along both sides, separated by a curb and bollards."
+    },
+    {
+      "question": "Where are the clusters of trees located relative to the road, and how do they affect the spatial structure of the scene?",
+      "reasoning_chain": "1. The image shows multiple clusters of tall trees with green foliage.\n2. The majority of these trees are aligned in rows, forming a natural barrier along the sides of the road.\n3. On the left side of the road (center-left of the image), trees are densely packed, separating the sidewalk from the buildings.\n4. More trees line the right side of the road (center-right of the image), forming a buffer between the road and other buildings or open areas.\n5. The trees thus create a green corridor, visually and physically separating vehicular space from pedestrian and building zones.",
+      "final_answer": "Clusters of trees are located along both sides of the road, forming a green barrier that separates the road from adjacent pedestrian areas and buildings."
+    },
+    {
+      "question": "What is the relative position of the blue directional signs and the metallic dome-shaped building?",
+      "reasoning_chain": "1. On the right side of the image, two blue directional signs are clearly visible near a paved open area.\n2. Slightly behind and to the left of these signs, there is a metallic dome-shaped building with a curved roof.\n3. The signs are positioned at the edge of the road, providing directions to people approaching from the central paved area.\n4. The dome-shaped building is farther back in the scene, partially surrounded by trees and greenery.",
+      "final_answer": "The blue directional signs are positioned in the foreground near the edge of the road, while the metallic dome-shaped building is located further behind them, partially obscured by trees."
+    }
+  ]
+}

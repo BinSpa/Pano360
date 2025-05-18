@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "109_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the Divine Dental Care clinic located at a street intersection or along a single straight road?",
+      "reasoning_chain": "1. The panoramic image shows the Divine Dental Care clinic in the center.  \n2. To the left of the clinic, there is a road running parallel to the clinic\u2019s entrance, visible with several parked cars and a fence.  \n3. To the right of the clinic, there is another road diverging away, also lined with parked cars and extending into a different direction.  \n4. The structure of the sidewalk and the angles of the buildings suggest two roads meeting at an angle by the clinic.  \n5. The clinic itself is situated at the point where the building corner faces both roads, further indicating an intersection.",
+      "final_answer": "The Divine Dental Care clinic is located at a street intersection."
+    },
+    {
+      "question": "Which direction is the primary entrance of Divine Dental Care facing relative to the roads visible in the image?",
+      "reasoning_chain": "1. The signboard and entrance of the clinic are centrally positioned and clearly visible, indicating the front of the building.  \n2. The entrance does not align directly with either road, but is slightly angled between the two visible roads.  \n3. The sidewalk directly in front of the entrance leads toward the area where both roads diverge, suggesting the entrance faces into the intersection rather than parallel to either street.",
+      "final_answer": "The entrance of Divine Dental Care faces diagonally toward the intersection of the two visible roads."
+    },
+    {
+      "question": "Are there more cars parked on the left side or the right side of the Divine Dental Care clinic?",
+      "reasoning_chain": "1. On the left side of the clinic (as viewed in the image), there are several cars visible along the road, parked parallel to the sidewalk.  \n2. On the right side of the clinic, there are fewer cars: two cars and a couple of motorcycles are visible.  \n3. By counting visible vehicles, the left side has more cars compared to the right.",
+      "final_answer": "There are more cars parked on the left side of the Divine Dental Care clinic."
+    },
+    {
+      "question": "Is there a pedestrian walkway immediately in front of the Divine Dental Care clinic?",
+      "reasoning_chain": "1. The area directly in front of the clinic\u2019s entrance displays a tiled or bricked platform, distinct from the road surface.  \n2. This raised, patterned area is aligned with the clinic entrance and separate from the vehicular roadway, indicating it is intended for pedestrian use.",
+      "final_answer": "Yes, there is a pedestrian walkway immediately in front of the Divine Dental Care clinic."
+    }
+  ]
+}

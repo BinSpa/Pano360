@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "226_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where are the tallest buildings located in the panoramic image, and how do they relate spatially to the roadways?",
+      "reasoning_chain": "1. The panoramic image shows a wide urban intersection with multiple tall buildings.  \n2. The tallest buildings, including the twin towers (Petronas Towers), are located to the right of the image, around the center-right.  \n3. The roadways curve around these buildings, with a major road running parallel to the base of the towers.  \n4. The towers rise above all other nearby structures, making them a focal point in the skyline.  \n5. Comparing both ends of the image, the left features lower buildings, while the center-right is dominated by very tall skyscrapers.",
+      "final_answer": "The tallest buildings are located in the center-right portion of the panoramic image, towering above the roadways that curve around their base."
+    },
+    {
+      "question": "Is there a green space or park visible in the image, and where is it located relative to the main roadways?",
+      "reasoning_chain": "1. Examining the panoramic view, a green, tree-filled area appears near the center of the image, stretching toward the right.  \n2. This green space is bordered by a major multi-lane road in the foreground.  \n3. The green space sits between the road and several high-rise buildings, including the Petronas Towers.  \n4. There are landscaped medians with shrubs along the roads, but the most prominent green area is the tree-filled park behind these medians.",
+      "final_answer": "Yes, there is a green park area located centrally and rightward in the image, positioned behind the main roadways and in front of the tall buildings."
+    },
+    {
+      "question": "Are public transportation vehicles (such as buses) present, and how are they distributed relative to the buildings?",
+      "reasoning_chain": "1. Looking at the image, several green buses can be spotted, especially on the right side of the central intersection.  \n2. These buses are parked or moving near modern buildings, including the one labeled \"CIMB.\"  \n3. The buses are close to the sidewalk and the entry area of these buildings, suggesting a hub of activity and possible bus stops.  \n4. No buses are immediately visible on the far left side of the image, where traffic is lighter and the area appears more business-oriented.",
+      "final_answer": "Yes, public buses are present, mainly located on the right side of the central intersection near the modern buildings."
+    },
+    {
+      "question": "How does the traffic density vary across the panoramic image, and what does this suggest about the flow of vehicles?",
+      "reasoning_chain": "1. The left side of the image, with fewer cars, suggests lighter traffic, possibly as vehicles move away from the city center.  \n2. The central section, especially in front of the tall buildings, shows denser traffic with multiple lanes occupied.  \n3. The rightmost side also has moderate traffic, but not as congested as the center.  \n4. The central area\u2019s high vehicle density suggests it is a major thoroughfare or business district.",
+      "final_answer": "Traffic density is highest in the central part of the image near the tall buildings, indicating a busy urban core, while the outer edges have lighter traffic."
+    }
+  ]
+}

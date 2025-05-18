@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "120_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where is the white car located in relation to the building entrance with the decorated silver doors?",
+      "reasoning_chain": "First, identify the decorated silver doors at the center of the image, which represent the building entrance. Next, look for the white car, which is parked directly in front of the building on the right side of the entrance. The car is on the street, parked parallel to the sidewalk and the entrance steps. The car is closer to the right edge of the panoramic image, while the doors are centered.",
+      "final_answer": "The white car is parked to the right of the building entrance with the decorated silver doors."
+    },
+    {
+      "question": "Where are the two people sitting on a motorcycle positioned in the panorama?",
+      "reasoning_chain": "Identify the people in the image: there are two individuals together near a motorcycle. They are positioned towards the far right side of the panorama, in front of the building with the stone-tiled exterior and beneath the lit overhang. They are next to the entrance steps and appear to be engaged in conversation or waiting.",
+      "final_answer": "The two people on the motorcycle are near the far right of the image, in front of the building with the stone-tiled wall."
+    },
+    {
+      "question": "Is the main street oriented parallel or perpendicular to the building entrance with the decorated silver doors?",
+      "reasoning_chain": "Observe the orientation of the building entrance with the decorated silver doors, which faces directly toward the viewer in the center of the panorama. The main street runs left to right across the middle of the image, directly in front of the entrance, indicating a parallel alignment.",
+      "final_answer": "The main street is oriented parallel to the building entrance with the decorated silver doors."
+    },
+    {
+      "question": "Where is the white utility truck stationed relative to the entrance with the decorated silver doors?",
+      "reasoning_chain": "Locate the white utility truck, which is visible toward the far right side of the image, parked on the street. Compare its position with the decorated silver doors, which are in the center of the panorama. The truck is farther down the street, past the right edge of the building.",
+      "final_answer": "The white utility truck is down the street to the right of the entrance with the decorated silver doors."
+    },
+    {
+      "question": "Are the majority of vehicles parked on the left or right side of the street, as seen from the building entrance?",
+      "reasoning_chain": "Survey the number and position of vehicles in the image. On the left side of the street (relative to the entrance), there are several parked vehicles: a white car, a motorcycle, and other vehicles further down. On the right side, a white car is adjacent to the entrance, and a white utility truck is further down. Overall, there are more vehicles visible on the left side of the street.",
+      "final_answer": "The majority of vehicles are parked on the left side of the street when viewed from the building entrance."
+    }
+  ]
+}

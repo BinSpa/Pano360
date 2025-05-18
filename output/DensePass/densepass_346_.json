@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "346_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where is the \"LUCKY BRAND JEANS\" store located in relation to the white truck with \"MAC TRANSPOR\" written on it?",
+      "reasoning_chain": "The panoramic image shows a street scene with multiple buildings and vehicles. The white truck with \"MAC TRANSPOR\" is clearly visible on the right side of the image, facing towards the intersection. The \"LUCKY BRAND JEANS\" store is located to the right side of the truck, as its storefront and sign can be seen just beyond the front of the truck. This positioning places the store directly adjacent to the right side of the white truck, confirming their spatial relationship.",
+      "final_answer": "The \"LUCKY BRAND JEANS\" store is directly to the right of the white \"MAC TRANSPOR\" truck."
+    },
+    {
+      "question": "Is there a street vendor cart, and if so, where is it located in relation to the crosswalk and the nearest black truck?",
+      "reasoning_chain": "Examining the center of the panoramic image, there is a crosswalk visible with a black truck stopped near it. Just ahead and to the right of the crosswalk, on the sidewalk, is a street vendor cart with a colorful umbrella. The vendor cart is positioned on the sidewalk, to the right (relative to the image viewpoint) of the crosswalk and slightly ahead of the front end of the black truck.",
+      "final_answer": "The street vendor cart is on the right sidewalk, just past the crosswalk and slightly ahead of the nearest black truck."
+    },
+    {
+      "question": "Which direction are most vehicles traveling on the street shown?",
+      "reasoning_chain": "Looking at the lane markings and the orientation of the vehicles, most of the visible vehicles (including the white truck, black trucks, and a row of cars to the left) are all pointed towards the center and upper right of the image. The lane markings (e.g., \"ONLY\" and \"BUS\") are also consistent with a one-way street in the same direction as the vehicles.",
+      "final_answer": "Most vehicles are traveling away from the viewer, towards the center and upper right of the image."
+    },
+    {
+      "question": "Which side of the street has more visible pedestrians, the left or right?",
+      "reasoning_chain": "On the left side of the image, there are a few pedestrians visible near the buildings and crosswalk area. On the right side, there are several pedestrians visible, particularly near the \"LUCKY BRAND JEANS\" store and along the sidewalk. By counting, more pedestrians are clustered on the right-hand side.",
+      "final_answer": "The right side of the street has more visible pedestrians."
+    }
+  ]
+}

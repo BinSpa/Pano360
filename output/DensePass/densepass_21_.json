@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "21_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where is the silver minivan located relative to the red car and the main tall building in the center of the image?",
+      "reasoning_chain": "1. The panoramic image shows a parking lot with several vehicles and buildings.  \n2. The main tall building is centrally located in the image and serves as a visual anchor.  \n3. The silver minivan is parked in the row of cars closest to the camera, slightly right of the central tall building.  \n4. The red car is parked immediately to the right of the silver minivan.  \n5. Therefore, the silver minivan is to the left of the red car and in front of the main tall building.",
+      "final_answer": "The silver minivan is located to the left of the red car and in front of the main tall building in the center."
+    },
+    {
+      "question": "What is the relationship between the entrance ramp and the pedestrian visible on the right side of the image?",
+      "reasoning_chain": "1. The rightmost section of the panoramic image shows a building with a metal ramp leading up to an entrance.  \n2. There is a pedestrian walking on the flat ground, near the base of this ramp and close to a door in the brick wall.  \n3. The ramp leads upwards and is adjacent to the pedestrian's path, suggesting proximity but different vertical positions.  \n4. The pedestrian is on the ground level, while the ramp provides access to an elevated building entrance.",
+      "final_answer": "The entrance ramp is adjacent to the pedestrian's path, with the pedestrian on the ground level and the ramp leading up to an elevated entrance."
+    },
+    {
+      "question": "How does the relative position of the two wooden structures on the left side of the image relate to the parking lot and the large brick building?",
+      "reasoning_chain": "1. On the left side of the image, two wooden structures are visible, one closer to the center and one farther left.  \n2. Both structures are positioned near the edge of the parking lot, adjacent to the large, round brick building.  \n3. The structure closer to the center faces the parking lot and is partially enclosed.  \n4. The structure farther left is closer to the edge of the image and to the wall of the brick building, suggesting it's more of a boundary or entry point to the area.",
+      "final_answer": "The two wooden structures are positioned at the edge of the parking lot adjacent to the large brick building, with one serving as a more central entry point and the other closer to the building\u2019s wall."
+    },
+    {
+      "question": "What is the spatial relationship between the row of parked cars and the statues on the far right?",
+      "reasoning_chain": "1. A row of parked cars is visible extending from the middle towards the right side of the image.  \n2. On the far right, there is a group of statues positioned on a platform or sidewalk beyond the parked cars.  \n3. The statues are further from the camera and closer to the edge of the parking lot, separated from the cars by a curb or low barrier.",
+      "final_answer": "The row of parked cars is in front of the statues, with the statues positioned further away from the camera and separated from the parking lot by a curb."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "104_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the main entrance gate closer to the red-brick building with arched windows or to the small red guardhouse?",
+      "reasoning_chain": "1. The panoramic image shows a large red-brick building with prominent arched windows on the left side.  \n2. The main entrance gate is visible in the central area of the image, with a red gate and fencing.  \n3. Near the entrance gate, to the right, there is a small red guardhouse with a window.  \n4. The entrance gate is connected directly to the guardhouse, while the red-brick building is farther to the left, separated by a path and some greenery.  \n5. There is no direct connection between the main entrance gate and the red-brick building, but there is a direct spatial adjacency between the entrance gate and the guardhouse.",
+      "final_answer": "The main entrance gate is closer to the small red guardhouse."
+    },
+    {
+      "question": "From the perspective of the main entrance, is the large green canopy visible to the left or right side?",
+      "reasoning_chain": "1. The main entrance gate is centrally located in the image, with the guardhouse nearby.  \n2. The large green canopy is on the far right side of the image, surrounded by tall plants and trees.  \n3. If standing at the main entrance, facing inward, the green canopy would be positioned to the right.",
+      "final_answer": "The large green canopy is to the right side of the entrance."
+    },
+    {
+      "question": "Is the signboard for the \"Christ Methodist Church\" located nearer to the road or to the main red-brick building?",
+      "reasoning_chain": "1. The blue signboard for the \"Christ Methodist Church\" is positioned centrally in the image.  \n2. The signboard is mounted on poles close to the street and the outer fence, indicating proximity to the road.  \n3. The main red-brick building is set further back from the road and separated from the signboard by fencing and vegetation.",
+      "final_answer": "The signboard is nearer to the road."
+    },
+    {
+      "question": "Do the trees along the fence create a visual barrier between the entrance and the buildings behind?",
+      "reasoning_chain": "1. The fence runs parallel to the road, with several trees planted along it.  \n2. These trees are tall and dense, providing significant coverage.  \n3. Behind the trees and fence, buildings are partially visible, but the trees obscure a clear line of sight.",
+      "final_answer": "Yes, the trees along the fence create a visual barrier between the entrance and the buildings behind."
+    }
+  ]
+}

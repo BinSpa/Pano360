@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "54_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where is the entrance to the establishment called \"NIX'S MATE\" located relative to the street intersections shown in the panoramic image?",
+      "reasoning_chain": "1. The panoramic image shows a street scene with intersections on both the left and right sides.  \n2. In the center of the image, there is a clear entrance to a building with glass doors, and a sign reading \"NIX'S MATE\" is visible next to the door.  \n3. The entrance is positioned centrally in the image, suggesting the establishment is located on the corner or along the side between two intersecting streets.  \n4. To the left of the entrance, there is an intersection with a crosswalk and street signs, indicating immediate proximity to a corner.  \n5. To the right, the street continues with more buildings and cars parked along the curb, but no immediate intersection is visible.  \n6. The NIX'S MATE entrance, therefore, faces the main street, near the intersection seen on the left side of the image.",
+      "final_answer": "The entrance to NIX'S MATE is located on the main street, immediately adjacent to the intersection shown on the left side of the panoramic image."
+    },
+    {
+      "question": "Are the two large potted plants at the entrance to NIX'S MATE symmetrically placed with respect to the doorway?",
+      "reasoning_chain": "1. The image shows the entrance to NIX'S MATE in the center, with two large potted plants\u2014one on each side of the doorway.  \n2. Both plants appear equidistant from the doorway, with their pots directly in line with the edges of the glass doors.  \n3. The symmetry of the glass panels and the placement of the plants on either side reinforce the sense of balanced, symmetrical placement.  \n4. There are no major visual obstructions or offsets that break this symmetry at the entrance.",
+      "final_answer": "Yes, the two large potted plants are symmetrically placed on either side of the entrance to NIX'S MATE."
+    },
+    {
+      "question": "Which direction is the main entrance of NIX'S MATE facing relative to the visible streets?",
+      "reasoning_chain": "1. The panoramic image shows two streets: one runs horizontally across the left and the other continues straight ahead to the right side of the image.  \n2. The entrance to NIX'S MATE is shown facing outward from the building, directly towards a relatively open sidewalk area, not angled towards either visible street exclusively.  \n3. The building corner and the layout of the crosswalks suggest the entrance is oriented diagonally between the two intersecting streets.  \n4. This would mean the entrance faces the wedge-shaped plaza formed by the intersection, rather than strictly aligning with either street.",
+      "final_answer": "The main entrance of NIX'S MATE faces diagonally towards the intersection, oriented between the two visible streets."
+    },
+    {
+      "question": "Is the Hilton hotel visible in the panoramic image, and if so, where is it located relative to the entrance of NIX'S MATE?",
+      "reasoning_chain": "1. The panoramic image shows a sign reading \"Hilton\" on the right side, mounted on the building along the same street as NIX'S MATE.  \n2. The sign is farther down the sidewalk from the entrance to NIX'S MATE, suggesting it is in the same block or building complex.  \n3. Relative to the NIX'S MATE entrance (center of the image), the Hilton sign is to the right (about one-fourth from the right edge of the panorama).",
+      "final_answer": "Yes, the Hilton hotel is visible in the image, and it is located to the right of the entrance to NIX'S MATE along the same street."
+    }
+  ]
+}

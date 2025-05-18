@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "103_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "What is the position of the green auto-rickshaw relative to the group of people standing together on the street?",
+      "reasoning_chain": "1. The panoramic image shows a street scene with various people, shops, and vehicles.  \n2. The group of people is visible towards the left side of the panorama, standing together near the roadside.  \n3. The green auto-rickshaw is located towards the right side of the image, next to a building and close to a man in a yellow and blue jacket.  \n4. The street depicted is continuous and bends in the panorama, suggesting both the people and the auto-rickshaw are on the same road but at different positions along it.  \n5. Observing their positions, the green auto-rickshaw is further down the street from the viewpoint of the people and is positioned to their right in the panoramic perspective.",
+      "final_answer": "The green auto-rickshaw is to the right and further down the street relative to the group of people standing together."
+    },
+    {
+      "question": "Is there a shop with a blue shutter closer to the center or the edge of the panorama?",
+      "reasoning_chain": "1. The image contains several shops, some of which have shutters in various colors, including blue.  \n2. A prominent shop with a blue shutter and signage above is visible near the center of the panoramic image, beneath an awning and with a small table in front.  \n3. Comparing the positions, there are no blue shutter shops at the extreme left or right edges; most edge shops have different colored shutters or are closed.  \n4. Therefore, the shop with the blue shutter is closer to the center of the panorama.",
+      "final_answer": "The shop with a blue shutter is closer to the center of the panorama."
+    },
+    {
+      "question": "What is the spatial relationship between the woman with a sweeping broom and the green auto-rickshaw?",
+      "reasoning_chain": "1. Locate the green auto-rickshaw towards the right side of the panorama, with a distinct green color and a load on top.  \n2. The woman with a broom (sweeping) appears just to the left of the green auto-rickshaw.  \n3. Both the woman and the auto-rickshaw are near the right edge of the image, but the woman is positioned slightly ahead of the auto-rickshaw when facing down the street.  \n4. The woman is on the sidewalk adjacent to the road, while the auto-rickshaw is parked partially on the road.",
+      "final_answer": "The woman with a broom is immediately left and slightly ahead of the green auto-rickshaw."
+    },
+    {
+      "question": "Where are the majority of closed shop shutters located in the panorama?",
+      "reasoning_chain": "1. Scan the panoramic image for closed shop shutters, identifiable by their rolled-down metal doors.  \n2. The left side of the panorama has several closed shutters, especially along the row of shops where the group of people stands.  \n3. The center and right sections also have some closed shutters, but these are interspersed with open shops and activity.  \n4. The concentration of closed shutters is highest along the left and central segments of the panorama.",
+      "final_answer": "The majority of closed shop shutters are located on the left and center portions of the panorama."
+    }
+  ]
+}

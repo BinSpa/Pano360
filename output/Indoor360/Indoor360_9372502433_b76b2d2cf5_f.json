@@ -1,0 +1,33 @@
+{
+  "dataset": "Indoor360",
+  "task": "basic",
+  "image_id": "9372502433_b76b2d2cf5_f",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (1920, 960).\n    The image contains detection boxes in multiple colors, each representing a different region. Based on these regions, \n    please generate a series of spatial reasoning data that includes detailed reasoning steps. \n    The questions should describe the spatial relationships between certain objects or infer the functional use of the region based on the objects present.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n",
+  "reasoning": [
+    {
+      "question": "What is the possible function of the region with the desk, computer monitor, and office chair located on the left side of the image?",
+      "reasoning_chain": "The presence of a desk, computer monitor, and office chair suggests that this area is set up for focused activities. These items are typically found in spaces dedicated to work, study, or computer use. The organization of cables and documents further supports the idea of a workspace. The placement near a window may provide natural light, which is desirable in a working environment.",
+      "final_answer": "Home office or study area."
+    },
+    {
+      "question": "How is the large bookshelf spatially related to the seating area in the room?",
+      "reasoning_chain": "The large bookshelf is placed directly to the right of the sofa, forming a continuous line along the wall. This proximity allows easy access to books or decorative items from the seating area. The arrangement suggests a reading or relaxation zone, with the bookshelf serving both storage and aesthetic functions.",
+      "final_answer": "The bookshelf is adjacent to the seating area, supporting a reading or relaxation function."
+    },
+    {
+      "question": "What can be inferred about the function of the region with the television, speakers, and media console on the right side of the image?",
+      "reasoning_chain": "A television, speakers, and a media console are typically found in entertainment or living areas where people gather to watch movies, play games, or listen to music. The seating area is oriented to face this region, suggesting its use for communal relaxation and entertainment.",
+      "final_answer": "Entertainment or media area."
+    },
+    {
+      "question": "How is the entryway spatially separated from the main living area?",
+      "reasoning_chain": "The entryway, visible near the door and lamp, is partially separated from the main living area by a dividing wall that creates a small alcove. The color of the flooring changes from carpet to tile in the entryway, visually distinguishing it from the rest of the space. This layout helps define a transition zone from the outside to the interior living space.",
+      "final_answer": "The entryway is separated by a partial wall and a change in flooring, marking it as a transition area."
+    },
+    {
+      "question": "Based on the objects and arrangement, what can be inferred about the primary use of the central area with the sofa and low table?",
+      "reasoning_chain": "The central area features a sofa and a low table, with books, magazines, and remote controls on the table. This setup is typical for a living room, where people gather to relax, read, or use entertainment devices. The proximity to the entertainment center and bookshelf supports this inference.",
+      "final_answer": "Main living or relaxation area."
+    }
+  ]
+}

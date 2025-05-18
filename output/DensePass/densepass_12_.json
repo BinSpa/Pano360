@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "12_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the white van closer to the green park area or the office building?",
+      "reasoning_chain": "The panoramic image shows a wide road with a green park area to the left and an office building to the right. The white van is located in the lower right quadrant of the image, closer to the curb on the side of the road that borders the park area\u2014but it is on the opposite side of the road from the park. The office building is on the same side of the road as the van, meaning there is no road in between them. The van is parked parallel to the building, which shows it is adjacent to or in front of the office building and separated from the park by several lanes of traffic.",
+      "final_answer": "The white van is closer to the office building."
+    },
+    {
+      "question": "Are there more parked vehicles visible on the park side or on the office building side of the street?",
+      "reasoning_chain": "On the left (park) side, several vehicles are visible parked along the curb and within the park\u2019s parking lot. On the right (office building) side, only a few cars are parallel-parked along the street in front of the office buildings, and there is more open curb space. By counting, the number of parked cars is clearly greater on the park side (with visible rows of cars in a parking lot and along the curb) than on the office building side.",
+      "final_answer": "There are more parked vehicles visible on the park side of the street."
+    },
+    {
+      "question": "Is the road divided by a median, and how can you tell?",
+      "reasoning_chain": "The image shows a wide road with multiple lanes going in each direction. In the center, there is a slight elevation with a curb and a strip of grass or dirt, which separates the two main directions of traffic. The existence of this physical barrier indicates a median, as opposed to simple lane markings.",
+      "final_answer": "Yes, the road is divided by a median."
+    },
+    {
+      "question": "Are the majority of trees in the image located on the left or the right side of the panorama?",
+      "reasoning_chain": "The left side of the image (park area) features a dense group of tall trees with significant green foliage, while the right side (office building and roadside) has fewer trees, mostly lining the street and in front of buildings. The park area contains a noticeably higher density of trees.",
+      "final_answer": "The majority of trees are located on the left side of the panorama."
+    },
+    {
+      "question": "If you were to walk from the office building to the park, would you need to cross the road?",
+      "reasoning_chain": "The office building is on the right-hand side of the image, while the park is on the left-hand side. The multi-lane road with a median separates them. Therefore, walking from the office building to the park would require crossing the road.",
+      "final_answer": "Yes, you would need to cross the road."
+    }
+  ]
+}

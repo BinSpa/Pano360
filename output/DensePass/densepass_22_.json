@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "22_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the building with mirrored glass panels located to the left or right of the central tree in the image?",
+      "reasoning_chain": "1. Identify the central tree in the panoramic image, which is located roughly in the center of the image (around pixel 1024 horizontally).  \n2. Locate the building with mirrored glass panels. This building is visible towards the left section of the panorama (left of the central tree), with a reflection on its facade and modern architectural style.  \n3. Compare the spatial positions: The mirrored glass building is positioned to the left of the central tree, not to the right.",
+      "final_answer": "The building with mirrored glass panels is to the left of the central tree."
+    },
+    {
+      "question": "Are there more trees visible on the left side or the right side of the image?",
+      "reasoning_chain": "1. Visually divide the panorama in half at the central vertical axis (pixel 1024).  \n2. Count the number of visible trees on the left side (pixels 0-1023). There are about 5-6 trees clearly visible, both in the foreground and background.  \n3. Count the number of visible trees on the right side (pixels 1024-2047). There are about 7-8 trees, with several prominent ones lining the walkway.  \n4. Compare the counts: The right side of the image has a denser population of trees.",
+      "final_answer": "There are more trees visible on the right side of the image."
+    },
+    {
+      "question": "Does the curved bench follow the contour of the path or does it cut across the open area?",
+      "reasoning_chain": "1. Observe the positioning of the curved bench in the foreground and mid-ground.  \n2. Note that the bench starts near the central tree and gently curves along the brick-paved walkway, following its curvature.  \n3. There is no indication that the bench cuts across the open dirt area; rather, it traces the edge of the path, defining it.",
+      "final_answer": "The curved bench follows the contour of the path."
+    },
+    {
+      "question": "Is the building with many small rectangular windows closer to the center or the right edge of the panorama?",
+      "reasoning_chain": "1. Locate the building with many small rectangular windows, which is the low, grey building.  \n2. Observe its placement in the panorama, which is just to the right of the central vertical axis (slightly right of center).  \n3. Compare this position to the right edge, where a taller white building is visible.",
+      "final_answer": "The building with many small rectangular windows is closer to the center of the panorama."
+    },
+    {
+      "question": "Does the main road curve to the left or right as it moves away from the point of view in the center of the image?",
+      "reasoning_chain": "1. Identify the main road appearing in the center of the image, intersected by a crosswalk.  \n2. Follow its trajectory as it moves away from the viewer\u2014towards the background.  \n3. The road is seen curving gently to the left, past the white car and crossing.",
+      "final_answer": "The main road curves to the left as it moves away from the center."
+    }
+  ]
+}

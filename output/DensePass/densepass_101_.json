@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "101_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "What is the relative position of the main beige building with balconies compared to the entrance gate and the pedestrian sidewalk?",
+      "reasoning_chain": "1. The main beige building with balconies is clearly visible near the center-right of the panorama.\n2. There is a black metal entrance gate and a garden directly in front of this building.\n3. The pedestrian sidewalk runs from the left side of the image toward the center, approaching the garden gate.\n4. The beige building is situated on the right side of the sidewalk, behind both the gate and the garden area.\n5. The sidewalk and gate act as foreground elements, while the building stands back and to the right.",
+      "final_answer": "The main beige building with balconies is behind and to the right of the entrance gate and pedestrian sidewalk."
+    },
+    {
+      "question": "Where are the majority of the people located relative to the street and the buildings?",
+      "reasoning_chain": "1. The street runs horizontally through the central portion of the panorama.\n2. Most people are seen on the left and right sides of the image, near sidewalks and open spaces.\n3. On the left, people are walking along the pedestrian sidewalk, away from the street and toward the buildings.\n4. On the right, people are gathered near the edge of the open space, also adjacent to the buildings and sidewalks.\n5. Few, if any, people are present directly on the street itself, as most activity is concentrated on the pedestrian areas bordering the buildings.",
+      "final_answer": "The majority of the people are located on the sidewalks and open areas near the buildings, not on the street."
+    },
+    {
+      "question": "What is the spatial relationship between the \"Delhi Police\" barricade and the main road?",
+      "reasoning_chain": "1. The \"Delhi Police\" barricade is visible in the lower right corner of the image.\n2. The main road runs horizontally and is located to the left of the barricade.\n3. The barricade is positioned on the edge of the sidewalk, just before the street begins.\n4. This suggests the barricade is placed to prevent vehicles or pedestrians from crossing into the road at that point or to control flow.",
+      "final_answer": "The \"Delhi Police\" barricade is positioned at the edge of the sidewalk, directly adjacent to and facing the main road."
+    },
+    {
+      "question": "How is the garden area with plants and signboards spatially arranged relative to the entrance and main building?",
+      "reasoning_chain": "1. The garden area is located in front of the main beige building and inside the black metal gate.\n2. Signboards and plants are arranged along the edge of the garden, providing a buffer between the sidewalk/entrance and the building.\n3. The entrance to the garden is through the black gate, which is aligned centrally with the building\u2019s facade.",
+      "final_answer": "The garden area with plants and signboards is directly in front of the main building, separated by an entrance gate, and serves as a buffer between the sidewalk and the building."
+    }
+  ]
+}

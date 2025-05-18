@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "267_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which business establishment is located at the left edge of the panoramic image, and what is directly to its right?",
+      "reasoning_chain": "- The panoramic image has a width of 2048 pixels and a height of 400 pixels.\n- At the leftmost edge (near x = 0), there is a business establishment with a visible banner reading \"CROSSFIT 213\".\n- Immediately to the right of \"CROSSFIT 213\" (moving rightward from the left edge), there is a building with a sign \"FIRST SECURITY SAFE\" and further down, a sign indicating \"FOR LEASE\".",
+      "final_answer": "The business establishment at the left edge is \"CROSSFIT 213\", and directly to its right is \"FIRST SECURITY SAFE\"."
+    },
+    {
+      "question": "Where is the large, rounded building with tall windows positioned in the panoramic image, and what is across the street from it?",
+      "reasoning_chain": "- The center of the panoramic image (around x = 1024) features a large, rounded building with tall glass windows and classical architecture.\n- There is a street in front of this building, running horizontally through the image.\n- Across the street (foreground in the image), there is a sidewalk lined with trees and another set of buildings, including retail spaces visible at the far right and left edges.",
+      "final_answer": "The large, rounded building is located at the center of the panorama, and across the street from it is a sidewalk lined with trees and a series of retail spaces."
+    },
+    {
+      "question": "What is the spatial relationship between the \"CROSSFIT 213\" gym and the \"CREATIVE SPACE\" sign?",
+      "reasoning_chain": "- The \"CROSSFIT 213\" gym is at the far left of the panorama (left edge).\n- The \"CREATIVE SPACE\" sign is visible on the right half of the panorama (right edge), on the building that appears similar in structure to the one on the left.\n- Since this is a panoramic image, the left and right edges represent the same street block, suggesting that \"CROSSFIT 213\" and \"CREATIVE SPACE\" are adjacent or within the same building structure, separated visually by the panoramic stitching.",
+      "final_answer": "\"CROSSFIT 213\" and \"CREATIVE SPACE\" are on opposite ends of the same building structure and likely adjacent in physical space."
+    },
+    {
+      "question": "Is there a crosswalk visible in the panoramic image, and if so, where is it positioned relative to the rounded building?",
+      "reasoning_chain": "- Examining the area in front of the rounded building (center), there is a crosswalk visible at the intersection to the left of the rounded building.\n- The crosswalk extends from the left side of the rounded building towards the left edge of the image.",
+      "final_answer": "Yes, there is a crosswalk positioned to the left of the rounded building, extending towards the left edge of the image."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "110_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "If a person is standing in front of the central green building (the one with visible balconies), which direction should they go to reach the road that extends far into the distance on the right side of the panorama?",
+      "reasoning_chain": "The central green building is located towards the middle of the panoramic image. To the right of this building, there is a road bordered by bushes and trees, which extends into the distance and has several streetlights along it. The road curves to the right, and it is clearly separated from the green area by a low stone wall. From the central building's position, to reach this road, the person would need to walk to the right, following the direction where the road is visibly receding into the distance.",
+      "final_answer": "The person should go right from the central green building to reach the road that extends far into the distance."
+    },
+    {
+      "question": "Which building is closest to the intersection at the center of the panorama?",
+      "reasoning_chain": "The intersection is located near the center of the panorama, where several pathways and roads converge. The green building with multiple balconies is immediately adjacent to this intersection, with its entrance and landscaped area facing directly towards it. Other buildings are further away, positioned at the edges or corners of the image.",
+      "final_answer": "The green building with balconies is the closest to the intersection at the center of the panorama."
+    },
+    {
+      "question": "Are the taller brown buildings on the left side of the image positioned higher, lower, or at the same elevation as the green building in the center?",
+      "reasoning_chain": "The left side of the image shows brown buildings that are situated on a grassy slope, which rises from the road level up to the base of the buildings. The central green building is on flatter ground, with landscaping and entrance at the same level as the road. The slope beneath the brown buildings indicates they are positioned at a higher elevation compared to the green building.",
+      "final_answer": "The taller brown buildings on the left are positioned at a higher elevation than the green building in the center."
+    },
+    {
+      "question": "Is there an uninterrupted pathway from the intersection at the center to the rightmost building in the panorama?",
+      "reasoning_chain": "From the center intersection, a paved road curves to the right and continues straight towards the rightmost part of the panorama. This road is bordered by a low wall and streetlights, leading directly to the visible building at the far right. There are no visible barriers or obstructions along this pathway.",
+      "final_answer": "Yes, there is an uninterrupted pathway from the center intersection to the rightmost building."
+    }
+  ]
+}

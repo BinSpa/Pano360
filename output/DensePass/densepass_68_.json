@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "68_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the yellow tram closer to the camera than the cars in the street?",
+      "reasoning_chain": "The yellow tram occupies the right part of the panoramic image and appears much larger and more detailed compared to the cars, which are further down the crosswalk and appear smaller. The tram doors and windows are clearly visible, indicating proximity, while the cars' details are less distinct, suggesting they are further away. In panoramic images, objects that appear larger and with more detail are typically closer to the camera.",
+      "final_answer": "Yes, the yellow tram is closer to the camera than the cars in the street."
+    },
+    {
+      "question": "Is there a pedestrian currently crossing the crosswalk in the scene?",
+      "reasoning_chain": "Examining the crosswalk in the center of the image, it appears there are no visible pedestrians on the stripes of the crosswalk. People are visible on the sidewalks on both sides, but there is no one actively crossing.",
+      "final_answer": "No, there is no pedestrian currently crossing the crosswalk."
+    },
+    {
+      "question": "Is the main building on the left side of the image directly adjacent to the yellow tram?",
+      "reasoning_chain": "The main building with red bricks and white stripes is on the far left of the panoramic image. The yellow tram is on the far right. Observing the road and the crosswalk in between these two, there is a significant gap filled by the street and vehicles, indicating they are not directly adjacent but separated by the road.",
+      "final_answer": "No, the main building and the yellow tram are separated by the street and are not directly adjacent."
+    },
+    {
+      "question": "Are the overhead tram wires continuous across the scene, connecting both sides of the panorama?",
+      "reasoning_chain": "The overhead tram wires are visible running throughout the top portion of the panorama, starting above the tram on the right and extending to the left above the street, reaching the area near the main building. They form a network that connects the tram route through the entire scene.",
+      "final_answer": "Yes, the overhead tram wires are continuous and connect both sides of the panorama."
+    }
+  ]
+}

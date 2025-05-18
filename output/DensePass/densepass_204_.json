@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "204_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which building is located directly across from the yellow building with a triangular roof in the middle of the panorama?",
+      "reasoning_chain": "1. Identify the yellow building with a triangular roof in the center of the panorama.\n2. Locate the road running in front of this yellow building.\n3. Observe the area directly across this road from the yellow building.\n4. Note the presence of another building facing the yellow building, which is white with a brown roof and a balcony.",
+      "final_answer": "The white building with a brown roof and a balcony is directly across from the yellow building with a triangular roof in the middle of the panorama."
+    },
+    {
+      "question": "Where are the flowerbeds with purple flowers located in relation to the yellow building?",
+      "reasoning_chain": "1. Identify the location of the yellow building in the center-left of the panorama.\n2. Observe the flowerbeds with purple flowers, which are located in the foreground on the right-center of the yellow building.\n3. Notice the sidewalk separating the flowerbeds and the yellow building.",
+      "final_answer": "The flowerbeds with purple flowers are located in the foreground to the right and slightly in front of the yellow building."
+    },
+    {
+      "question": "Is there a crossing path or intersection visible near the yellow building, and where is it positioned?",
+      "reasoning_chain": "1. Identify the yellow building in the middle of the panorama as the central reference point.\n2. Notice the roads converging in front of and beside the yellow building.\n3. Observe the sidewalks and the layout, which reveals a three-way intersection with roads meeting in front and to the sides of the yellow building.",
+      "final_answer": "Yes, there is a three-way intersection directly in front of and beside the yellow building."
+    },
+    {
+      "question": "What objects are positioned closest to the camera in the panoramic image?",
+      "reasoning_chain": "1. Examine the lower part of the image near the central area.\n2. Notice the objects that appear largest and most detailed, indicating proximity.\n3. Identify a trash bin and a flowerbed with vibrant purple flowers as the closest objects.",
+      "final_answer": "A trash bin and a flowerbed with purple flowers are positioned closest to the camera."
+    },
+    {
+      "question": "Which direction does the road marked with bike lane symbols curve toward, relative to the white house with a balcony?",
+      "reasoning_chain": "1. Find the white house with a balcony on the right side of the panorama.\n2. Observe the road in front of this house, noting the bike lane symbols.\n3. Notice the road curving to the left relative to the position of the white house with a balcony.",
+      "final_answer": "The road marked with bike lane symbols curves to the left relative to the white house with a balcony."
+    }
+  ]
+}

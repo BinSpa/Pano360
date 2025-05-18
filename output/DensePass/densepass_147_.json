@@ -1,0 +1,23 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "147_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "What is the spatial relationship between the mountainous area, the road, and the city buildings in the image?",
+      "reasoning_chain": "1. The panoramic image covers a wide horizontal field, depicting two roadways divided by a median strip.  \n2. The left side of the image shows a steep, green hillside with dense vegetation. This hillside is bordered by a stone wall and sidewalk adjacent to the road.  \n3. The road curves and stretches toward the center and right, where it becomes flanked by metal guardrails, indicating a transition from hillside to a more open space.  \n4. On the far right and far left sides of the image, tall city buildings are visible, partially obscured by trees and greenery, indicating urban development at both ends.  \n5. The road itself serves as a central divider, separating the natural landscape (hill) on the left from the more open and urbanized area on the right.  \n6. The spatial arrangement suggests the city is built around natural features, with roads cut through and around hills, and city buildings distributed on both sides but not in the immediate center of the image.",
+      "final_answer": "The mountainous area is to the left, the road runs centrally through the image, and city buildings are located at both far ends (left and right), with the road separating the natural hillside from the more urbanized space."
+    },
+    {
+      "question": "If a car travels from the far left side to the far right side of the panorama, how does the surrounding environment change?",
+      "reasoning_chain": "1. Starting from the far left, the car would be adjacent to a steep, tree-covered hillside with a stone retaining wall and less visibility beyond the road.  \n2. As the car proceeds toward the center, the road becomes curvier, and the hillside gradually transitions into a more open environment.  \n3. Moving further right, the environment shifts to more open space with metal guardrails and larger trees, offering broader views beyond the road.  \n4. Approaching the far right, the number of tall buildings increases, indicating entry into a more urbanized section of the city.  \n5. Thus, the environment experienced by the car changes from a natural, wooded hillside to a more urban, open area with city buildings.",
+      "final_answer": "The surroundings change from a steep, wooded hillside on the left to a more open and urbanized area with tall buildings on the right."
+    },
+    {
+      "question": "Is the road in the panoramic image straight or curving? Support your answer with spatial cues.",
+      "reasoning_chain": "1. The panoramic image provides a 360-degree view, distorting straight lines into curves due to projection.  \n2. However, the dividing lines on the road and the alignment of the guardrails and sidewalks can still offer clues.  \n3. The road appears to gently curve, especially visible in the center and right portions, where the guardrails and road markings are not parallel to the image edges but rather bend inward.  \n4. The layout of the hillside and the way the road transitions from left to right also supports the presence of a curve rather than a straight stretch.",
+      "final_answer": "The road is curving, as evidenced by the alignment of the road markings and guardrails in the panoramic image."
+    }
+  ]
+}

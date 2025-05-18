@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "468_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which direction is the white van with purple advertisements facing in relation to the main intersection in the center of the panorama?",
+      "reasoning_chain": "1. The panorama is a 360-degree wide image, showing an intersection with four main corners.  \n2. The white van with purple advertisements is located near the center of the image, slightly right of the middle vertical axis.  \n3. The stripes of the pedestrian crosswalk and the direction of the van indicate it is parallel to one of the roads leading away from the intersection.  \n4. The van\u2019s front is pointing to the right in the image, which suggests it is facing down the road extending from the intersection toward the right side of the panorama.  \n5. Since panoramic images wrap around, we compare the van\u2019s orientation with the visible building corners and road structure.  \n6. The van is not perpendicular to the viewer (not facing the viewer or away), but rather aligned with the road on the right side of the intersection.",
+      "final_answer": "The white van is facing down the road extending to the right from the main intersection, parallel to the crosswalk on the right side of the panorama."
+    },
+    {
+      "question": "Are there more parked cars visible on the left side or the right side of the central intersection in the panorama?",
+      "reasoning_chain": "1. Identify the central intersection by locating the crossing crosswalks and building corners in the center of the panorama.  \n2. Visually divide the image into left and right halves using the center of the intersection as a reference point.  \n3. Count the number of clearly visible parked cars on each side of the intersection.  \n4. On the left side, observe the cars parked along the buildings and curb.  \n5. On the right side, observe the cars parked along the buildings and curb as well.  \n6. Compare the numbers on each side.",
+      "final_answer": "There are more parked cars visible on the right side of the central intersection than on the left."
+    },
+    {
+      "question": "Which building at the intersection has a red brick exterior, and where is it located relative to the intersection?",
+      "reasoning_chain": "1. Look for buildings that have a distinct red brick exterior within the panorama.  \n2. Identify the intersection center by the crosswalks.  \n3. Locate the building with the red brick wall and note its position relative to the intersection (using the crosswalks as orientation).  \n4. The building with the red brick exterior is located at the far right of the image, at the corner where two streets meet.",
+      "final_answer": "The building with the red brick exterior is located at the right corner of the intersection in the panorama."
+    },
+    {
+      "question": "Is the road on the far left or the far right of the panorama brighter due to sunlight?",
+      "reasoning_chain": "1. Examine the lighting and shadows in both the far left and far right portions of the panorama.  \n2. Note the presence of sunlight, the direction of shadows, and the brightness of the road surfaces.  \n3. The far right section shows stronger sunlight, with shadows cast towards the bottom left, suggesting the sun is higher and more direct on that side.  \n4. The far left has more shade, likely due to buildings blocking the sunlight.",
+      "final_answer": "The road on the far right of the panorama is brighter due to sunlight."
+    },
+    {
+      "question": "Is there a visible pedestrian crossing the street at the main intersection?",
+      "reasoning_chain": "1. Focus on the crosswalks at the center of the panorama, where the main intersection is located.  \n2. Look for any figures or people walking on the crosswalks.  \n3. There are several pedestrians visible, specifically on the left part of the intersection, walking across the street.",
+      "final_answer": "Yes, there are visible pedestrians crossing the street at the main intersection."
+    }
+  ]
+}

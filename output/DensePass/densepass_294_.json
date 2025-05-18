@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "294_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which direction would you walk to reach the business called \"SUERTE\" from the entrance of \"AUTOESCUELA MALASA\u00d1A\"?",
+      "reasoning_chain": "1. The image is a panoramic street view with a width of 2048 pixels, representing a 360-degree view.\n2. The entrance of \"AUTOESCUELA MALASA\u00d1A\" is near the center of the panorama (roughly at pixel 1024 horizontally).\n3. \"SUERTE\" is visible further down the street, slightly to the right of \"AUTOESCUELA MALASA\u00d1A\".\n4. Observing the spatial alignment, to reach \"SUERTE\" from \"AUTOESCUELA MALASA\u00d1A\", one would need to walk along the street to the right as seen from the entrance.",
+      "final_answer": "Walk to the right and down the street from the entrance of \"AUTOESCUELA MALASA\u00d1A\" to reach \"SUERTE\"."
+    },
+    {
+      "question": "Is the shop called \"Casa Del Pez\" on the same side of the street as \"AUTOESCUELA MALASA\u00d1A\"?",
+      "reasoning_chain": "1. \"Casa Del Pez\" is visible on the left side of the panorama, and its door and signage are directly facing the camera view.\n2. \"AUTOESCUELA MALASA\u00d1A\" is near the center, with its entrance also facing the camera.\n3. The orientation of the doors and the relative positioning indicate that \"Casa Del Pez\" and \"AUTOESCUELA MALASA\u00d1A\" are on the same side of the street, as both their entrances are visible from the same side of the street corridor.",
+      "final_answer": "Yes, \"Casa Del Pez\" is on the same side of the street as \"AUTOESCUELA MALASA\u00d1A\"."
+    },
+    {
+      "question": "If you are standing in front of the building with the brown window bars and graffiti, which direction is \"AUTOESCUELA MALASA\u00d1A\"?",
+      "reasoning_chain": "1. The building with the brown window bars and graffiti is on the far right side of the panorama.\n2. \"AUTOESCUELA MALASA\u00d1A\" is located closer to the center of the image.\n3. If you are facing the building with brown window bars and turn left (counterclockwise in the panorama), you will face \"AUTOESCUELA MALASA\u00d1A.\"",
+      "final_answer": "\"AUTOESCUELA MALASA\u00d1A\" is to your left if you are facing the building with the brown window bars and graffiti."
+    },
+    {
+      "question": "Are there any cars parked closer to \"AUTOESCUELA MALASA\u00d1A\" or to \"SUERTE\"?",
+      "reasoning_chain": "1. There are visible cars parked on the side of the street near the center of the panorama.\n2. These cars are positioned closer to the entrance of \"AUTOESCUELA MALASA\u00d1A\".\n3. There are no visible cars parked directly in front of or immediately near \"SUERTE\".",
+      "final_answer": "There are cars parked closer to \"AUTOESCUELA MALASA\u00d1A\" than to \"SUERTE\"."
+    }
+  ]
+}

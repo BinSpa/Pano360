@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "289_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the white car parked closer to the glass office building or to the beige residential-style building with greenery along the sidewalk?",
+      "reasoning_chain": "The white car in question is located near the middle-right of the panorama. To determine which building it is closer to, I observe that the car is parallel to the sidewalk and directly adjacent to the beige building with multiple windows and greenery in front. The glass office building is on the opposite side of the street, farther away from the car. The visual proximity, the car\u2019s orientation to the buildings, and the boundary of the sidewalk with the greenery all suggest the white car is much closer to the beige building.",
+      "final_answer": "The white car is parked closer to the beige residential-style building with greenery along the sidewalk."
+    },
+    {
+      "question": "Are the two traffic lights in the image positioned on opposite corners of the intersection?",
+      "reasoning_chain": "Examining the panoramic image, I see two green traffic lights\u2014one on the left side of the image at the near corner of the glass office building, and another on the right side near the beige building and the trash bin. Both traffic lights are at the edges of the intersection, each serving a different street. Their placement suggests they are on opposite corners of the intersection, each controlling traffic flow from different angles.",
+      "final_answer": "Yes, the two traffic lights are positioned on opposite corners of the intersection."
+    },
+    {
+      "question": "Is the truck with the \u201cMaheso\u201d logo closer to the camera or farther away compared to the black sedan parked near the glass office building?",
+      "reasoning_chain": "The black sedan is clearly parked adjacent to the glass office building, which is close to the center of the image and not far from the supposed camera position. The \u201cMaheso\u201d truck is on the far right side of the panorama, parked along the street but visually appears smaller and farther down the road from the perspective of the viewer. This relative size and position in the panoramic frame indicate that the black sedan is closer to the camera.",
+      "final_answer": "The black sedan near the glass office building is closer to the camera than the \u201cMaheso\u201d truck."
+    },
+    {
+      "question": "Which building has more visible greenery along its street-facing side, the beige building or the glass office building?",
+      "reasoning_chain": "On inspection, the beige building on the right side of the image has a significant amount of greenery (bushes, plants) along the sidewalk, forming a distinct green boundary. The glass office building, by contrast, has a clean, modern facade with no visible greenery along its street-facing windows. Thus, the beige building clearly features more greenery.",
+      "final_answer": "The beige building has more visible greenery along its street-facing side."
+    },
+    {
+      "question": "Are the majority of cars in the image parked parallel or perpendicular to the street?",
+      "reasoning_chain": "Looking across the panorama, the majority of visible cars (white, black, and others) are aligned in parallel to the street curbs, rather than nose-in or tail-in perpendicular parking. This includes cars along both sides of the street, fitting the parallel parking pattern common in urban areas.",
+      "final_answer": "The majority of cars are parked parallel to the street."
+    }
+  ]
+}

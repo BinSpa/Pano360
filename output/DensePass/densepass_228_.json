@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "228_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the building under construction closer to the left side or the right side of the panoramic image?",
+      "reasoning_chain": "The building under construction is visible in the central-left part of the image. On the far left, there are other completed buildings and a pedestrian crossing the street, while the right side shows a wide avenue, more trees, motorcycles, and several completed skyscrapers (including prominent twin towers). The construction site is nearer to the left edge of the image than the right, based on its position relative to the entire panorama of width 2048 pixels.",
+      "final_answer": "The building under construction is closer to the left side of the panoramic image."
+    },
+    {
+      "question": "What is the spatial relationship between the pedestrian and the truck loaded with construction materials?",
+      "reasoning_chain": "The pedestrian is seen walking across a zebra crossing, located in the left part of the image near the bottom. The truck loaded with construction materials is parked ahead of the pedestrian, further along the crosswalk and partially blocking it. The truck is closer to the center of the image, but both are near each other with the truck ahead of the pedestrian along the street.",
+      "final_answer": "The truck is ahead of the pedestrian, both located close to each other in the left section of the panorama."
+    },
+    {
+      "question": "Are the iconic twin towers on the same side of the street as the construction site?",
+      "reasoning_chain": "The construction site is visible on the left and central portion of the panorama, with the street dividing the scene. The iconic twin towers appear clearly on the right side of the panorama, across the wide avenue and separated by several lanes of traffic and a median. The spatial arrangement shows the towers and construction site on opposite sides of the main road.",
+      "final_answer": "No, the iconic twin towers are on the opposite side of the street from the construction site."
+    },
+    {
+      "question": "Is the motorcyclist visible on the extreme right moving towards or away from the viewer?",
+      "reasoning_chain": "The motorcyclist on the rightmost side of the image is oriented such that the front of the motorcycle faces away from the central point of view, matching the direction of traffic on that side of the divided roadway. The positioning of the road lines and the motion blur indicate movement away from the viewer.",
+      "final_answer": "The motorcyclist on the extreme right is moving away from the viewer."
+    },
+    {
+      "question": "Where are the largest trees located relative to the twin towers in the panorama?",
+      "reasoning_chain": "The largest trees in the panorama are situated near the center-right, occupying the road median and sidewalk area. The twin towers are found just right of center in the panorama, behind the trees. This places the largest trees directly in front of and slightly to the left of the twin towers from the viewer\u2019s perspective.",
+      "final_answer": "The largest trees are directly in front of and slightly to the left of the twin towers in the panorama."
+    }
+  ]
+}

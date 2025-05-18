@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "361_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the entrance with open glass doors closer to the left or right edge of the panoramic image?",
+      "reasoning_chain": "The panoramic image covers a wide courtyard surrounded by buildings. The entrance with open glass doors, marked by two vertical flags, is clearly visible near the left side of the image. The right side is dominated by curves of the buildings and does not show the entrance. Since the entrance is predominantly situated near the left edge and not visible towards the far right, it must be closer to the left edge.",
+      "final_answer": "The entrance with open glass doors is closer to the left edge of the panoramic image."
+    },
+    {
+      "question": "Is the building with many balconies located in the center, left, or right part of the image?",
+      "reasoning_chain": "The building with many balconies is visible in the background, towering above the courtyard. Its central placement in the image suggests it is directly ahead in the panoramic view, with the courtyard leading the eye toward it. It is not skewed to the left or right edge but is a focal point toward the center.",
+      "final_answer": "The building with many balconies is located in the center part of the image."
+    },
+    {
+      "question": "Are the windows with closed metal shutters found on both the left and right sides of the image?",
+      "reasoning_chain": "Observing the panoramic image, closed metal shutters are visible both on the left side (adjacent to the entrance) and on the right side (on the ground floor beneath the curved building). This indicates that these features appear on both sides of the panorama.",
+      "final_answer": "Yes, the windows with closed metal shutters are found on both the left and right sides of the image."
+    },
+    {
+      "question": "Where is the area with the most direct sunlight located\u2014left, center, or right of the image?",
+      "reasoning_chain": "The ground on the right side of the image appears much brighter, indicating strong direct sunlight. The left side is more shaded, especially under the awning and near the entrance. The center has a transition between shade and sunlight.",
+      "final_answer": "The area with the most direct sunlight is located on the right of the image."
+    }
+  ]
+}

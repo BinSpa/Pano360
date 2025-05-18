@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "366_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the cafe entrance closer to the left edge or the center of the panoramic image?",
+      "reasoning_chain": "1. The panoramic image is 2048 pixels wide, so the center is at approximately pixel 1024.\n2. The entrance of the cafe is clearly visible slightly right of the actual image center, as it is just past the middle of the storefront section (the left half of the image).\n3. The left edge features the continuation of the building and sidewalk, while the entrance is not adjacent to this edge.\n4. Therefore, the entrance is closer to the center of the image than to the left edge.",
+      "final_answer": "The cafe entrance is closer to the center of the panoramic image."
+    },
+    {
+      "question": "Are the white vans parked on the same street as the cafe?",
+      "reasoning_chain": "1. The cafe is prominent on the left half of the panoramic image, with its entrance and street-side tables visible.\n2. The white vans appear in the right half, along a street that is parallel and visually continuous with the cafe's sidewalk.\n3. The panoramic stitching shows a continuous urban streetscape, and the sidewalk, street, and buildings match up, indicating the vans are parked in front of or near the cafe.\n4. The alignment of the building facades and the curb strongly suggests both the vans and the cafe are on the same street.",
+      "final_answer": "Yes, the white vans are parked on the same street as the cafe."
+    },
+    {
+      "question": "Is the intersection closer to the right or left side of the image?",
+      "reasoning_chain": "1. The intersection, where two roads meet, can be identified by the crossing pedestrian lines and the multiple visible building corners.\n2. This intersection appears predominantly in the right half of the image, along with several crossing pedestrians and vehicles.\n3. The left side shows mostly uninterrupted building facades and the cafe, without street crossings.\n4. Therefore, the intersection is nearer to the right side of the panoramic image.",
+      "final_answer": "The intersection is closer to the right side of the image."
+    },
+    {
+      "question": "Are there more outdoor tables in front of the cafe or parked vehicles visible in the image?",
+      "reasoning_chain": "1. In front of the cafe, there are three outdoor tables with chairs visible on the sidewalk.\n2. On the street, there are at least four parked vehicles visible (two white vans in the foreground, and at least two more cars further along the street).\n3. By counting, there are more vehicles than outdoor tables.",
+      "final_answer": "There are more parked vehicles visible in the image than outdoor tables in front of the cafe."
+    }
+  ]
+}

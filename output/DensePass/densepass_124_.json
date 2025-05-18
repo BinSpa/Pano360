@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "124_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "What is located between the two main roads shown in the panorama?",
+      "reasoning_chain": "- The panoramic image shows two main roads, one on the left side and one on the right side, each with visible vehicles and road infrastructure (e.g., traffic signs, sidewalks, streetlights).  \n- In the center of the panorama, between these two roads, there is a large area filled with orange and yellow flowers, indicating a field or meadow.  \n- No other major structures (such as buildings or playgrounds) are present in this central area; instead, there is a clear, uninterrupted span of flowering vegetation.",
+      "final_answer": "A large field of orange and yellow flowers."
+    },
+    {
+      "question": "Where are the construction cranes in relation to the flower field?",
+      "reasoning_chain": "- The flower field occupies the center of the panoramic image and stretches to the right.  \n- Two tall construction cranes are visible towards the right side of the panorama, behind the flower field.  \n- Given the spatial orientation, these cranes are situated beyond the flower field, further away from the camera.",
+      "final_answer": "Behind and to the right of the flower field."
+    },
+    {
+      "question": "Is the red truck closer to the camera than the white car?",
+      "reasoning_chain": "- The white car is parked on the left side of the image, very close to the camera and the edge of the frame.  \n- The red truck is on the right side of the image, parked further along the road and sidewalk.  \n- The size and clarity of the white car indicate it is nearer to the camera, while the red truck, though large, is further away in the perspective.",
+      "final_answer": "No, the white car is closer to the camera than the red truck."
+    },
+    {
+      "question": "What direction do the road signs indicate for vehicles?",
+      "reasoning_chain": "- A prominent blue road sign is visible in the upper central-left portion of the panorama.  \n- The sign shows three arrows: two pointing straight and one pointing to the right, which suggests permitted movements.  \n- Based on the typical meaning of such road signs, vehicles in the left or center lanes must go straight, while those in the right lane may turn right or go straight.",
+      "final_answer": "Vehicles can go straight or turn right."
+    },
+    {
+      "question": "Is there any building directly adjacent to the left road?",
+      "reasoning_chain": "- The left road is separated from nearby buildings by a wall and some green space.  \n- The nearest building is set back from the road, with the wall and a short distance of land (possibly a lawn or field) in between.  \n- No structure directly abuts the sidewalk or curb of the left road.",
+      "final_answer": "No, there is no building directly adjacent; there is a wall and green space in between."
+    }
+  ]
+}

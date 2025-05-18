@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "24_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where is the tall building located in relation to the visible open grassy area?",
+      "reasoning_chain": "The panoramic image is wide, showing a continuous scene from left to right. The largest and tallest building is positioned centrally in the panorama. The open grassy area occupies the foreground, extending across the image, with the building situated directly behind this area. Thus, the building is centrally located and set back from the grassy field.",
+      "final_answer": "The tall building is located centrally and behind the open grassy area."
+    },
+    {
+      "question": "What objects are present in the foreground near the center of the image, and how are they spatially related?",
+      "reasoning_chain": "In the center foreground, there is a large white rock and a coiled hose or pipe extending toward the camera. The white rock is in front of the building, and the hose appears to lead from the bottom edge of the image toward the rock, suggesting a connection or interaction between the two.",
+      "final_answer": "A large white rock and a hose are present in the foreground center, with the hose leading toward the rock."
+    },
+    {
+      "question": "Are there more trees on the left side or the right side of the tall building in the image?",
+      "reasoning_chain": "Examining both sides of the central building, the left side contains many densely packed trees with yellow foliage, while the right side also has several trees, but they are more sparse and some are bare. The left side appears fuller and more crowded with trees.",
+      "final_answer": "There are more trees on the left side of the tall building."
+    },
+    {
+      "question": "Where are the benches and pathways located relative to the open grassy area?",
+      "reasoning_chain": "Benches and pathways can be seen behind the grassy area, closer to the line of trees and before the buildings. The pathways run parallel to the grassy field, while benches are distributed along the edge of the grass, mostly under the trees.",
+      "final_answer": "Benches and pathways are located behind the open grassy area, near the line of trees."
+    },
+    {
+      "question": "What is the spatial relationship between the bicycles and the main building?",
+      "reasoning_chain": "Two bicycles are visible on the right side of the image, parked near the trees and pathway. They are positioned to the right and in front of the tall building, closer to the foreground and not directly adjacent to the building itself.",
+      "final_answer": "The bicycles are in the right foreground, in front of and to the right of the main building."
+    }
+  ]
+}

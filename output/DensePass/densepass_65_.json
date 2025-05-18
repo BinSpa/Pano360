@@ -1,0 +1,23 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "65_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "If a person standing at the crosswalk in front of the building with the pink sign wants to reach the car parked in the handicap parking space, what is the shortest route they can take?",
+      "reasoning_chain": "1. The crosswalk in front of the building with the pink sign is visible slightly left of the image center, at the street intersection.\n2. The car in the handicap parking space is visible on the right side of the image, in front of the building with yellow shop signs.\n3. To reach the parked car from the crosswalk, the person would cross the intersection using the zebra crossing, move slightly to the right along the edge of the intersection, and then head straight towards the car across a short distance of sidewalk.\n4. There is no need to cross additional streets or take any detours, as the crosswalk conveniently connects near the car's location.",
+      "final_answer": "Cross the street using the crosswalk, then walk right along the sidewalk to reach the handicap parking space directly in front of the yellow shop signs."
+    },
+    {
+      "question": "How many distinct crosswalks are visible in the panorama, and where are they located in relation to the central intersection?",
+      "reasoning_chain": "1. The central intersection is in the middle of the image.\n2. One crosswalk is directly in front of the building with the pink sign, leading across the left road.\n3. Another crosswalk runs across the main road, perpendicular to the first, near the stop sign on the right side of the intersection.\n4. Both crosswalks meet at the intersection, forming an \u2018L\u2019 shape around the corner.",
+      "final_answer": "There are two distinct crosswalks: one on the left side of the intersection and one on the right, meeting at the central junction."
+    },
+    {
+      "question": "If a car exits the parking spot in front of the yellow shop signs and wants to drive straight, which direction will it go relative to the intersection?",
+      "reasoning_chain": "1. The parking spot in front of the yellow shop signs is on the right side of the image.\n2. The road adjacent to these parked cars is a one-way street, indicated by the road markings and signage.\n3. Driving straight from the parking spot would follow the direction of traffic on this one-way street, which continues straight past the intersection (toward the far right of the image).\n4. The intersection shows that this direction aligns with the street beyond the crossing, heading further right in the panorama.",
+      "final_answer": "The car will drive straight, heading right past the intersection, following the direction of the one-way street."
+    }
+  ]
+}

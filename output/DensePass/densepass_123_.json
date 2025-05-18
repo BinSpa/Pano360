@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "123_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "How many distinct crossings for pedestrians are visible in the panoramic image, and how are they spatially distributed?",
+      "reasoning_chain": "1. Observe the panoramic image which shows a wide intersection with multiple roads converging.  \n2. Identify the white zebra stripes on the road, which indicate pedestrian crossings.  \n3. The image provides a 360-degree view, so examine each segment for these crossings.  \n4. On the left, there is a pedestrian crossing leading from the sidewalk to the opposite side.  \n5. In the middle section, two crossings are visible: one perpendicular and one parallel, creating an intersection for foot traffic.  \n6. On the right, another crossing leads towards the commercial building.  \n7. Verify if all crossings connect with sidewalks or pedestrian paths, confirming their functionality.  \n8. Summing up, there are crossings on the left (1), center (2), and right (1), but the central area crossings intersect, so they count as two distinct crossings.",
+      "final_answer": "There are four distinct pedestrian crossings, spatially distributed on the left, center (two intersecting), and right sides of the intersection."
+    },
+    {
+      "question": "Where are most of the parked bicycles concentrated in the panoramic image?",
+      "reasoning_chain": "1. Scan the entire panorama to locate areas with parked bicycles.  \n2. On the left, a yellow bicycle is parked next to the sidewalk near a white fence.  \n3. In the center, near the intersection, a few yellow bicycles are visible by the bus stop area.  \n4. On the far right, there is a large cluster of bicycles, including both green and silver ones, parked along the sidewalk near commercial buildings.  \n5. Compare the number of bicycles in each area.  \n6. The rightmost area has the highest density and variety of bicycles compared to the other sections.",
+      "final_answer": "Most of the parked bicycles are concentrated on the right side of the panoramic image near the commercial buildings."
+    },
+    {
+      "question": "What is the relationship between the main intersection and the tall buildings in the image?",
+      "reasoning_chain": "1. Identify the location of the main intersection, which is centrally placed in the panorama.  \n2. Observe the tall buildings\u2014many are positioned in the background near the intersection, with some directly facing it.  \n3. The tallest buildings are clustered on the right half of the image, with frontage directly onto the intersection.  \n4. The intersection acts as a hub, with roads leading toward and away from these tall buildings.  \n5. The spatial arrangement suggests the intersection is a central node for accessing these high-rise structures, likely serving as a commercial and residential focal point.",
+      "final_answer": "The main intersection is centrally located and directly faces several tall buildings, which are clustered around it, indicating the intersection is a hub for accessing these prominent structures."
+    },
+    {
+      "question": "Are there clear boundaries between pedestrian and vehicle areas in the scene, and how are they marked?",
+      "reasoning_chain": "1. Observe the sidewalks and roadways in the panoramic image.  \n2. Note the presence of white fences along the edges of the sidewalks and green areas, creating a physical boundary.  \n3. Pedestrian crossings are marked with white zebra stripes across the roads.  \n4. The sidewalks are paved with a different texture and color than the vehicle roads.  \n5. Bollards and planters are placed at some sidewalk entrances, further separating pedestrian zones from vehicle lanes.",
+      "final_answer": "Yes, there are clear boundaries between pedestrian and vehicle areas, marked by white fences, zebra crossings, bollards, and distinct pavement differences."
+    }
+  ]
+}

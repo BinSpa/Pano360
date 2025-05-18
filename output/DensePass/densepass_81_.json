@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "81_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which car is parked closest to the entrance gate on the right side of the panorama?",
+      "reasoning_chain": "1. The panoramic image shows a parking lot with several cars and two gates\u2014one on the left and one on the far right.  \n2. The entrance gate on the right is visible near the edge of the image, next to a white car.  \n3. There are two cars near this gate: a white car right beside the gate, and a yellow car parked further back on the left of the white car.  \n4. The white car is directly adjacent to the gate and the entry lane, while the yellow car is further away from the entrance.",
+      "final_answer": "The white car is parked closest to the entrance gate on the right side of the panorama."
+    },
+    {
+      "question": "How many cars are parked directly in front of the building with a red banner?",
+      "reasoning_chain": "1. The building with the red banner is located in the center section of the panoramic image.  \n2. Directly in front of this building (below the banner) are three cars in a line.  \n3. These cars are a white Honda, a red car, and a black Volkswagen, all clearly visible and parked in marked spaces facing the building.",
+      "final_answer": "Three cars are parked directly in front of the building with a red banner."
+    },
+    {
+      "question": "What is the relative position of the garden/roundabout with the stone to the main parking lot?",
+      "reasoning_chain": "1. The panoramic image shows a circular garden/roundabout with a stone feature on the left side of the image.  \n2. The main parking lot with most cars is positioned to the right of this garden/roundabout.  \n3. The garden/roundabout is separated from the main parking lot by a curb and some low hedges.  \n4. The garden/roundabout is at the entrance side of the parking area, closer to the left edge of the panorama.",
+      "final_answer": "The garden/roundabout with the stone is to the left of the main parking lot."
+    },
+    {
+      "question": "Is there any car parked facing directly toward the viewer (camera) in the panorama?",
+      "reasoning_chain": "1. Observing the orientation of the cars, most are parked at an angle or parallel to the buildings.  \n2. The white Honda in the front center of the image is parked head-in toward the camera, showing its front grill and windshield.  \n3. The other cars are either side-parked or positioned such that their front or rear is not directly facing the viewer.",
+      "final_answer": "Yes, the white Honda in the center is parked facing directly toward the viewer (camera)."
+    },
+    {
+      "question": "Which building is closest to the left entrance gate?",
+      "reasoning_chain": "1. The left portion of the panoramic image shows an entrance gate and a small building immediately to its right (from the viewer's perspective).  \n2. This building is a short, light-colored structure with windows, situated before the taller buildings further back.  \n3. The proximity and alignment with the gate indicate it is the closest building to the left entrance.",
+      "final_answer": "The small light-colored building is closest to the left entrance gate."
+    }
+  ]
+}

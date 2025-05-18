@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "183_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which direction should a person walk from the white car in the middle of the street to reach the store labeled \"Ashraf's Take Away Strictly Halaal\"?",
+      "reasoning_chain": "The white car is located roughly in the center of the panoramic image, aligned with the road. The store labeled \"Ashraf's Take Away Strictly Halaal\" is visible on the right side of the image, on the corner of a building with large windows. To reach the store from the white car's position, one would need to walk towards the right side of the image, up the street, and across to the corner where the store is situated.",
+      "final_answer": "Walk forward along the street and cross to the right to reach \"Ashraf's Take Away Strictly Halaal.\""
+    },
+    {
+      "question": "If you are standing at the entrance of the red building with green trim on the left side, which major buildings are directly visible across the street?",
+      "reasoning_chain": "The entrance to the red building with green trim is located on the left side of the image. Directly across the street from this position, we see a multi-story building with a white facade and colored stripes on its upper floors. This building occupies a prominent position in the left quarter of the image, directly facing the red building.",
+      "final_answer": "The multi-story building with a white facade and colored stripes is directly visible across the street from the red building with green trim."
+    },
+    {
+      "question": "Where is the building labeled \"Embossed Label Printers\" in relation to the visible intersection?",
+      "reasoning_chain": "The \"Embossed Label Printers\" signage is visible on a building near the center of the image. The intersection is in the immediate foreground, with multiple roads converging. The labeled building is to the right and slightly behind the intersection as seen from the panoramic viewpoint, indicating it is located on the street running perpendicular to the main road at the intersection.",
+      "final_answer": "The \"Embossed Label Printers\" building is on the right side, just past and parallel to the main intersection."
+    },
+    {
+      "question": "If you travel from the building with a yellow and green awning (left) to the building with a curved white facade and red sign (right), which direction do you need to go?",
+      "reasoning_chain": "The building with the yellow and green awning is on the left part of the image, while the building with the curved white facade and red \"Ashraf's Take Away\" sign is on the right part of the image. Moving from one to the other means traversing the width of the image from left to right, crossing the street and the intersection.",
+      "final_answer": "You need to walk rightward across the intersection to reach the building with the curved white facade and red sign."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "118_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "What is located immediately to the right of the main entrance of the jewelry store at the center of the image?",
+      "reasoning_chain": "The panoramic image shows a street scene with various storefronts. The central focus is a jewelry store with a glass entrance and illuminated interior. The main entrance is clearly visible at the center. Observing the area immediately to the right of this entrance, we see a group of three men standing on the sidewalk and a large white SUV parked just beyond them, almost aligned with the entrance and right edge of the jewelry store fa\u00e7ade.",
+      "final_answer": "A group of three men and a white SUV."
+    },
+    {
+      "question": "Is there a vehicle parked directly in front of the jewelry store entrance?",
+      "reasoning_chain": "Examining the jewelry store entrance in the center of the image, the entrance and the area directly in front of it are visible. There are no vehicles, only people standing and sitting, as well as potted plants and a red box. Vehicles (motorcycles and a car) are seen further along the sidewalk but not directly in front of the entrance.",
+      "final_answer": "No, there is no vehicle parked directly in front of the jewelry store entrance."
+    },
+    {
+      "question": "Which direction do the motorcycles on the left side of the image face relative to the street?",
+      "reasoning_chain": "On the left side of the image, several motorcycles are parked along the sidewalk. Observing the orientation of the motorcycles, most appear to be positioned parallel to the street with their front wheels pointing towards the viewer\u2019s right, suggesting they are facing towards the center of the image (towards the jewelry store entrance).",
+      "final_answer": "The motorcycles are facing towards the center of the image, generally pointing right relative to the street."
+    },
+    {
+      "question": "What is located across the street from the jewelry store entrance?",
+      "reasoning_chain": "The jewelry store entrance is at the center of the image, and directly across the street, the panoramic perspective provides a view of several commercial shops. Visible are storefronts with red and yellow signage, mannequins dressed in red clothing, and a rickshaw parked nearby.",
+      "final_answer": "Several commercial shops, mannequins, and a rickshaw."
+    },
+    {
+      "question": "Where is the white SUV positioned in relation to the jewelry store entrance?",
+      "reasoning_chain": "The white SUV is visible just to the right of the jewelry store entrance, parked on the sidewalk. The SUV is positioned parallel to the storefront and is adjacent to the group of three men talking in front of the jewelry store.",
+      "final_answer": "The white SUV is parked just to the right of the jewelry store entrance on the sidewalk."
+    }
+  ]
+}

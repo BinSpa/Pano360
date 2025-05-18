@@ -1,0 +1,27 @@
+{
+  "dataset": "area3",
+  "image_id": "camera_b3ef2004d9fb42ba909f0da483b1a1f9_WC_1_frame_equirectangular_domain_rgb",
+  "prompt": "You are a language model tasked with generating spatial reasoning questions based on a panoramic scene with (h, w)=(2048, 4096).\n\nYour task is to generate complex spatial reasoning tasks using given object information, such as:\n- An object that satisfies multiple spatial constraints at once.\n- An object positioned between two others.\n- Comparison tasks involving sorting or ranking (by distance, height, etc.)\n- An object spatial position related to other objects.\nThe data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\nUse natural and diverse language. Do not include coordinate values or measurements in your output.",
+  "reasoning": [
+    {
+      "question": "Consider the pile of used paper towels collected in the trash bin beneath the paper towel dispenser near the sink area. Is this pile located closer to the row of sinks or to the entrance door of the restroom?",
+      "reasoning_chain": "The pile of used paper towels is described as being beneath the paper towel dispenser near the sink area, which suggests its location is adjacent to the sinks. The entrance door is positioned toward the side of the restroom, away from the sinks. Given this spatial arrangement, the pile of used paper towels in the trash bin is positioned much closer to the sinks than to the entrance door.",
+      "final_answer": "The pile of used paper towels is closer to the row of sinks than to the entrance door."
+    },
+    {
+      "question": "The wastebasket filled with discarded paper towels is positioned beside the sinks in the restroom. Is this wastebasket located closer to the row of toilet stalls or to the entrance door of the restroom?",
+      "reasoning_chain": "The wastebasket is described as being right next to the sinks, which are typically placed in a central location for handwashing after using the restroom. Toilet stalls are generally further inside the restroom, while the entrance door is usually located at the opposite end of the sinks. Given its position beside the sinks, the wastebasket would be closer to the entrance door than to the row of toilet stalls, which are deeper into the room.",
+      "final_answer": "The wastebasket filled with discarded paper towels is closer to the entrance door than to the row of toilet stalls."
+    },
+    {
+      "question": "The small trash bin placed near the entrance of the restroom shares the space with a wastebasket filled with discarded paper towels positioned beside the sinks. Which of these two containers is situated closer to the row of sinks, and how does their placement relate to the entrance door?",
+      "reasoning_chain": "The small trash bin is located near the entrance of the restroom, likely intended for use as people come in or leave. In contrast, the wastebasket filled with discarded paper towels is specifically described as being beside the sinks, which are generally placed further inside the restroom. Therefore, the wastebasket is positioned closer to the row of sinks, while the small trash bin is closer to the entrance door.",
+      "final_answer": "The wastebasket filled with discarded paper towels is situated closer to the row of sinks, while the small trash bin is closer to the entrance door."
+    },
+    {
+      "question": "The woven basket placed on the floor near the corner is one of several receptacles in the restroom. Considering its location, is this basket positioned closer to the entrance door or to the sinks, and how does its distance compare to the small trash bin placed near the entrance?",
+      "reasoning_chain": "The woven basket is described as being near the corner of the room, which situates it away from the central sink area but not immediately next to the entrance. The small trash bin is specifically noted as being near the entrance, placing it closer to the doorway than the basket. Since the basket is not described as being beside the sinks either, it must be positioned somewhere between the entrance and the sinks, but not as close to either as the other two containers. Therefore, the woven basket is farther from the entrance than the small trash bin and also not as near to the sinks as the wastebasket filled with discarded paper towels.",
+      "final_answer": "The woven basket is farther from the entrance door than the small trash bin, and it is not as close to the sinks as the wastebasket filled with discarded paper towels."
+    }
+  ]
+}

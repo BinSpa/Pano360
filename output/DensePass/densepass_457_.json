@@ -1,0 +1,23 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "457_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which side of the street are the houses with double garages located on in the panoramic image?",
+      "reasoning_chain": "1. In the panoramic image, the street runs horizontally through the middle, with houses visible on both the left and right sides.\n2. Two prominent houses with double garages are clearly visible on the left half of the image (near the central area).\n3. Upon examining the right side of the street (right half of the image), there are houses, but none are as clearly visible with double garages as the ones on the left.\n4. Given the panoramic nature of the scene, the left side of the image corresponds to the left side of the street, and the right side to the right side of the street.",
+      "final_answer": "The houses with double garages are located on the left side of the street."
+    },
+    {
+      "question": "Is there a sidewalk on both sides of the street throughout the panorama?",
+      "reasoning_chain": "1. Examine the lower part of the image for continuous sidewalks on both the left and right sides of the street.\n2. On the left side, a sidewalk is visible running along the houses, continuing up to the central area.\n3. On the right side, a sidewalk is visible for part of the street, but it becomes patchy and is missing along sections, especially toward the central and rightmost areas.\n4. The right side transitions into grassy and treed areas without a paved sidewalk in some segments.",
+      "final_answer": "No, there is not a continuous sidewalk on both sides of the street throughout the panorama."
+    },
+    {
+      "question": "Are the trees along the right side of the street taller or shorter than the houses on the left side?",
+      "reasoning_chain": "1. Compare the height of the trees on the right side of the street with the rooflines of the houses on the left side.\n2. The houses on the left generally appear to be two stories tall.\n3. Most of the trees on the right side are either similar in height or shorter than the houses, with a few exceptions where some trees are slightly taller than the rooflines.\n4. On average, the majority of trees do not surpass the tallest points of the houses.",
+      "final_answer": "Most of the trees along the right side of the street are shorter than the houses on the left side."
+    }
+  ]
+}

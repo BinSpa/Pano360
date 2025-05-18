@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "116_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which side of the panoramic image contains more parked cars, the left side (0\u20131024 pixels width) or the right side (1024\u20132048 pixels width)?",
+      "reasoning_chain": "First, I will divide the image into two halves by width: left from 0 to 1024 pixels and right from 1024 to 2048 pixels.  \nNext, I will count the visible parked cars in each half. On the left side, there are several cars parked along the road and near shops, and on the right side, there are multiple parked cars near the yellow barricade and along the sidewalk, as well as some cars parked near the trees.  \nComparing the two, the right side has a denser concentration of parked cars, especially in front of the barricade and along the curb, while the left side has fewer visible parked vehicles.",
+      "final_answer": "The right side (1024\u20132048 pixels) contains more parked cars than the left side (0\u20131024 pixels)."
+    },
+    {
+      "question": "Is the temple-like building located closer to the center or the edges of the panoramic image?",
+      "reasoning_chain": "I will first identify the temple-like building, which is characterized by ornate architecture and central position in the image. The panoramic image width is 2048 pixels, so the center is around pixel 1024.  \nObserving the building's position, it appears directly behind the trees and cars in the central portion of the image, with its midpoint aligning very closely to the center of the panorama.",
+      "final_answer": "The temple-like building is located closer to the center of the panoramic image."
+    },
+    {
+      "question": "Is the yellow barricade located in the right half or left half of the image?",
+      "reasoning_chain": "I observe the yellow barricade structure, which stands out with its color and mesh design. In the panorama, it is situated to the right of the central temple-like building. Since the image is 2048 pixels wide, and the barricade starts around the middle and stretches further right, its main portion resides in the right half.",
+      "final_answer": "The yellow barricade is located in the right half of the image."
+    },
+    {
+      "question": "Are there more trees visible on the left side or the right side of the image?",
+      "reasoning_chain": "First, I observe the tree distribution in the image. On the left side, there is a large tree partially shading the street, but on the right side, several large trees with dense foliage are visible, especially behind the yellow barricade and near the red building.\nComparing both sides, the right side features a larger cluster of trees.",
+      "final_answer": "There are more trees visible on the right side of the image."
+    },
+    {
+      "question": "Does the direction of the sunlight indicate that the left side of the image is more shaded compared to the right side?",
+      "reasoning_chain": "By analyzing the shadows cast by the cars, trees, and buildings, it is evident that the sun is high and slightly to the right, as the shadows fall towards the bottom left. The area near the temple-like building and towards the left is more shaded by the large trees, while the right side is more brightly lit.",
+      "final_answer": "Yes, the left side of the image is more shaded compared to the right side."
+    }
+  ]
+}

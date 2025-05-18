@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "202_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "How are the three flagpoles positioned in relation to the main building with the red door in the center of the image?",
+      "reasoning_chain": "1. The main building with the red door is located near the center-right of the panorama.\n2. Three flagpoles are visible in front of this building.\n3. The flagpoles are aligned parallel to the front facade of the building, standing a few meters away from the wall.\n4. The flags are between the sidewalk and the building, closer to the viewer in the image\u2019s perspective.\n5. The shadow of the flagpoles and a person on the ground confirms the relative positioning and direction of sunlight.",
+      "final_answer": "The three flagpoles are positioned in front of and parallel to the main building with the red door, standing between the building and the open paved area."
+    },
+    {
+      "question": "What objects are present in the leftmost part of the panorama, and how do their positions relate to each other?",
+      "reasoning_chain": "1. The leftmost side of the panorama shows a building with a visible entrance and a sign above it.\n2. In front of the entrance, there are two stairways leading up to the doors.\n3. To the right of the stairways, there is a ramp with a handrail.\n4. The building is further back compared to the ramp and stairs, which are closer to the immediate foreground.",
+      "final_answer": "The leftmost part contains a building with stairs and a ramp leading up to the main entrance, with the stairs and ramp positioned in front of the building."
+    },
+    {
+      "question": "Where are the bicycle racks located in the panorama?",
+      "reasoning_chain": "1. Several bicycle racks can be seen on the far right side and near the center-right of the image.\n2. The racks are placed in front of two different buildings: one by the building on the right edge, and some near the main building in the center-right.\n3. Most of the bicycles are stationed on the paved area, next to the buildings and adjacent to the sidewalk.",
+      "final_answer": "Bicycle racks are located on the far right and center-right of the panorama, near the buildings and along the edge of the paved area."
+    },
+    {
+      "question": "What is the spatial relationship between the rectangular planter and the trees in the center of the image?",
+      "reasoning_chain": "1. In the center of the panorama, there is a raised, rectangular planter with bare soil or mulch.\n2. Several trees are planted inside this planter, their trunks emerging from within it.\n3. The planter is bordered by a low wall, separating it from the paved walkway surrounding it.",
+      "final_answer": "The trees in the center are planted inside the raised rectangular planter, which is surrounded by a low retaining wall."
+    }
+  ]
+}

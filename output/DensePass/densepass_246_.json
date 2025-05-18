@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "246_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which side of the alley, left or right, has more windows visible at ground level?",
+      "reasoning_chain": "To determine which side has more ground-level windows, I observe the panoramic image and define \"ground level\" as the lowest row of windows visible on each side. On the left side, which consists of a building with stone walls, there are several windows with bars but they are limited in number and spaced out. On the right side, the building is made of red brick and has more small windows with bars at ground level, especially under the main set of windows. By counting, the right side features more ground-level windows than the left.",
+      "final_answer": "The right side of the alley has more ground-level windows visible."
+    },
+    {
+      "question": "Is the alley open or blocked at the far end?",
+      "reasoning_chain": "To answer this, I examine the central vanishing point of the panoramic image where the alley extends. At the far end, there is a red sign with white text that appears to be a warning or informational sign. In addition, there is a barrier or gate visible just before the building at the end, which indicates that the alley is not open for through passage.",
+      "final_answer": "The alley is blocked at the far end."
+    },
+    {
+      "question": "Which building, the one on the left or the one on the right, has a smoother facade texture?",
+      "reasoning_chain": "To evaluate the facade texture, I compare the surfaces of the two main buildings visible in the image. The left building is constructed from large stone slabs, giving it a smooth and uniform appearance. The right building is built from red bricks, resulting in a rougher and more textured facade.",
+      "final_answer": "The building on the left has a smoother facade texture."
+    },
+    {
+      "question": "Are there trees visible on both sides of the alley?",
+      "reasoning_chain": "To determine the presence of trees, I look at both the far left and right edges of the panoramic image. Both sides show green foliage and visible tree trunks, indicating that trees are present on each side.",
+      "final_answer": "Yes, there are trees visible on both sides of the alley."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "188_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "How many distinct crosswalks are visible in the panoramic image and where are they located relative to the intersection?",
+      "reasoning_chain": "The panoramic image shows a large intersection with multiple streets converging. By examining the road surface, I can see marked pedestrian crosswalks on three sides of the intersection. One is directly in the foreground (bottom center of the image), another one is to the left side of the intersection (center-left), and the third is visible to the right side of the intersection (center-right). The far side of the intersection (across from the camera viewpoint) does not show a crosswalk.",
+      "final_answer": "There are three distinct crosswalks visible, located at the near, left, and right sides of the intersection."
+    },
+    {
+      "question": "Is the building with large vertical columns and a curved facade positioned on the left, center, or right side of the intersection?",
+      "reasoning_chain": "There is a large building with prominent vertical columns and a distinct curved facade visible in the central area of the panorama. It is directly facing the intersection and is positioned such that the intersection wraps around it. To the left, there are smaller, more rectangular buildings, and on the right, there is a simpler rectangular building without such columns or curvature.",
+      "final_answer": "The building with large vertical columns and a curved facade is positioned at the center of the intersection."
+    },
+    {
+      "question": "Is the turquoise car located closer to the foreground or the background of the intersection, and on which side?",
+      "reasoning_chain": "By inspecting the vehicles in the image, the turquoise car is seen on the right side of the intersection, slightly past the pedestrian crosswalk, and closer to the buildings that are further away from the camera. The car is not in the immediate foreground, but rather a bit deeper into the intersection, almost aligned with the rightmost crosswalk in the image.",
+      "final_answer": "The turquoise car is located closer to the background, on the right side of the intersection."
+    },
+    {
+      "question": "Where are the streetlights positioned in relation to the intersection and the buildings?",
+      "reasoning_chain": "Several streetlights are visible in the image. One stands on the left foreground, near the corner of the building and crosswalk. Two others are seen toward the right, near the edges of the intersection, with one almost directly in line with the rightmost building and another just past the intersection. The positioning suggests the streetlights are placed at the corners of the intersection, adjacent to both the roadways and the sidewalks bordering the buildings.",
+      "final_answer": "The streetlights are positioned at the corners of the intersection, next to the sidewalks and adjacent to the buildings."
+    },
+    {
+      "question": "Is there a supermarket visible in the image, and if so, where is its entrance relative to the intersection?",
+      "reasoning_chain": "A sign for \"Supermarket\" is visible on the building in the left foreground of the image. The entrance to the supermarket is located facing the intersection, slightly to the left side. This entrance is adjacent to the crosswalk at the near (bottom) side of the intersection, suggesting the supermarket is positioned at the corner.",
+      "final_answer": "Yes, there is a supermarket visible; its entrance is at the left-front corner, facing the intersection."
+    }
+  ]
+}

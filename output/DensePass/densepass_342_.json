@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "342_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which side of the street (left or right) appears to have more parked vehicles in the panoramic image?",
+      "reasoning_chain": "1. The panoramic image is split by the central vanishing point. The left side of the street is visible from the left edge to the center, and the right side from the center to the right edge.  \n2. On the left side, I can count at least six visible parked vehicles (including the large van and several cars in the distance).  \n3. On the right side, there are at least ten visible parked vehicles, including those in front of the houses and along the curb, continuing deep into the background.  \n4. Comparing the two sides, the right side clearly has more parked vehicles than the left.",
+      "final_answer": "The right side of the street has more parked vehicles."
+    },
+    {
+      "question": "Is there a higher concentration of trees on the left or right side of the street in the panoramic image?",
+      "reasoning_chain": "1. Observing the left side of the image, there are a couple of trees scattered near the sidewalk and in front of buildings, but they are sparse.  \n2. On the right side, there are multiple trees visible\u2014especially one large prominent tree near the center-right and several smaller ones in front of houses.  \n3. The right side has more greenery and visibly more trees than the left, which mostly shows buildings with minimal vegetation.",
+      "final_answer": "The right side of the street has a higher concentration of trees."
+    },
+    {
+      "question": "Which side of the street (left or right) predominantly features row houses with front steps and gates?",
+      "reasoning_chain": "1. Examining the left side, buildings include a mix of small apartment-like structures and some houses, but few distinct row houses with prominent front steps or gates.  \n2. On the right side, nearly all the buildings are classic row houses with front steps leading to entrance doors, and decorative gates or fences are visible along the sidewalk line.  \n3. The architectural style on the right is consistent for several houses in a row, highlighting the row house nature.",
+      "final_answer": "The right side of the street predominantly features row houses with front steps and gates."
+    },
+    {
+      "question": "Is the street sloping upwards, downwards, or is it flat from left to right in the panoramic image?",
+      "reasoning_chain": "1. Looking at the sidewalk and building base levels from the left edge (near the red van) across to the right, notice the alignment of the sidewalks and the base of the houses.  \n2. The sidewalk on the right side appears to be slightly higher relative to the road, and the slope of the street, as seen by the curb and the elevation of the front yards, suggests a gradual incline from left to right.  \n3. The cars parked on the right also seem to be at a slightly higher elevation than those on the left.",
+      "final_answer": "The street is sloping upwards from left to right."
+    }
+  ]
+}

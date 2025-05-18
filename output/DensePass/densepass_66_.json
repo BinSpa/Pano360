@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "66_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the red and yellow modern building on the left side or the right side of the panoramic image?",
+      "reasoning_chain": "The panoramic image covers a wide urban scene with a road running through the middle. The modern building with distinctive red and yellow coloring and many windows is prominent on one side of the image. On the opposite side, there is a more open space with trees, an old wall, and less dense urban development. Since the modern building appears on the far left portion of the panorama, while the open area with the wall and trees is on the right, the spatial relationship indicates the modern building is positioned on the left side.",
+      "final_answer": "The red and yellow modern building is on the left side of the panoramic image."
+    },
+    {
+      "question": "Are the majority of cars in the scene located closer to the modern building or the walled park area?",
+      "reasoning_chain": "In the image, most of the visible cars are parked or moving along the road adjacent to the modern building on the left side. On the right side, near the walled area and trees, there are very few cars visible, mainly just a few in the distance or behind the wall. The concentration of cars is noticeably higher on the side where the modern building is present.",
+      "final_answer": "The majority of cars are located closer to the modern building."
+    },
+    {
+      "question": "Is the sidewalk wider on the side with the modern building or the side with the wall and trees?",
+      "reasoning_chain": "Examining the sidewalks, the side with the modern building (left) has a relatively narrow sidewalk lined with trees and street lamps, closely bordered by the building. The side with the wall and trees (right) has a visibly wider sidewalk, with more open space, trees, and bicycle stands, and there is more distance between the street and the wall.",
+      "final_answer": "The sidewalk is wider on the side with the wall and trees."
+    },
+    {
+      "question": "Are there more trees on the left side or right side of the image?",
+      "reasoning_chain": "On the left, near the modern building, there are a few trees spaced along the sidewalk. On the right side, there is a large number of trees both along the sidewalk and inside the walled park area, creating a much greener and more forested appearance.",
+      "final_answer": "There are more trees on the right side of the image."
+    }
+  ]
+}

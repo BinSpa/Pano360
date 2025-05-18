@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "112_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the white car closer to the left or right edge of the panoramic image?",
+      "reasoning_chain": "The white car is clearly visible in the right half of the panoramic image. By analyzing its position relative to the overall width of the image (2048 pixels), the car is situated near the center-right portion, next to the green fence and large tree. There is more visible space between the car and the right edge of the image than between the car and the left edge, but the car is still substantially closer to the right edge than to the left.",
+      "final_answer": "The white car is closer to the right edge of the panoramic image."
+    },
+    {
+      "question": "Are the two main buildings (on the left and right) parallel or perpendicular to each other according to the spatial layout?",
+      "reasoning_chain": "The two main brick buildings are separated by a central open space with a road and greenery. Their facades are facing each other and are aligned along the same axis, suggesting that they are parallel rather than perpendicular. The roads running in front of and between the buildings further reinforce the parallel orientation.",
+      "final_answer": "The two main buildings are parallel to each other."
+    },
+    {
+      "question": "Is there a road intersection visible in this panoramic image? If so, where is it located?",
+      "reasoning_chain": "By examining the layout, there are roads running in front of both buildings and another that seems to cross from the bottom-right to the top-left. Where these roads meet, especially in the central part of the image (slightly right of center), there is a clear intersection, evidenced by the angles and layout of the cars and pathways.",
+      "final_answer": "Yes, there is a road intersection visible slightly right of the center of the image."
+    },
+    {
+      "question": "Which direction (left, center, or right) has the densest tree coverage in the image?",
+      "reasoning_chain": "The left side of the image shows several tall trees and substantial greenery, especially around the red fence and banana plant. The center also contains trees, but more space is taken up by buildings and open road. The right side has some trees but less dense coverage compared to the left.",
+      "final_answer": "The left side of the image has the densest tree coverage."
+    },
+    {
+      "question": "Are the parked cars mostly grouped together or spread out in the image?",
+      "reasoning_chain": "Most of the parked cars, including the white one and several others, are located in the center-right section of the image, close to each other and adjacent to the buildings. There are no other visible parking clusters in the left or far-right portions.",
+      "final_answer": "The parked cars are mostly grouped together in the center-right section of the image."
+    }
+  ]
+}

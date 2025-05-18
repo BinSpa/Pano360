@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "201_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which direction would you walk to go from the black car parked near the center of the image to the blue building visible on the right side of the panorama?",
+      "reasoning_chain": "1. Identify the black car, which is parked in the center foreground of the image, close to a street intersection.\n2. Locate the blue building, which is positioned toward the right side of the panorama.\n3. Note that the panoramic image provides a continuous 360-degree view, so spatial relationships are preserved left-to-right.\n4. The black car is near the intersection, and the blue building appears to be across the intersection and to the right.\n5. From the position of the black car, one would need to walk towards the intersection and then turn right to reach the blue building.",
+      "final_answer": "Walk forward to the intersection from the black car and then turn right to go towards the blue building."
+    },
+    {
+      "question": "Is the street sign more centrally located, closer to the left side, or closer to the right side of the panoramic image?",
+      "reasoning_chain": "1. Find the street sign in the image, which is mounted on a pole above the intersection.\n2. Assess its horizontal position within the panoramic image.\n3. The street sign appears to be just right of the center of the entire panorama, situated slightly to the right of the black car and intersection.\n4. Compare the space to the left and right of the sign to determine its relative location.",
+      "final_answer": "The street sign is slightly right of the center but mostly centrally located in the image."
+    },
+    {
+      "question": "Which car is closest to the large tree in the right section of the image?",
+      "reasoning_chain": "1. Locate the large tree in the right section of the panorama, which is near the edge of the image.\n2. Identify the cars parked near this tree.\n3. There is a silver car and a small trailer directly beneath or next to the tree.\n4. Compare their proximity to the tree relative to other cars in the area.",
+      "final_answer": "The silver car with the small trailer next to it is closest to the large tree in the right section of the image."
+    },
+    {
+      "question": "If you start at the building with blue window shutters on the far left and want to reach the intersection at the center, which path would you take?",
+      "reasoning_chain": "1. The building with blue window shutters is positioned on the far left of the panorama.\n2. The intersection is centrally located in the image, marked by the street sign and black car.\n3. There is a sidewalk running from the left foreground toward the central intersection, passing by the bushes and trees.\n4. Following this sidewalk will lead directly from the leftmost edge of the panorama to the center where the intersection is.",
+      "final_answer": "Follow the sidewalk from the left side straight to the center intersection."
+    },
+    {
+      "question": "Are there more parked cars visible on the left side or the right side of the panorama?",
+      "reasoning_chain": "1. Count the visible parked cars on the left side of the image (from the far left to the center).\n2. Count the visible parked cars on the right side of the image (from the center to the far right).\n3. On the left, there are a black car and a red car near the center.\n4. On the right, there are at least four cars visible in a row, plus the silver car with the trailer.\n5. Compare the totals.",
+      "final_answer": "There are more parked cars visible on the right side of the panorama."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "126_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which car is closer to the camera, the white SUV or the black sedan, and what is their spatial relationship?",
+      "reasoning_chain": "By examining the panoramic image, the white SUV is positioned prominently in the foreground on the right side, partially outside the parking spot and closer to the curb. The black sedan is behind the white SUV, further back along the same side of the road and partially blocked by the SUV. The spatial relationship indicates that the white SUV is nearer to the camera, and the black sedan is directly behind it.",
+      "final_answer": "The white SUV is closer to the camera, and the black sedan is behind the white SUV."
+    },
+    {
+      "question": "Where are the industrial buildings located in relation to the main road, and how is their presence indicated?",
+      "reasoning_chain": "In the panoramic image, the main road runs along the bottom edge, with vehicles parked adjacent to it. The industrial buildings are set behind a metal fence, occupying the central and right background areas of the image, behind the line of small trees and the parking cars. Their presence is indicated by the large warehouse-style structures, smokestacks, and signage in Chinese characters visible above and behind the fence.",
+      "final_answer": "The industrial buildings are located behind the metal fence and line of trees, on the far side of the main road."
+    },
+    {
+      "question": "How does the arrangement of trees influence the visibility of the fenced area throughout the panorama?",
+      "reasoning_chain": "The panoramic image shows a consistent line of small, leafless trees along the fence, running parallel to both the fence and the road. These trees are evenly spaced and partially obscure the view of the fenced area behind them. However, gaps between the branches and trunks allow for partial visibility of the buildings, vehicles, and other objects inside the fenced compound.",
+      "final_answer": "The arrangement of trees creates partial visual barriers but allows intermittent visibility of the fenced area behind them."
+    },
+    {
+      "question": "What is the spatial orientation of the two roads seen in this panoramic image?",
+      "reasoning_chain": "The image shows two roads forming a \u201cT\u201d intersection. The main road runs horizontally along the bottom and both sides of the image, while a perpendicular road forms the top of the \u201cT,\u201d heading into the fenced area where cars are parked and industrial buildings are situated. The intersection is marked by curbs and a speed bump visible in the center of the image.",
+      "final_answer": "The image depicts a \u201cT\u201d intersection, with the main road running horizontally and a perpendicular road leading into the fenced area."
+    }
+  ]
+}

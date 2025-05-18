@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "390_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which building is closer to the camera, the curved white building on the left or the brown building in the center-right?",
+      "reasoning_chain": "1. The panoramic image shows multiple buildings.  \n2. The curved white building is located on the far left and right edges due to the panoramic stitching, suggesting it is very close to the camera as panoramas wrap the closest objects around the edges.  \n3. The brown building in the center-right appears further along the street, with more road visible between it and the camera.  \n4. Foreground elements (such as flags, signs, and the entrance) further indicate proximity; these details are much clearer and larger for the curved white building.  \n5. The brown building, by contrast, is behind a parking area and appears more distant.",
+      "final_answer": "The curved white building on the left is closer to the camera than the brown building in the center-right."
+    },
+    {
+      "question": "Is the intersection pictured in the center of the panorama a T-junction or a four-way crossroads?",
+      "reasoning_chain": "1. The central area of the image shows two streets: one running horizontally (left to right) and one running vertically (towards and away from the camera).\n2. The horizontal road continues both left and right, while the vertical road leads towards the viewer and also continues away from the camera.\n3. No road branches directly off from the central intersection in the up/down direction relative to the viewer.\n4. The shape formed is that of a \u201cT\u201d, not a \"+\".\n5. Therefore, the intersection configuration is a T-junction.",
+      "final_answer": "The intersection is a T-junction."
+    },
+    {
+      "question": "Where is the main entrance of the hotel relative to the intersection?",
+      "reasoning_chain": "1. The hotel entrance is visible on the left side of the image, marked by several blue flags and an entrance with steps.\n2. The intersection is in the center of the panorama.\n3. The entrance is on the near side of the intersection, on the left side when looking towards the curved white building.\n4. Therefore, the hotel entrance is on the corner facing the intersection, slightly to the left from the central viewpoint.",
+      "final_answer": "The main entrance of the hotel is on the near left corner, facing the intersection."
+    },
+    {
+      "question": "Is there any pedestrian crossing visible near the center of the intersection?",
+      "reasoning_chain": "1. Examine the road surfaces around the central intersection for the presence of zebra stripes or other pedestrian markings.\n2. There are no visible white stripes or indication of a painted pedestrian crossing on the road in the central intersection area.\n3. This suggests either there is no pedestrian crossing, or it is not visible in this image due to angle or snow coverage.",
+      "final_answer": "No, there is no pedestrian crossing clearly visible near the center of the intersection."
+    }
+  ]
+}

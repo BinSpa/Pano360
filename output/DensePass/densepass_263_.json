@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "263_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "If a person is standing at the \"P\" parking sign on the left side of the image and wants to go to the entrance of the tall building on the far right, what is the shortest visible route they should take?",
+      "reasoning_chain": "1. The \"P\" parking sign is located near the center-left portion of the image, adjacent to an open lot and near the edge of the main road.\n2. The entrance of the tall building is at the far right end of the panorama, facing the main road.\n3. To take the shortest visible route, the person should move rightward along the sidewalk on the near side of the street, staying close to the fence and street lamps.\n4. This avoids crossing the road, which is wide and has ongoing traffic based on visible vehicles.\n5. The sidewalk continues directly towards the entrance of the tall building, with no visible obstructions along the way.",
+      "final_answer": "Walk along the sidewalk on the same side of the street as the \"P\" parking sign, heading right (east) directly to the entrance of the tall building."
+    },
+    {
+      "question": "Is the bus closer to the white SUV or the round, brown building in the middle of the image?",
+      "reasoning_chain": "1. The bus is located on the left side of the image, in the leftmost lane near the crosswalk.\n2. The white SUV is further to the right of the bus but still on the left half of the panorama, stopped or moving slowly.\n3. The round, brown building is situated centrally in the image, further right than both the bus and the white SUV.\n4. The perspective shows the bus and the white SUV are both on the street, but the SUV is physically closer to the round, brown building than the bus is.\n5. Therefore, the bus is closer to the white SUV because they are both in the same lane, whereas the round building is further to the right.",
+      "final_answer": "The bus is closer to the white SUV."
+    },
+    {
+      "question": "Is it possible to make a left turn at the intersection shown in the middle of the image?",
+      "reasoning_chain": "1. The middle of the image shows a main intersection with visible traffic signs and turn markings.\n2. The road markings in the right lane indicate a right turn only.\n3. There are no visible road markings or dedicated lanes indicating a left turn from the main road at the intersection.\n4. A \"No Left Turn\" sign is visible on the right side of the intersection, reinforcing the restriction.",
+      "final_answer": "No, it is not possible to make a left turn at the intersection; only right turns are permitted."
+    },
+    {
+      "question": "Which side of the street has more trees visible, the left side or the right side of the panorama?",
+      "reasoning_chain": "1. On the left side of the panorama, there are a few trees visible in the open areas and near the sidewalks close to the buildings.\n2. On the right side of the panorama (closer to the camera viewpoint), there are trees lining the sidewalk along the fence, as well as some near the entrance of the tall building.\n3. Counting the number of visible tree canopies, the right side of the panorama has more trees along the sidewalk and the wall.",
+      "final_answer": "The right side of the street has more trees visible."
+    }
+  ]
+}

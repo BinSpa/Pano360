@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "286_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Which building is directly opposite the restaurant with outdoor seating in this panoramic image?",
+      "reasoning_chain": "1. The restaurant with outdoor seating is located towards the center-left of the image.  \n2. The cars parked in front of the restaurant face towards the large building on the opposite side of the street.  \n3. The large building directly across the street has a red-brick lower half and a beige upper half with a blue entrance gate.  \n4. This position and appearance indicate it is directly opposite the restaurant.",
+      "final_answer": "The large red-brick and beige industrial building with a blue entrance gate is directly opposite the restaurant with outdoor seating."
+    },
+    {
+      "question": "Where is the parking lot with the highest number of visible cars located in the image?",
+      "reasoning_chain": "1. Scan the panorama for clusters of parked cars.\n2. The street along the restaurant and the industrial building has a line of parked cars, but they are all parallel to the street and relatively few.\n3. On the far left, in front of a white building (with arches on the ground level), there is a parking area with multiple cars, including a yellow and green car, suggesting a higher density.\n4. Other parts of the image show scattered or single parked cars.",
+      "final_answer": "The parking lot with the highest number of visible cars is in front of the white building with arches on the far left of the image."
+    },
+    {
+      "question": "If a person is standing at the restaurant entrance and wants to walk to the blue-gated industrial building, which direction should they go?",
+      "reasoning_chain": "1. Identify the entrance of the restaurant with the outdoor seating area.\n2. Locate the blue-gated industrial building, which is directly across the street from the restaurant.\n3. The shortest route from the restaurant entrance to the blue gate is to cross the street directly in front of the restaurant.",
+      "final_answer": "The person should walk straight across the street from the restaurant entrance to reach the blue-gated industrial building."
+    },
+    {
+      "question": "How are the two main streets oriented relative to each other in this panoramic image?",
+      "reasoning_chain": "1. The image shows an intersection with two main roads.\n2. The left side depicts a curved street going around the white building.\n3. The center and right sides show a straight street running parallel to the building with the restaurant and the industrial building.\n4. The two streets intersect at approximately a right angle (perpendicular).",
+      "final_answer": "The two main streets are perpendicular to each other, forming a right-angle intersection."
+    }
+  ]
+}

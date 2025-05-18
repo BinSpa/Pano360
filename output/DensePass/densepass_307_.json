@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "307_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Where is the security booth located in relation to the main entrance of the Wing Yip building?",
+      "reasoning_chain": "1. The main entrance of the Wing Yip building is located near the center-left of the panoramic image, under a large yellow and red sign with glass double doors.\n2. The security booth is a small structure with \"SECURITY\" labeled on its side and is located on the right side of the panoramic image.\n3. The layout of the image shows that the driveway loops around, and the security booth is positioned at the driveway entrance, before the covered parking area on the far right.\n4. Therefore, the security booth is situated to the right (when facing the building) and slightly forward compared to the main entrance.",
+      "final_answer": "The security booth is located to the right and slightly forward of the main entrance of the Wing Yip building."
+    },
+    {
+      "question": "Are the two Wing Yip delivery vans parked next to each other or separated?",
+      "reasoning_chain": "1. The left side of the image shows two white vans with \"Wing Yip\" branding.\n2. Both vans are parked with one in the foreground (facing out) and another just to the right (facing left), both occupying adjacent spaces in front of the main entrance area.\n3. There are no visible barriers or significant gaps between them; they are aligned closely side by side within the parking area.",
+      "final_answer": "The two Wing Yip delivery vans are parked next to each other."
+    },
+    {
+      "question": "Is the customer parking area closer to the left or the right side of the panorama?",
+      "reasoning_chain": "1. The panorama displays marked parking spaces with \"Parking\" inscriptions and yellow lines\u2014these are situated to the left and in front of the building entrance.\n2. The right side of the panorama shows a security booth and an entrance to a covered parking area, but no marked customer parking visible in the open.\n3. The signs indicating \"Ground Level Reserved\" and \"Maximum stay 2 hours while shopping\" are above the covered area, suggesting this is also a parking area but not as immediately accessible as the spaces in front.\n4. The most obvious and accessible customer parking by the entrance is on the left side.",
+      "final_answer": "The customer parking area is closer to the left side of the panorama."
+    },
+    {
+      "question": "Which direction does the driveway lead after passing by the security booth?",
+      "reasoning_chain": "1. The security booth is on the rightmost side of the image, next to a driveway marked with yellow lines.\n2. The driveway curves beyond the security booth and leads towards the back of the building, as seen in the center-right of the panorama.\n3. The perspective of the panoramic image suggests that cars passing the security booth would continue straight and then curve left to go behind the main building.",
+      "final_answer": "The driveway leads straight and curves left after passing the security booth, heading behind the building."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "344_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "What types of businesses or public services are located along this street, and how are they spatially distributed from left to right in the panoramic image?",
+      "reasoning_chain": "1. Starting from the far left, we observe a series of parked cars along the street and a red-brick building. \n2. Moving slightly to the right, there is a building with signs indicating a \"Star Beauty Shop\" and a \"Reality Salon Inc.\" on the ground floor, and signs above for other services such as rentals and pharmacy.\n3. Further to the right, a yellow school bus is parked in front of the entrance to the beauty shop.\n4. To the right of the beauty shop, across a side street, there is a red building with signage for \"Alvarez Med Cnla\" and next to it, a business labeled \"Farmacia,\" indicating a medical clinic and a pharmacy.\n5. At the far-right end of the image, there is a large building with a sign reading \"Boston Plaza Senior Center,\" indicating a facility for senior citizens. There are people visible near the entrance.\n6. Trash bags are seen on the sidewalk, suggesting possible public sanitation services.\n7. Residential buildings are visible throughout, especially on the far left and right edges of the image.",
+      "final_answer": "From left to right, the businesses and public services visible along the street include a beauty salon, a pharmacy, a medical clinic, and a senior center, interspersed with residential buildings and parking areas, demonstrating a mixed-use urban environment."
+    }
+  ]
+}

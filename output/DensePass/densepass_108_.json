@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "108_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "What is the spatial relationship between the motorcycle parked at the far left and the shop with paint buckets in the center of the image?",
+      "reasoning_chain": "1. The panoramic image encompasses a busy street scene with several motorcycles and shops.\n2. The far left of the image shows a motorcycle with a license plate, parked near the street's edge.\n3. In the center of the image is a shop with a green mat and colorful paint buckets stacked at the entrance.\n4. To determine spatial relationship, observe the ground lines and perspective: the motorcycle on the far left is on the street, while the shop is on the sidewalk in the image\u2019s central area.\n5. The angle of the panoramic image suggests the motorcycle is positioned to the left of the shop with paint buckets in the viewer\u2019s perspective, and they are separated by a portion of the street.",
+      "final_answer": "The motorcycle at the far left is on the street, to the left of the centrally located shop with paint buckets, with a section of the road separating them."
+    },
+    {
+      "question": "Which is closer to the camera: the motorcycles in the foreground on the right or the cars parked near the building in the background on the left?",
+      "reasoning_chain": "1. The panoramic image shows multiple objects at various depths along the street.\n2. On the right side of the image, several motorcycles are positioned prominently in the foreground, appearing larger and more detailed.\n3. On the left, cars are parked along the building, but they appear smaller and less detailed, indicating distance due to perspective.\n4. Objects appearing larger and with more detail in panoramic images are usually closer to the camera.\n5. Comparing the relative size and clarity, the motorcycles on the right are closer to the camera than the cars on the left.",
+      "final_answer": "The motorcycles in the foreground on the right are closer to the camera than the cars parked near the building in the background on the left."
+    },
+    {
+      "question": "Is the green tree visible in the image positioned closer to the left, center, or right side of the panorama?",
+      "reasoning_chain": "1. Scan the panoramic image for the green tree.\n2. The tree is visible in the background, with its canopy occupying a significant portion of sky area.\n3. By comparing its horizontal position, the tree is closer to the right side than the center or the left.\n4. Reference points such as the shops and motorcycles show the tree is not aligned with the image\u2019s central shop or the far-left buildings.",
+      "final_answer": "The green tree is positioned closer to the right side of the panoramic image."
+    },
+    {
+      "question": "Where are the buckets of paint located relative to the green mat in the image?",
+      "reasoning_chain": "1. In the center of the image, there is a green mat in front of a shop.\n2. Multiple buckets of paint are visible; they are stacked at the entrance of the shop.\n3. The buckets are positioned directly on and adjacent to the green mat, extending from the store entrance towards the street.\n4. The green mat acts as the base or foundation for the buckets\u2019 placement.",
+      "final_answer": "The buckets of paint are located on and adjacent to the green mat in front of the shop entrance."
+    }
+  ]
+}

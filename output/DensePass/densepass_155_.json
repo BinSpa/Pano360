@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "155_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "Is the entrance to Shaw Studios located to the left, right, or center of the panoramic image?",
+      "reasoning_chain": "1. The panoramic image has a width of 2048 pixels and a height of 400 pixels.\n2. The Shaw Studios building and its entrance are clearly visible with prominent signage on the left side of the image.\n3. In the center of the image, there is an intersection with traffic lights, and on the right, there is a hillside and parked vehicles.\n4. The entrance to Shaw Studios, indicated by the signage and pathway, is positioned on the leftmost section of the panorama.",
+      "final_answer": "The entrance to Shaw Studios is located to the left of the panoramic image."
+    },
+    {
+      "question": "How many separate roadways can be observed in the image, and what are their spatial relationships?",
+      "reasoning_chain": "1. The panoramic image provides a 360-degree view, showing multiple roads intersecting.\n2. On the left side, there is a road running parallel to Shaw Studios.\n3. In the center, there is a major intersection connecting several lanes going in different directions.\n4. On the right, there is another road progressing uphill with a truck parked along it.\n5. All visible roads connect or intersect at the central intersection.",
+      "final_answer": "Three separate roadways can be observed, converging at the central intersection in the image."
+    },
+    {
+      "question": "Where is the bus located in relation to the intersection and Shaw Studios?",
+      "reasoning_chain": "1. The intersection is located near the center of the image.\n2. The bus is seen crossing the intersection, positioned slightly to the right of center.\n3. Shaw Studios is visible on the left side of the image, and the bus is to its right, moving perpendicular to the building\u2019s main facade.",
+      "final_answer": "The bus is to the right of Shaw Studios, crossing the intersection near the center of the image."
+    },
+    {
+      "question": "Is there a clear pedestrian path leading from Shaw Studios towards the intersection?",
+      "reasoning_chain": "1. Examination of the area in front of Shaw Studios shows a continuous sidewalk bordered by cones.\n2. This sidewalk leads directly towards the intersection, which is equipped with crosswalk lines and pedestrian signals.\n3. The sidewalk and crosswalks form an uninterrupted path for pedestrians.",
+      "final_answer": "Yes, there is a clear pedestrian path leading from Shaw Studios towards the intersection."
+    },
+    {
+      "question": "Are there any vehicles waiting at a red light, and if so, where are they located pixel-wise in the image?",
+      "reasoning_chain": "1. The traffic lights in the center-right area of the image are red, indicating stopped traffic.\n2. There are two vehicles\u2014one truck and one red car\u2014waiting before the crosswalk at this intersection.\n3. These vehicles are located roughly between pixel positions 1100 and 1300 horizontally in the panoramic image.",
+      "final_answer": "Yes, there are vehicles waiting at a red light, located near the center-right (approximately pixels 1100 to 1300) of the image."
+    }
+  ]
+}

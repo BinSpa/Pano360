@@ -1,0 +1,28 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "1_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "If a person starts walking from the leftmost edge of the image and wants to reach the building with the black-and-white abstract pattern, what route should they take?",
+      "reasoning_chain": "1. The leftmost edge of the panoramic image shows a sidewalk and a road next to a brown brick building.\n2. Moving rightward, the road curves and leads past several buildings, including a red-bricked building, and continues around a bend.\n3. The building with the black-and-white abstract pattern is located at the far right side of the image.\n4. To reach this building, the person would need to follow the road adjacent to the leftmost building, continue straight, and then proceed rightward around the bend.\n5. Upon reaching the area with the crosswalk in front of the industrial-looking building, the person should continue along the road until they arrive at the patterned building on the right.",
+      "final_answer": "Follow the road from the leftmost edge, continue straight past the red-bricked buildings, and proceed rightward around the bend until reaching the building with the black-and-white pattern at the far right side of the image."
+    },
+    {
+      "question": "Is the parking lot closer to the left or right side of the panoramic image?",
+      "reasoning_chain": "1. Observing the left side of the image, there are visible parked cars behind a fence next to the brown brick building.\n2. The right side of the image shows mostly buildings and a street, but no visible parking lot.\n3. The parking lot is clearly demarcated in the left portion of the image, near signage and the entry gate.",
+      "final_answer": "The parking lot is closer to the left side of the panoramic image."
+    },
+    {
+      "question": "Which direction should a vehicle travel if it wants to enter the road leading uphill, located in the middle of the image?",
+      "reasoning_chain": "1. In the center of the image, a road is visible that rises uphill, flanked by buildings on both sides.\n2. Arrows painted on the road at the intersection indicate the allowed direction of traffic.\n3. To enter the uphill road, a vehicle should follow the arrows and turn left from the main intersection visible at the center, moving from the bottom of the image upwards.",
+      "final_answer": "A vehicle should turn left at the intersection in the middle of the image to enter the uphill road."
+    },
+    {
+      "question": "Are there more trees visible on the left side or the right side of the image?",
+      "reasoning_chain": "1. On the left side of the image, there are several medium-sized trees visible near the brown brick building and along the sidewalk.\n2. The right side of the image includes a few trees near the building with the black-and-white pattern and along the road.\n3. Counting the visible trees, the left side contains a higher number and density of trees compared to the right side.",
+      "final_answer": "There are more trees visible on the left side of the image."
+    }
+  ]
+}

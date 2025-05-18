@@ -1,0 +1,33 @@
+{
+  "dataset": "densepass",
+  "task": "basic",
+  "image_id": "44_",
+  "prompt": "\n    You are now a visual language model adept at generating inferential data, especially with panoramic images. \n    Please generate serverl visual reasoning chain data according to the input panoramic image with size (w, h) = (2048, 400), \n    which requires the spatial position relationship to be reflected, and there are detailed reasoning steps.\n    The data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n\n    ---\n\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\n    ",
+  "reasoning": [
+    {
+      "question": "How many moving trucks are visible in the panoramic image, and where are they positioned relative to the center of the image?",
+      "reasoning_chain": "1. Start by scanning the image from left to right, noting the presence of vehicles that clearly have moving company branding.  \n2. Identify the \"Wheaton\" moving truck with \"Olympia\" branding visible; this truck is on the right half of the panorama.  \n3. Notice a \"U-Haul\" truck also, which is further to the right of the Wheaton truck.  \n4. Both trucks are located on the right side of the image, past the midpoint (center position at x=1024).  \n5. No moving trucks are visible on the left side of the center. All other vehicles are regular cars.",
+      "final_answer": "There are two moving trucks visible in the image, both positioned to the right of the center."
+    },
+    {
+      "question": "What business establishments can be identified in the image, and how are they spatially arranged?",
+      "reasoning_chain": "1. Look for signs or entrances with business names.  \n2. On the left side, near the center (around x=950), notice the \"NEWPORT BUILDING\" sign above a door.  \n3. On the right side, past the moving trucks, see the entrance to \"SEBASTIANS\" with a purple awning.  \n4. \"NEWPORT BUILDING\" is on the left side of the panorama, close to the center.  \n5. \"SEBASTIANS\" is on the right side, partially obscured by the U-Haul truck.",
+      "final_answer": "\"NEWPORT BUILDING\" is near the center-left, and \"SEBASTIANS\" is on the right side, past the moving trucks."
+    },
+    {
+      "question": "Is there a pedestrian visible in the image, and where is this person located relative to the buildings and vehicles?",
+      "reasoning_chain": "1. Scan the sidewalk areas for people.  \n2. A pedestrian is visible near the center of the image, just to the right of the lamppost in front of the \"NEWPORT BUILDING\" entrance.  \n3. This person is standing on the sidewalk next to a white car.  \n4. The pedestrian is to the right of the white car in the left-center section, and to the left of the lamppost.",
+      "final_answer": "Yes, there is a pedestrian visible near the center of the image, in front of the \"NEWPORT BUILDING\" entrance, standing on the sidewalk next to a white car."
+    },
+    {
+      "question": "What is the spatial relationship between the Wheaton moving truck and the U-Haul truck?",
+      "reasoning_chain": "1. Identify the Wheaton moving truck, which is parked along the street, occupying a significant part of the right-center of the image.\n2. The U-Haul truck is further right, closer to the curb, partially obscuring the entrance to \"SEBASTIANS.\"\n3. The Wheaton truck is positioned to the left of the U-Haul truck in the panorama.\n4. Both trucks are on the same side of the street, with the Wheaton truck preceding the U-Haul truck as you move from left to right.",
+      "final_answer": "The Wheaton moving truck is to the left of the U-Haul truck, with both parked on the same side of the street in the right half of the image."
+    },
+    {
+      "question": "How does the curvature of the building facade affect the apparent perspective of the street in the panoramic image?",
+      "reasoning_chain": "1. Observe the building facade's curve, particularly prominent on the left side of the image.\n2. The curvature creates a sense of depth, making the street appear to bend around the building.\n3. The curved perspective causes vehicles and pedestrians on the left to appear at an angle compared to the more frontal view on the right.\n4. This effect is a result of the panoramic stitching, exaggerating the building's curve and widening the street view.",
+      "final_answer": "The building's curved facade creates a panoramic effect, making the street appear to bend and enhancing the sense of depth on the left side of the image."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "dataset": "area3",
+  "image_id": "camera_ede7064adbbe490284373cf8c0cf8bae_lounge_2_frame_equirectangular_domain_rgb",
+  "prompt": "You are a language model tasked with generating spatial reasoning questions based on a panoramic scene with (h, w)=(2048, 4096).\n\nYour task is to generate complex spatial reasoning tasks using given object information, such as:\n- An object that satisfies multiple spatial constraints at once.\n- An object positioned between two others.\n- Comparison tasks involving sorting or ranking (by distance, height, etc.)\n- An object spatial position related to other objects.\nThe data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\nUse natural and diverse language. Do not include coordinate values or measurements in your output.",
+  "reasoning": [
+    {
+      "question": "In the scene, the cluster of miscellaneous items or papers near the stairwell railing on the left is visible. Is this cluster positioned closer to the stairwell entrance or to the main hallway entrance, and what clues from the scene help you determine its relative location?",
+      "reasoning_chain": "The cluster of miscellaneous items or papers is specifically noted as being near the stairwell railing on the left side. The stairwell entrance is also on the left side of the panoramic image, whereas the main hallway entrance is located centrally, farther away from the stairwell railings. Since the described object is adjacent to the stairwell railing and not in the central portion leading towards the main hallway, it is spatially closer to the stairwell entrance.",
+      "final_answer": "The cluster of miscellaneous items or papers is positioned closer to the stairwell entrance, as evidenced by its proximity to the stairwell railing on the left side of the scene."
+    },
+    {
+      "question": "Consider the single hallway door located to the left of the main stairwell. If you were standing in front of this door facing the stairwell, would the cluster of miscellaneous items or papers near the stairwell railing be to your left, right, or directly ahead? Explain your reasoning based on their relative positions.",
+      "reasoning_chain": "The single hallway door is described as being to the left of the main stairwell, and the cluster of miscellaneous items or papers is also near the stairwell railing on the left side of the scene. If you were standing in front of the door facing the stairwell, you would be oriented toward the center of the room, with the stairwell ahead. Because the cluster of miscellaneous items or papers is located near the same left stairwell railing, it would be to your right as you face the stairwell from in front of the door.",
+      "final_answer": "The cluster of miscellaneous items or papers would be to your right if you were standing in front of the single hallway door facing the stairwell."
+    },
+    {
+      "question": "Imagine you are walking from the main stairwell toward the hallway entrance where the single cushioned chair is located. Would you pass by the single hallway door before reaching the chair, or would you encounter the chair first? Justify your answer using the objects\u2019 described locations.",
+      "reasoning_chain": "The single cushioned chair is described as being near the entrance to another room, set apart from the main stairwell and in the open hallway area. The single hallway door is situated to the left of the main stairwell, serving as an access point to another room or corridor. Since hallway doors typically provide entry before reaching open seating areas, and the chair is placed near but past the entrance, you would likely encounter the hallway door before reaching the chair as you move away from the main stairwell.",
+      "final_answer": "You would pass by the single hallway door before reaching the single cushioned chair."
+    },
+    {
+      "question": "If you are standing at the bottom of the main stairwell facing forward, which object do you encounter first: the wide double door situated centrally in the hallway or the single cushioned chair positioned near the entrance to another room? Explain your reasoning based on the spatial arrangement described.",
+      "reasoning_chain": "The wide double door is described as being centrally located directly ahead of the stairwell, serving as the primary entrance to another section of the building. The single cushioned chair is noted as being near the entrance to another room and set apart from the main stairwell, likely off to the side in the open hallway area. Since the wide double door is positioned straight ahead and centrally aligned with the stairwell, it would be directly in your path as you move forward from the bottom of the stairs, while the chair would be farther to the side and encountered only if you deviated from this direct path.",
+      "final_answer": "You would encounter the wide double door first if you walk straight forward from the bottom of the main stairwell."
+    }
+  ]
+}
