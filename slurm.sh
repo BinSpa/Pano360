@@ -8,7 +8,8 @@
 #SBATCH --time=24:00:00               # 最长运行时间（24小时）
 #SBATCH --output=slurm-%j.out         # 输出文件（%j为作业ID）
 
-salloc --partition i64m512u --ntasks=1 --cpus-per-task=16 --mem=64G --time=7-00:00:00 --pty bash
+salloc --partition i64m512u --ntasks=1 --cpus-per-task=16 --mem=64G --time=7-00:00:00 
+--pty bash
 --partition i64m512u 
 --partition=i64m1tga800u 
 --gres=gpu:1
@@ -17,7 +18,7 @@ salloc --partition i64m512u --ntasks=1 --cpus-per-task=16 --mem=64G --time=7-00:
 scontrol show job $SLURM_JOB_ID
 # 进入一个作业
 squeue -u $USER
-srun --jobid=7397983 --pty bash
+srun --jobid=7402340 --pty bash
 # job
 dg_cpu: 7397983
 # 查看可申请资源

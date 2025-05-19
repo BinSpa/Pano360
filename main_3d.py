@@ -11,7 +11,8 @@ import psutil
 
 # GPT-4o 模型配置
 MODEL_NAME = "gpt-4.1"
-client = OpenAI(api_key=None)
+api_key = os.getenv("OPENAI_API_KEY")  # 从环境变量中读取
+client = OpenAI(api_key=api_key)
 
 def run_pipeline(dataset):
     # create dataset saved dir

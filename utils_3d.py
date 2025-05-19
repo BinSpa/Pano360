@@ -13,8 +13,16 @@ from mpl_toolkits.mplot3d import Axes3D
 from scipy import ndimage
 import random
 import base64
+from io import BytesIO
 from scipy.ndimage import center_of_mass
 import psutil
+
+# 定义 4 种颜色（RGB）
+colors = [(255, 0, 0),    # red
+            (0, 255, 0),    # green
+            (0, 0, 255),    # blue
+            (255, 255, 0)]  # yellow
+colors_name = ['red', 'green', 'blue', 'yellow']
 
 def process_area3(image_path, annot_path, xyz_path, semantic_labels, model_name, client, output_path):
     image = Image.open(image_path)
@@ -25,12 +33,6 @@ def process_area3(image_path, annot_path, xyz_path, semantic_labels, model_name,
     semantic_nums = len(semantic_labels)
     # print_mem()
     # map (r,g,b) form annot_image to instance_index
-    '''
-    instance_index = np.zeros([h, w])
-    for i in range(h):
-        for j in range(w):
-            instance_index[i, j] = get_index(annot_image[i, j])
-    '''
     instance_index = rgb_to_instance_index(annot_image)
     instance_ids = np.unique(instance_index)
     instance_ids = instance_ids[instance_ids < semantic_nums]
@@ -70,8 +72,13 @@ def compute_center_3d(points):
     return np.mean(points, axis=0)
 
 def multiturn_conversation(image_path, model_name, client, turn, basic_prompt, instance_info):
+    # inference with point
+    selected_instance = select_instance_groups_area3(instance_info, k=turn)
+    points = [(center_of_mass(instance["2d_mask"])) for instance in selected_instance]
+    image = mark_points_on_image(image_path, points, colors)
     # basic message
-    base64_image = encode_image_to_base64(image_path)
+    # base64_image = encode_image_to_base64(image_path)
+    base64_image = encode_np_image_to_base64(image, image_format='.png')
     messages = []
     messages.append({
         "role": "user", "content": [
@@ -80,13 +87,13 @@ def multiturn_conversation(image_path, model_name, client, turn, basic_prompt, i
     ]})
     reasoning_data = []
     # multi-turn conversation
-    for _ in range(turn):
+    for i in range(turn):
         # current object information to generate data
         cur_content = []
         # split the generation process to two part: position location + spatial reasoning
-        cur_content.append("The object information is shown below.")
+        cur_content.append(f"The object information is shown below. The key point of the object have been marked in the image with dots of {colors_name[i]} color.")
         # select objects for current turn conversation
-        selected_instance = select_instance_groups_area3(instance_info, k=1)
+        # selected_instance = select_instance_groups_area3(instance_info, k=1)
         for idx, cur_instance in enumerate(selected_instance):
             label = cur_instance["class_name"]
             center_3d = cur_instance["center"]
@@ -157,6 +164,26 @@ def build_prompt_from_instances(h, w):
     lines.append("Use natural and diverse language. Do not include coordinate values or measurements in your output.")
 
     return "\n".join(lines)
+
+def mark_points_on_image(image_path: str, points: list, colors: list, radius: int = 3) -> np.ndarray:
+    """
+    mark key points on image.
+
+    Args:
+        image_path: string
+        points (tuple): (y, x)
+        colors: colors used in different points
+        radius (int): radius
+
+    Returns:
+        np.ndarray: image with key points
+    """
+    image = np.array(Image.open(image_path))
+    for i, point in enumerate(points):
+        y, x = point
+        cv2.circle(image, (int(x), int(y)), radius, colors[i], thickness=-1)
+
+    return image
 
 def select_instance_groups_area3(instance_info, k=15, min_points=100):
     """
@@ -243,6 +270,20 @@ def plot_xyz_pointcloud(xyz_map, step=10):
 def encode_image_to_base64(image_path):
     with open(image_path, "rb") as f:
         return base64.b64encode(f.read()).decode("utf-8")
+
+def encode_pil_image_to_base64(pil_image, image_format="PNG"):
+    buffer = BytesIO()
+    pil_image.save(buffer, format=image_format)
+    return base64.b64encode(buffer.getvalue()).decode("utf-8")
+
+def encode_np_image_to_base64(np_image, image_format=".jpg"):
+    # 将 numpy 图像编码为内存中的图像二进制
+    success, encoded_image = cv2.imencode(image_format, np_image)
+    if not success:
+        raise ValueError("Image encoding failed")
+    
+    # 转为 base64 字符串
+    return base64.b64encode(encoded_image.tobytes()).decode("utf-8")
     
 def print_mem():
     pid = os.getpid()

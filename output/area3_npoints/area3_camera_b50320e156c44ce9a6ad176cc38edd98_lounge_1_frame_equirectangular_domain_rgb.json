@@ -1,0 +1,27 @@
+{
+  "dataset": "area3",
+  "image_id": "camera_b50320e156c44ce9a6ad176cc38edd98_lounge_1_frame_equirectangular_domain_rgb",
+  "prompt": "You are a language model tasked with generating spatial reasoning questions based on a panoramic scene with (h, w)=(2048, 4096).\n\nYour task is to generate complex spatial reasoning tasks using given object information, such as:\n- An object that satisfies multiple spatial constraints at once.\n- An object positioned between two others.\n- Comparison tasks involving sorting or ranking (by distance, height, etc.)\n- An object spatial position related to other objects.\nThe data format I need is a question, a chain of reasoning and the final answer. The format is shown below:\n    Question:\n    xxx\n    Reasoning Chain:\n    xxx\n    Final Answer:\n    xxx\nUse natural and diverse language. Do not include coordinate values or measurements in your output.",
+  "reasoning": [
+    {
+      "question": "Consider the small trash bin or wastebasket positioned near the hallway. Which seating area is closer to the trash bin: the set of cushioned stools and round table along the blue wall, or the pair of armchairs near the television screen?",
+      "reasoning_chain": "The small trash bin or wastebasket is located near the hallway entrance, which is closer to the central area where the cushioned stools and round table are arranged along the blue wall. The pair of armchairs near the television screen is situated farther away, at the back right corner of the lounge area. Therefore, the cushioned stools and round table are nearer to the trash bin than the armchairs by the television.",
+      "final_answer": "The cushioned stools and round table along the blue wall are closer to the trash bin."
+    },
+    {
+      "question": "Imagine standing next to the small, circular wooden table positioned in the lounge area. If you wanted to reach the small trash bin or wastebasket located near the hallway, would you need to pass by the cushioned stools and round table along the blue wall, or could you walk directly toward the hallway without encountering any other major furniture?",
+      "reasoning_chain": "The small, circular wooden table is located in the seating area, somewhat away from the hallway entrance where the trash bin is situated. Between the wooden table and the hallway, the cushioned stools and round table are positioned along the blue wall, creating a partial barrier. To reach the trash bin from the wooden table, you would most likely pass by or navigate around the cushioned stools and round table along the blue wall before reaching the hallway.",
+      "final_answer": "You would need to pass by the cushioned stools and round table along the blue wall to reach the trash bin from the small, circular wooden table."
+    },
+    {
+      "question": "If someone is sitting near the compact wastebasket placed by the hallway entrance, which object would be farther away from them: the small, circular wooden table in the lounge area or the pair of armchairs near the television screen?",
+      "reasoning_chain": "The compact wastebasket is positioned close to the hallway entrance, making it nearer to the corridor than to the central lounge area. The small, circular wooden table is placed in the middle of the lounge, which is closer to the hallway entrance than the pair of armchairs, as the armchairs are set further back near the television screen at the opposite end of the room. Therefore, the pair of armchairs near the television screen are farther from the wastebasket compared to the small, circular wooden table.",
+      "final_answer": "The pair of armchairs near the television screen would be farther away from the compact wastebasket."
+    },
+    {
+      "question": "If you are carrying a piece of trash while seated on the curved sofa near the corner, would it be quicker to walk directly to the modest-sized trash can by the hallway entrance or to the small, circular wooden table in the lounge area first before reaching the trash can?",
+      "reasoning_chain": "The curved sofa near the corner is positioned at one end of the room, while the modest-sized trash can is located by the entrance to the hallway, which is farther from the corner. The small, circular wooden table sits closer to the center of the lounge area, acting as a midpoint between the sofa and the trash can. Walking directly to the trash can from the sofa would be the shortest route, whereas stopping by the table would add an unnecessary detour.",
+      "final_answer": "It would be quicker to walk directly from the curved sofa to the modest-sized trash can by the hallway entrance."
+    }
+  ]
+}
