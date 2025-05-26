@@ -1,0 +1,31 @@
+{
+  "dataset": "area3",
+  "image_id": "camera_b3ef2004d9fb42ba909f0da483b1a1f9_WC_1_frame_equirectangular_domain_rgb.png",
+  "prompt": "In each round of dialogue, you will be given a spatial cognitive map corresponding to a panoramic image.\nThe cognitive map is a 20\u00d720 grid. Movement is restricted to one grid at a time.\nThis map represents a top-down layout of a scene. The camera\u2019s position is marked in red. \nThe yellow marker indicates your starting point, and the green marker indicates your destination.\nObject class information will be provided in the accompanying text.\nYour task is to generate a simple path plan from the starting point to the destination.\nYour initial position is at the starting point, facing toward the camera.\nYou may only use the following movement instructions to describe the path: move forward, turn left, turn right, and turn around.\nDo not collide with any objects during the path.\nDo not include any extra description. Only output the planned path.",
+  "reasoning": [
+    {
+      "question": "Starting at the yellow point and facing toward the camera, what is the path to reach the green point? You may only use the actions: move forward, turn left, turn right, and turn around.",
+      "object": "Start Point:(np.float64(1136.4652432366856), np.float64(2236.2341077277692)), Class:clutter. End Point:(np.float64(1109.9721887308094), np.float64(2128.762559279801)), Class:clutter.",
+      "grid_position": "Start Point:(6, 14). End Point:(6, 13).",
+      "answer": "move forward"
+    },
+    {
+      "question": "Starting at the yellow point and facing toward the camera, what is the path to reach the green point? You may only use the actions: move forward, turn left, turn right, and turn around.",
+      "object": "Start Point:(np.float64(709.4239170830408), np.float64(2564.3644547218896)), Class:clutter. End Point:(np.float64(1190.6224257241122), np.float64(1608.000787303692)), Class:clutter.",
+      "grid_position": "Start Point:(19, 19). End Point:(5, 5).",
+      "answer": "turn around  \nmove forward \u00d714  \nturn left  \nmove forward \u00d715  \nturn left  \nmove forward \u00d71"
+    },
+    {
+      "question": "Starting at the yellow point and facing toward the camera, what is the path to reach the green point? You may only use the actions: move forward, turn left, turn right, and turn around.",
+      "object": "Start Point:(np.float64(1058.3809665575072), np.float64(120.34434851642354)), Class:door. End Point:(np.float64(1200.7485074243207), np.float64(2653.482669134362)), Class:clutter.",
+      "grid_position": "Start Point:(7, 3). End Point:(7, 13).",
+      "answer": "move forward \u00d72  \nturn right  \nmove forward \u00d79  \nturn left  \nmove forward \u00d72"
+    },
+    {
+      "question": "Starting at the yellow point and facing toward the camera, what is the path to reach the green point? You may only use the actions: move forward, turn left, turn right, and turn around.",
+      "object": "Start Point:(np.float64(1099.4219464402352), np.float64(2003.3736120182887)), Class:clutter. End Point:(np.float64(1286.0683673469389), np.float64(2413.1795918367347)), Class:clutter.",
+      "grid_position": "Start Point:(6, 11). End Point:(2, 14).",
+      "answer": "move forward  \nturn left  \nmove forward \u00d74  \nturn right  \nmove forward \u00d73"
+    }
+  ]
+}

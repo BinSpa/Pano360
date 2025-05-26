@@ -9,7 +9,7 @@
 #SBATCH --output=slurm-%j.out         # 输出文件（%j为作业ID）
 
 salloc --partition i64m512u --ntasks=1 --cpus-per-task=16 --mem=64G --time=7-00:00:00 
---pty bash
+srun --pty bash
 --partition i64m512u 
 --partition=i64m1tga800u 
 --gres=gpu:1
@@ -20,7 +20,7 @@ scontrol show job $SLURM_JOB_ID
 squeue -u $USER
 srun --jobid=7402340 --pty bash
 # job
-dg_cpu: 7397983
+dg_cpu: 7407090
 # 查看可申请资源
 sinfo
 # 后台挂起

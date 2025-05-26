@@ -33,7 +33,7 @@ def process_area3(image_path, annot_path, xyz_path, depth_path, semantic_labels,
         cur_info['points'] = xyz_image[cur_info['mask']]
         instance_info.append(cur_info)
     # get object position in grid
-    instance_info = update_instance_info_with_grid_coordinates(instance_info)
+    update_instance_info_with_grid_coordinates(instance_info)
     # get camera map
     p_camera = estimate_camera_position_from_equirectangular(xyz_image, depth_image, pano_image)
     # get cognitive map
@@ -45,9 +45,9 @@ def process_area3(image_path, annot_path, xyz_path, depth_path, semantic_labels,
     cog_map = generate_cognitive_map(instance_index, xyz_image, id_map, p_camera)
     # generate data
     basic_prompt = build_basic_prompt()
-    reason_data, messages = multiturn_converstaion(cog_map, instance_info, model_name, client, turn=4, basic_prompt=basic_prompt)
-    # save reason data and messages
     image_id = image_path.split('/')[-1]
+    reason_data, messages = multiturn_converstaion(cog_map, image_id, instance_info, model_name, client, turn=4, basic_prompt=basic_prompt)
+    # save reason data and messages
     output = {
         "dataset": "area3",
         "image_id": image_id,
@@ -63,18 +63,23 @@ def process_area3(image_path, annot_path, xyz_path, depth_path, semantic_labels,
         
     return len(reason_data)
     
-def multiturn_converstaion(cog_map, instance_info, model_name, client, turn, basic_prompt):
+def multiturn_converstaion(cog_map, image_id, instance_info, model_name, client, turn, basic_prompt):
+    if instance_info is None:
+        return None, None
     non_wall_instances = [inst for inst in instance_info if inst["class_name"] != "wall"]
+    if instance_info is None:
+        return None, None
     messages = []
     reason_data = []
     messages.append({"role": "user", "content": basic_prompt})
     for i in range(turn):
         selected_instances = random.sample(non_wall_instances, 2)
+        print(selected_instances[0].keys())
         start_point = selected_instances[0]["grid_coord"]
         end_point = selected_instances[1]["grid_coord"]
         start_class = selected_instances[0]["class_name"]
         end_class = selected_instances[1]["class_name"]
-        cog_map_se = plot_cog_map(cog_map, start_point, end_point)
+        cog_map_se = plot_cog_map(cog_map, start_point, end_point, image_id)
         base64_image = encode_np_image_to_base64(cog_map_se, image_format='.png')
         messages.append({
         "role": "user", "content": [
@@ -92,13 +97,14 @@ def multiturn_converstaion(cog_map, instance_info, model_name, client, turn, bas
         # construct data
         sample = dict()
         sample["question"] = "Starting at the yellow point and facing toward the camera, what is the path to reach the green point? You may only use the actions: move forward, turn left, turn right, and turn around."
-        sample["object"] = f"Start Point:{ndimage.center_of_mass(selected_instances[0]["mask"])}, Class:{selected_instances[0]["class_name"]}. End Point:{ndimage.center_of_mass(selected_instances[1]["mask"])}, Class:{selected_instances[1]["class_name"]}."
+        sample["object"] = f"Start Point:{ndimage.center_of_mass(selected_instances[0]['mask'])}, Class:{selected_instances[0]['class_name']}. End Point:{ndimage.center_of_mass(selected_instances[1]['mask'])}, Class:{selected_instances[1]['class_name']}."
+        sample["grid_position"] = f"Start Point:{start_point}. End Point:{end_point}."
         sample["answer"] = object_description.choices[0].message.content
-        reason_data.append(sample)
+        reason_data.append(sample)  
     return reason_data, messages
         
     
-def plot_cog_map(cog_map, start_point, end_point, grid_size=(20, 20)):
+def plot_cog_map(cog_map, start_point, end_point, image_id, grid_size=(20, 20)):
     cog_map[start_point[0]][start_point[1]].append("Start")
     cog_map[end_point[0]][end_point[1]].append("End") 
     fig, ax = plt.subplots(figsize=(12, 12))
@@ -127,11 +133,15 @@ def plot_cog_map(cog_map, start_point, end_point, grid_size=(20, 20)):
     ax.set_title("Spatial Cognitive Map with Start and End", fontsize=16)
     plt.tight_layout()
     
-    # transpose to numpy RGB image
-    fig.canvas.draw()
-    img_array = np.frombuffer(fig.canvas.tostring_rgb(), dtype=np.uint8)
-    img_array = img_array.reshape(fig.canvas.get_width_height()[::-1] + (3,))
+    # save cognitive map and load it.
+    fig.savefig(f"{image_id}_cognitive_map.png", dpi=300, bbox_inches='tight')
     plt.close(fig)
+    
+    img_array = np.array(Image.open(f"{image_id}_cognitive_map.png"))
+    # remove this turn information
+    cog_map[start_point[0]][start_point[1]].remove("Start")
+    cog_map[end_point[0]][end_point[1]].remove("End") 
+    
     return img_array
     
 def build_basic_prompt():
@@ -159,6 +169,7 @@ def update_instance_info_with_grid_coordinates(instance_info, grid_size=(20, 20)
         在每个物体字典中添加 'grid_coord': (gy, gx)
     """
     centers_3d = []
+    new_instance_info = []
 
     # 第一步：先提取所有有效中心点用于计算归一化范围
     for info in instance_info:
@@ -168,6 +179,9 @@ def update_instance_info_with_grid_coordinates(instance_info, grid_size=(20, 20)
         center = np.median(points, axis=0)
         info["_center3d"] = center
         centers_3d.append(center)
+        new_instance_info.append(info)
+    # 只保留符合大小条件的目标
+    instance_info[:] = new_instance_info
 
     if not centers_3d:
         raise ValueError("没有足够的实例参与 grid 坐标计算")
@@ -297,27 +311,3 @@ def generate_cognitive_map(instance_mask, xyz_map, id_to_class, p_camera, grid_s
             continue
         grid[grid_y][grid_x].append(label)
     return grid
-    '''
-    # 绘制认知图（俯视 X-Z 方向）
-    fig, ax = plt.subplots(figsize=(12, 8))
-    ax.set_xlim(0, grid_size[1])
-    ax.set_ylim(0, grid_size[0])
-    ax.invert_yaxis()
-    ax.set_xticks(np.arange(0, grid_size[1]+1))
-    ax.set_yticks(np.arange(0, grid_size[0]+1))
-    ax.grid(True)
-
-    for i in range(grid_size[0]):
-        for j in range(grid_size[1]):
-            items = grid[i][j]
-            if items:
-                label = '\n'.join(sorted(set(items)))
-                # 相机位置用红色标出
-                text_color = 'red' if "Camera" in label else 'black'
-                ax.text(j + 0.5, i + 0.5, label, ha='center', va='center', fontsize=8, color=text_color)
-
-    ax.set_title("Spatial Cognitive Map (Top-down view on X-Z plane)", fontsize=16)
-    plt.tight_layout()
-    plt.show()
-    fig.savefig("./temp/cognitive_map.png", dpi=300, bbox_inches='tight')
-    '''

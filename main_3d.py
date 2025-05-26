@@ -29,7 +29,7 @@ def run_pipeline(dataset):
     data_nums = 0
     image_list = os.listdir(image_dir)[:5]
     print(f"{len(image_list)} images will be processed.")
-    for fname in tqdm(image_list, desc="Processing")[:5]:
+    for fname in tqdm(image_list[:5], desc="Processing"):
         if fname.lower().endswith((".jpg", ".jpeg", ".png")):
             image_path = os.path.join(image_dir, fname)
             if dataset == "area3":
